@@ -1,0 +1,15 @@
+.horizontal {
+    display: inline;
+    margin: 24px;
+    font-size: 18px;
+}
+
+.horizontal:hover {
+    cursor: pointer;
+}
+
+.logo {
+    width: 4%;
+    height: 4%;
+    cursor: pointer;
+}
