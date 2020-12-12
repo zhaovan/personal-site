@@ -17,7 +17,7 @@ export default function AboutMe() {
             <div className={shared.container}>
                 <div style={{ marginTop: "7%" }}>
                     <img
-                        src="./about_img1.jpg"
+                        src="./about_img1.png"
                         className={styles.photo}
                         alt="This is a terrible photo of me but with cute cats"
                     />
