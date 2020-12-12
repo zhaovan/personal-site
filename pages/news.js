@@ -1,13 +1,19 @@
 import Footer from "../components/footer";
 import NavBar from "../components/navbar";
 import { Timeline, TimelineItem } from "vertical-timeline-component-for-react";
+import {
+    VerticalTimeline,
+    VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+
+import styles from "../styles/News.module.css";
 import Head from "next/head";
 
 import shared from "../styles/Shared.module.css";
 
 const news = [
     {
-        date: "November 2020",
+        date: "Summer 2021",
         title: "Software Engineering Intern",
         company: "Blend",
         website: "https://blend.com/",
@@ -15,7 +21,7 @@ const news = [
             "Signed on to join Blend as a software engineering intern for next summer! Excited to make impact in meaningful ways!",
     },
     {
-        date: "October 2020",
+        date: "October 2020-Present",
         title: "Investment Partner",
         company: "Dorm Room Fund",
         website: "http://dormroomfund.com/",
@@ -23,7 +29,7 @@ const news = [
             "Joined Dorm Room Fund on the Boston team. Excited to invest in the next generation of startup founders on a national scale 🇺🇸",
     },
     {
-        date: "July 2020",
+        date: "July 2020-Present",
         title: "Cofounder",
         company: "Tea Time",
         website: "http://teatime.substack.com/",
@@ -31,7 +37,7 @@ const news = [
             "Started Tea Time with a couple of friends, a community for LGBTQ+ people interested in tech and tech adjacent industries",
     },
     {
-        date: "Dec 2019",
+        date: "Dec 2019-Present",
         title: "Associate",
         company: "Van Wickle Ventures",
         website: "https://www.vanwickleventures.com/",
@@ -39,7 +45,7 @@ const news = [
             "Joined Van Wickle Ventures, Brown's student-run evergreen VC fund as a student associate",
     },
     {
-        date: "Nov 2019",
+        date: "Nov 2019 - May 2020",
         title: "Software Engineer and PM",
         company: "Intus Care",
         website: "https://intuscare.com/",
@@ -47,7 +53,7 @@ const news = [
             "Started at Intus Care as a software engineer and product manager, building out the initial MVP and ML algorithms ",
     },
     {
-        date: "Oct 2020",
+        date: "Oct 2019",
         title: "Participant",
         company: "IDEO Colab",
         website: "https://www.ideocolab.com/",
@@ -55,7 +61,7 @@ const news = [
             "Attended IDEO Colab's Makeathon in Cambridge where I helped make digital communication easier using BERT models",
     },
     {
-        date: "June 2019",
+        date: "June 2019 - Aug 2019",
         title: "Operations Intern",
         company: "Loftium",
         website: "https://loftium.com/",
@@ -63,7 +69,7 @@ const news = [
             "Worked at Loftium as an Operations Intern! Joined the Renter Operations Team where I helped with maximizing Airbnb performance and created a Messenger Chatbot",
     },
     {
-        date: "Sept 2018",
+        date: "Sept 2018 - Present",
         title: "Student",
         company: "Brown",
         website: "https://www.brown.edu/",
@@ -88,53 +94,42 @@ export default function News() {
                     I sometimes do things. Here's a way to keep track of some of
                     them (nonexhaustive by any means)
                 </div>
-                <Timeline
-                    lineColor={"#ddd"}
-                    style={{ paddingTop: "2%", width: "100%" }}
+                <VerticalTimeline
+                    layout="1-column-left"
+                    className={styles.timeline}
                 >
-                    {news.map((event, i) => {
+                    {news.map((newsItem, i) => {
                         const currColor = i % 2 == 0 ? "#FF9AA2" : "#C7CEEA";
                         return (
-                            <TimelineItem
-                                key={i}
-                                dateText={event.date}
-                                style={{ color: currColor }}
-                                dateInnerStyle={{
-                                    backgroundColor: currColor,
+                            <VerticalTimelineElement
+                                className="vertical-timeline-element--work"
+                                contentStyle={{
+                                    boxShadow: "5px 5px",
+                                    borderRadius: "10px",
+                                    border: "solid",
+                                }}
+                                contentArrowStyle={{
+                                    borderRight: "12px solid " + currColor,
+                                }}
+                                date={newsItem.date}
+                                iconStyle={{
+                                    background: currColor,
+                                    color: "#fff",
                                 }}
                             >
-                                <div
-                                    style={{
-                                        boxShadow: "5px 5px",
-                                        borderRadius: "10px",
-                                        border: "solid",
-                                        padding: "3%",
-                                    }}
-                                >
-                                    <div style={{ display: "flex" }}>
-                                        <h3
-                                            style={{
-                                                fontWeight: "800",
-                                                fontStyle: "italic",
-                                            }}
-                                        >
-                                            {event.title},&nbsp;
-                                        </h3>
-                                        <h3 style={{ fontWeight: "800" }}>
-                                            <a
-                                                href={event.website}
-                                                target="_blank"
-                                            >
-                                                {event.company}
-                                            </a>
-                                        </h3>
-                                    </div>
-                                    <p>{event.bodyText}</p>
-                                </div>
-                            </TimelineItem>
+                                <h3 className="vertical-timeline-element-title">
+                                    <a href={newsItem.website} target="_blank">
+                                        {newsItem.company}
+                                    </a>
+                                </h3>
+                                <h4 className="vertical-timeline-element-subtitle">
+                                    {newsItem.title}
+                                </h4>
+                                <p>{newsItem.bodyText}</p>
+                            </VerticalTimelineElement>
                         );
                     })}
-                </Timeline>
+                </VerticalTimeline>
             </div>
             <Footer />
         </div>

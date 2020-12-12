@@ -1,0 +1,8 @@
+.timeline {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.timeline::before {
+    background: black;
+}
