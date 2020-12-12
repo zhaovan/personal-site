@@ -9,6 +9,7 @@ export default function NavBar() {
                 marginLeft: "8%",
                 marginRight: "8%",
                 marginTop: "1%",
+                marginBottom: "1%",
             }}
         >
             <Link href="/">
@@ -18,7 +19,7 @@ export default function NavBar() {
                     className={styles.logo}
                 />
             </Link>
-            <ul style={{ listStyle: "none", margin: "auto 0 auto auto" }}>
+            <ul style={{ listStyle: "none", alignSelf: "flex-end" }}>
                 <Link href="/aboutme">
                     <li className={styles.horizontal}>About Me</li>
                 </Link>
@@ -28,8 +29,8 @@ export default function NavBar() {
                 <Link href="/projects">
                     <li className={styles.horizontal}>Projects</li>
                 </Link>
-                <Link href="/rejection">
-                    <li className={styles.horizontal}>Rejection</li>
+                <Link href="/work">
+                    <li className={styles.horizontal}>How I Work</li>
                 </Link>
             </ul>
         </div>

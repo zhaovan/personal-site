@@ -6,6 +6,7 @@
 
 .horizontal:hover {
     cursor: pointer;
+    text-decoration: underline;
 }
 
 .logo {

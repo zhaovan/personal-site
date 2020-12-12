@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+    width: 70%;
+    margin: auto;
+    margin-top: 2%;
+}
+
+.page {
+    min-height: 100vh; /* will cover the 100% of viewport */
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding-bottom: 2.5rem;
+}

@@ -2,8 +2,9 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
 import NavBar from "../components/navbar";
-import Typewriter from "typewriter-effect";
+
 import Footer from "../components/footer";
+import shared from "../styles/Shared.module.css";
 
 export default function Home() {
     return (
@@ -21,32 +22,10 @@ export default function Home() {
                 }}
             >
                 <div style={{ margin: "auto" }}>
-                    <div style={{ fontSize: "64px", marginTop: "16%" }}>
+                    <div style={{ fontSize: "64px", marginTop: "8%" }}>
                         Hey there, I'm Ivan!
                     </div>
-                    {/* <div
-                        style={{
-                            display: "flex",
-                            fontSize: "20px",
-                            fontStyle: "italic",
-                        }}
-                    >
-                        {" "}
-                        I'm probably&nbsp;
-                        <Typewriter
-                            options={{
-                                strings: [
-                                    "coding",
-                                    "designing",
-                                    "petting corgis",
-                                    "climbing walls",
-                                    "breaking things",
-                                ],
-                                autoStart: true,
-                                loop: true,
-                            }}
-                        />
-                    </div> */}
+
                     <div
                         style={{
                             marginTop: "2%",
@@ -54,7 +33,7 @@ export default function Home() {
                             fontSize: "18px",
                         }}
                     >
-                        <p>
+                        <p className="animate__slideInUp">
                             I love building tools, workflows, and automation so
                             that I can spend less time doing work and more time
                             thinking about the random, crazy stuff in life. I've
@@ -66,6 +45,7 @@ export default function Home() {
                                 <a
                                     href="https://intuscare.com/"
                                     target="_blank"
+                                    className={shared.site}
                                 >
                                     Intus Care
                                 </a>
