@@ -1,6 +1,5 @@
 import Footer from "../components/footer";
 import NavBar from "../components/navbar";
-import { Timeline, TimelineItem } from "vertical-timeline-component-for-react";
 import {
     VerticalTimeline,
     VerticalTimelineElement,
