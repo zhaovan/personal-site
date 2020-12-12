@@ -108,7 +108,7 @@ export default function News() {
                                         boxShadow: "5px 5px",
                                         borderRadius: "10px",
                                         border: "solid",
-                                        padding: "2%",
+                                        padding: "3%",
                                     }}
                                 >
                                     <div style={{ display: "flex" }}>
