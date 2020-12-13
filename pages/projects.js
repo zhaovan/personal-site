@@ -1,8 +1,6 @@
 import NavBar from "../components/navbar";
 import shared from "../styles/Shared.module.css";
 import Footer from "../components/footer";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import Head from "next/head";
 import styles from "../styles/Projects.module.css";
 
@@ -74,7 +72,6 @@ const projects = [
 ];
 
 export default function Projects() {
-    AOS.init();
     return (
         <div className={shared.page}>
             <Head>
