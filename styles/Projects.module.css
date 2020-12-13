@@ -10,6 +10,7 @@
 .description {
     text-align: left;
     font-weight: 300;
+    font-family: Montserrat;
 }
 
 .projectContainer {
@@ -73,3 +74,22 @@
         margin-top: 3%;
     }
 }
+
+/* .project {
+    transform: translateX(100vh);
+} */
+/* .project {
+    animation: cd-move-in 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes cd-move-in {
+    0% {
+        transform: translateX(-30vw);
+    }
+    65% {
+        transform: translateX(1.5vw);
+    }
+    100% {
+        transform: translateX(0vh);
+    }
+} */

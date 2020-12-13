@@ -84,13 +84,13 @@ export default function News() {
                 <title>News</title>
                 <link rel="icon" href="/icon.ico" />
             </Head>
-            <NavBar />
+            <NavBar currPage="news" />
             <p className={shared.titleText}>News!</p>
             <div
                 className={shared.container}
                 style={{ flexDirection: "column" }}
             >
-                <div style={{ textAlign: "center", fontSize: "20px" }}>
+                <div className={shared.firstText}>
                     I sometimes do things. Here's a way to keep track of some of
                     them (nonexhaustive by any means)
                 </div>
@@ -129,7 +129,9 @@ export default function News() {
                                 >
                                     {newsItem.title}
                                 </h4>
-                                <p>{newsItem.bodyText}</p>
+                                <p style={{ fontFamily: "Montserrat" }}>
+                                    {newsItem.bodyText}
+                                </p>
                             </VerticalTimelineElement>
                         );
                     })}

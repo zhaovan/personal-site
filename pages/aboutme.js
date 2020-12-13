@@ -13,7 +13,7 @@ export default function AboutMe() {
                 <title>Ivan Zhao</title>
                 <link rel="icon" href="/icon.ico" />
             </Head>
-            <NavBar />
+            <NavBar currPage="aboutMe" />
             <p className={shared.titleText}>About Me!</p>
             <div className={[shared.container, styles.newContainer].join(" ")}>
                 <div style={{ marginTop: "3%" }}>
@@ -25,7 +25,13 @@ export default function AboutMe() {
                 </div>
 
                 <div style={{ marginLeft: "4%" }}>
-                    <div style={{ marginTop: "5%", fontSize: "18px" }}>
+                    <div
+                        style={{
+                            marginTop: "5%",
+                            fontSize: "18px",
+                            fontFamily: "Montserrat",
+                        }}
+                    >
                         <p>
                             I'm a dog lover from Seattle, WA. I love
                             understanding decision making frameworks, both from

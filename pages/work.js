@@ -51,23 +51,13 @@ export default function Work() {
                 <title>How I Work</title>
                 <link rel="icon" href="/icon.ico" />
             </Head>
-            <NavBar />
+            <NavBar currPage="work" />
 
-            <p className={shared.titleText}>Principles and Work!</p>
-            <div
-                className={shared.container}
-                style={{ display: "block", marginTop: "4%" }}
-            >
-                In the same vein that&nbsp;{" "}
-                <a href="https://www.notion.so/How-can-I-help-you-fb75f2f5ee994bad98998a2b97a586b0">
-                    @Lolita Taub&nbsp;
-                </a>{" "}
-                and&nbsp;
-                <a href="https://github.com/hepwori/wwi/">@Isaac Hepworth</a>
-                &nbsp; provide ways that they can be useful to you, I wanted to
-                start compiling some of the ways that I can help out. As such,
-                here's some principles that I hold close to my heart whenever I
-                make decisions and some things that I value:
+            <p className={shared.titleText}>Work!</p>
+            <div className={shared.container} style={{ display: "block" }}>
+                A lot of people on twitter tweet about their opinions and
+                values. Rather than do that, I wanted to host them all in house.
+                Here are some things that you should know about me
                 <h1>Principles</h1>
                 {principles.map((principle) => {
                     const quote = principle.blurb.split(":")[1];
@@ -82,7 +72,7 @@ export default function Work() {
                 <ul>
                     {notes.map((note, i) => {
                         return (
-                            <li key={i} style={{ marginTop: "3%" }}>
+                            <li key={i} style={{ marginTop: "2%" }}>
                                 {note.statement}
                             </li>
                         );

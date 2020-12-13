@@ -1,6 +1,8 @@
 import NavBar from "../components/navbar";
 import shared from "../styles/Shared.module.css";
 import Footer from "../components/footer";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Head from "next/head";
 import styles from "../styles/Projects.module.css";
 
@@ -72,20 +74,21 @@ const projects = [
 ];
 
 export default function Projects() {
+    AOS.init();
     return (
         <div className={shared.page}>
             <Head>
                 <title>Projects</title>
                 <link rel="icon" href="/icon.ico" />
             </Head>
-            <NavBar />
+            <NavBar currPage="projects" />
 
             <p className={shared.titleText}>Projects</p>
             <div
                 className={shared.container}
                 style={{ flexDirection: "column" }}
             >
-                <div style={{ textAlign: "center", fontSize: "20px" }}>
+                <div className={shared.firstText}>
                     I sometimes work on things. Here's a couple of them that
                     (sort of) turned out.
                 </div>
@@ -93,7 +96,7 @@ export default function Projects() {
                 <div className={styles.projectContainer}>
                     {projects.map((project, i) => {
                         return (
-                            <div className={styles.project}>
+                            <div className={styles.project} data-aos="fade-up">
                                 <div className={styles.name}>
                                     <a href={project.website} target="_blank">
                                         {project.name}

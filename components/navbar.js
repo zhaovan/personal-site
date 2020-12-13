@@ -1,16 +1,9 @@
 import styles from "../styles/Navbar.module.css";
 import Link from "next/link";
 
-function LinkItem({ isCurrPage, currClass, link }) {
-    const currStyle = isCurrPage ? { opacity: 1 } : { opacity: 0.7 };
-    return (
-        <li className={currClass} style={currStyle}>
-            {link}
-        </li>
-    );
-}
-
 export default function NavBar({ currPage }) {
+    const active = { opacity: 1 };
+    const notActive = { opacity: 0.4 };
     return (
         <div className={styles.outerBar}>
             <Link href="/">
@@ -22,16 +15,36 @@ export default function NavBar({ currPage }) {
             </Link>
             <ul className={styles.listStyle}>
                 <Link href="/aboutme">
-                    <li className={styles.horizontal}>About Me</li>
+                    <li
+                        className={styles.horizontal}
+                        style={currPage == "aboutMe" ? active : notActive}
+                    >
+                        About Me
+                    </li>
                 </Link>
                 <Link href="/news">
-                    <li className={styles.horizontal}>News</li>
+                    <li
+                        className={styles.horizontal}
+                        style={currPage == "news" ? active : notActive}
+                    >
+                        News
+                    </li>
                 </Link>
                 <Link href="/projects">
-                    <li className={styles.horizontal}>Projects</li>
+                    <li
+                        className={styles.horizontal}
+                        style={currPage == "projects" ? active : notActive}
+                    >
+                        Projects
+                    </li>
                 </Link>
                 <Link href="/work">
-                    <li className={styles.horizontal}>How I Work</li>
+                    <li
+                        className={styles.horizontal}
+                        style={currPage == "work" ? active : notActive}
+                    >
+                        How I Work
+                    </li>
                 </Link>
             </ul>
             <hr className={styles.line} />

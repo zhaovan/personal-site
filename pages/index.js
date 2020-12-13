@@ -2,11 +2,22 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
 import NavBar from "../components/navbar";
+import Typewriter from "typewriter-effect";
 
 import Footer from "../components/footer";
 import shared from "../styles/Shared.module.css";
 
 export default function Home() {
+    const intros = [
+        "breaking code",
+        "petting corgis",
+        "designings apps",
+        "watching shows",
+        "climbing walls",
+    ];
+
+    const num = Math.floor(Math.random() * intros.length);
+
     return (
         <div className={shared.page}>
             <Head>
@@ -16,7 +27,16 @@ export default function Home() {
             <NavBar />
             <div className={[shared.container, styles.container].join(" ")}>
                 <div>
-                    <div className={styles.title}>Hey there, I'm Ivan!</div>
+                    <div className={styles.title}>
+                        <Typewriter
+                            onInit={(typewriter) => {
+                                typewriter
+                                    .typeString("Hey, I'm Ivan and I'm ")
+                                    .typeString(intros[num])
+                                    .start();
+                            }}
+                        />
+                    </div>
 
                     <div className={styles.textBox}>
                         <p className="animate__slideInUp">
