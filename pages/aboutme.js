@@ -14,8 +14,9 @@ export default function AboutMe() {
                 <link rel="icon" href="/icon.ico" />
             </Head>
             <NavBar />
-            <div className={shared.container}>
-                <div style={{ marginTop: "7%" }}>
+            <p className={shared.titleText}>About Me!</p>
+            <div className={[shared.container, styles.newContainer].join(" ")}>
+                <div style={{ marginTop: "3%" }}>
                     <img
                         src="./about_img1.png"
                         className={styles.photo}
@@ -24,7 +25,7 @@ export default function AboutMe() {
                 </div>
 
                 <div style={{ marginLeft: "4%" }}>
-                    <div style={{ marginTop: "7%", fontSize: "20px" }}>
+                    <div style={{ marginTop: "5%", fontSize: "18px" }}>
                         <p>
                             I'm a dog lover from Seattle, WA. I love
                             understanding decision making frameworks, both from

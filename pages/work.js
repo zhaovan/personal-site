@@ -40,7 +40,7 @@ const notes = [
     },
     {
         statement:
-            "I always try to give the benefit of the doubt whenever something happens. Things happen!",
+            "I always try to give the benefit of the doubt. Things happen!",
     },
 ];
 
@@ -53,7 +53,11 @@ export default function Work() {
             </Head>
             <NavBar />
 
-            <div className={shared.container} style={{ display: "block" }}>
+            <p className={shared.titleText}>Principles and Work!</p>
+            <div
+                className={shared.container}
+                style={{ display: "block", marginTop: "4%" }}
+            >
                 In the same vein that&nbsp;{" "}
                 <a href="https://www.notion.so/How-can-I-help-you-fb75f2f5ee994bad98998a2b97a586b0">
                     @Lolita Taub&nbsp;
@@ -77,7 +81,11 @@ export default function Work() {
                 <h1>Other Notes:</h1>
                 <ul>
                     {notes.map((note, i) => {
-                        return <li key={i}>{note.statement}</li>;
+                        return (
+                            <li key={i} style={{ marginTop: "3%" }}>
+                                {note.statement}
+                            </li>
+                        );
                     })}
                 </ul>
             </div>

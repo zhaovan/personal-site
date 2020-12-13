@@ -11,3 +11,12 @@
     width: 15%;
     height: 15%;
 }
+
+@media (max-width: 600px) {
+    .newContainer {
+        flex-direction: column;
+    }
+    .jack {
+        width: 100%;
+    }
+}

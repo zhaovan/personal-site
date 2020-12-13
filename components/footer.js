@@ -87,7 +87,7 @@ export default function Footer() {
                     width: "100%",
                 }}
             >
-                © {date.getFullYear()} Ivan Zhao, Bellevue, WA
+                © {date.getFullYear()} Ivan Zhao, made with ☕&nbsp; and 🍵
             </div>
         </footer>
     );

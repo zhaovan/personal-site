@@ -1,17 +1,18 @@
 import styles from "../styles/Navbar.module.css";
 import Link from "next/link";
 
-export default function NavBar() {
+function LinkItem({ isCurrPage, currClass, link }) {
+    const currStyle = isCurrPage ? { opacity: 1 } : { opacity: 0.7 };
     return (
-        <div
-            style={{
-                display: "flex",
-                marginLeft: "8%",
-                marginRight: "8%",
-                marginTop: "1%",
-                marginBottom: "1%",
-            }}
-        >
+        <li className={currClass} style={currStyle}>
+            {link}
+        </li>
+    );
+}
+
+export default function NavBar({ currPage }) {
+    return (
+        <div className={styles.outerBar}>
             <Link href="/">
                 <img
                     src="/doggo.png"
@@ -19,7 +20,7 @@ export default function NavBar() {
                     className={styles.logo}
                 />
             </Link>
-            <ul style={{ listStyle: "none", alignSelf: "flex-end" }}>
+            <ul className={styles.listStyle}>
                 <Link href="/aboutme">
                     <li className={styles.horizontal}>About Me</li>
                 </Link>
@@ -33,6 +34,7 @@ export default function NavBar() {
                     <li className={styles.horizontal}>How I Work</li>
                 </Link>
             </ul>
+            <hr className={styles.line} />
         </div>
     );
 }

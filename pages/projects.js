@@ -58,7 +58,7 @@ const projects = [
     {
         name: "Wander",
         description:
-            "A mobile app built in React Native on PostgreSQL and Express for users to create a voting plan for the upcoming 2020 election.",
+            "A mobile app built in React Native and Firebase that serves as an aggregator for users to build and search for itineraries",
         website: "https://github.com/zhaovan/wander",
         tags: ["design", "development"],
     },
@@ -79,6 +79,8 @@ export default function Projects() {
                 <link rel="icon" href="/icon.ico" />
             </Head>
             <NavBar />
+
+            <p className={shared.titleText}>Projects</p>
             <div
                 className={shared.container}
                 style={{ flexDirection: "column" }}
@@ -88,27 +90,10 @@ export default function Projects() {
                     (sort of) turned out.
                 </div>
 
-                <div
-                    style={{
-                        display: "flex",
-                        flexWrap: "wrap",
-                        marginBottom: "2%",
-                    }}
-                >
+                <div className={styles.projectContainer}>
                     {projects.map((project, i) => {
                         return (
-                            <div
-                                style={{
-                                    width: "40%",
-                                    border: "solid",
-                                    borderRadius: "10px",
-                                    padding: "2%",
-                                    margin: "3%",
-                                    textAlign: "center",
-                                    justifyContent: "center",
-                                    boxShadow: "5px 5px",
-                                }}
-                            >
+                            <div className={styles.project}>
                                 <div className={styles.name}>
                                     <a href={project.website} target="_blank">
                                         {project.name}

@@ -85,6 +85,7 @@ export default function News() {
                 <link rel="icon" href="/icon.ico" />
             </Head>
             <NavBar />
+            <p className={shared.titleText}>News</p>
             <div
                 className={shared.container}
                 style={{ flexDirection: "column" }}
@@ -115,13 +116,17 @@ export default function News() {
                                     background: currColor,
                                     color: "#fff",
                                 }}
+                                key={i}
                             >
                                 <h3 className="vertical-timeline-element-title">
                                     <a href={newsItem.website} target="_blank">
                                         {newsItem.company}
                                     </a>
                                 </h3>
-                                <h4 className="vertical-timeline-element-subtitle">
+                                <h4
+                                    className="vertical-timeline-element-subtitle"
+                                    style={{ fontStyle: "italic" }}
+                                >
                                     {newsItem.title}
                                 </h4>
                                 <p>{newsItem.bodyText}</p>

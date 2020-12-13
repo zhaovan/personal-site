@@ -12,6 +12,24 @@
     font-weight: 300;
 }
 
+.projectContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2%;
+    justify-content: center;
+}
+
+.project {
+    width: 40%;
+    border: solid;
+    border-radius: 10px;
+    padding: 2%;
+    margin: 3%;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 5px 5px;
+}
+
 .resumeTag {
     font-family: "Inconsolata", "Consolas", monospace;
     font-size: 0.9rem;
@@ -43,4 +61,15 @@
 .research {
     background-color: #f2c4b7;
     color: #8f5a51;
+}
+
+@media (max-width: 600px) {
+    .project {
+        /* margin: 2%; */
+        padding: 12%;
+        width: 100%;
+    }
+    .resumeTag {
+        margin-top: 3%;
+    }
 }

@@ -8,31 +8,17 @@ import shared from "../styles/Shared.module.css";
 
 export default function Home() {
     return (
-        <div>
+        <div className={shared.page}>
             <Head>
                 <title>Ivan Zhao</title>
                 <link rel="icon" href="/icon.ico" />
             </Head>
             <NavBar />
-            <div
-                style={{
-                    display: "flex",
-                    width: "70%",
-                    margin: "auto",
-                }}
-            >
-                <div style={{ margin: "auto" }}>
-                    <div style={{ fontSize: "64px", marginTop: "8%" }}>
-                        Hey there, I'm Ivan!
-                    </div>
+            <div className={[shared.container, styles.container].join(" ")}>
+                <div>
+                    <div className={styles.title}>Hey there, I'm Ivan!</div>
 
-                    <div
-                        style={{
-                            marginTop: "2%",
-                            width: "75%",
-                            fontSize: "18px",
-                        }}
-                    >
+                    <div className={styles.textBox}>
                         <p className="animate__slideInUp">
                             I love building tools, workflows, and automation so
                             that I can spend less time doing work and more time
@@ -45,7 +31,7 @@ export default function Home() {
                                 <a
                                     href="https://intuscare.com/"
                                     target="_blank"
-                                    className={shared.site}
+                                    className={styles.sketch}
                                 >
                                     Intus Care
                                 </a>
