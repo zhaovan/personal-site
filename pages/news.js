@@ -81,11 +81,11 @@ export default function News() {
     return (
         <div className={shared.page}>
             <Head>
-                <title>Ivan Zhao</title>
+                <title>News</title>
                 <link rel="icon" href="/icon.ico" />
             </Head>
             <NavBar />
-            <p className={shared.titleText}>News</p>
+            <p className={shared.titleText}>News!</p>
             <div
                 className={shared.container}
                 style={{ flexDirection: "column" }}

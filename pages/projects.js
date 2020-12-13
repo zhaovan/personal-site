@@ -75,7 +75,7 @@ export default function Projects() {
     return (
         <div className={shared.page}>
             <Head>
-                <title>Ivan Zhao</title>
+                <title>Projects</title>
                 <link rel="icon" href="/icon.ico" />
             </Head>
             <NavBar />
