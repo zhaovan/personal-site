@@ -7,24 +7,24 @@ const principles = [
     {
         principle: "Tech is inherently not neutral",
         blurb:
-            "You've probably heard me talk about tech ethics ad naseum, but I stand by the fact that we as humans and as technologists should always strive (within boundary, of course) to improve the world",
+            "You've probably heard me talk about tech ethics ad naseum, but I stand by the fact that we as humans and as technologists should always strive (within boundary, of course) to improve the world.",
     },
     {
         principle: "Relationships matter",
         blurb:
-            "There's the age old saying that you're the product of your five closest friends. As a product guy, I believe that. But make sure you treat all your friends well",
+            "There's the age old saying that you're the product of your five closest friends. As a product guy, I believe that. But make sure you treat all your friends well.",
     },
     {
         principle: "Always be learning",
         blurb:
-            'I think this quote from one of my favorite books, Educated, sums it up pretty well: "The decisions I made after that moment were not the ones she would have made. They were the choices of a changed person, a new self. You could call this selfhood many things. Transformation. Metamorphosis. Falsity. Betrayal. I call it an education"',
+            'I think this quote from one of my favorite books, Educated, sums it up pretty well: "The decisions I made after that moment were not the ones she would have made. They were the choices of a changed person, a new self. You could call this selfhood many things. Transformation. Metamorphosis. Falsity. Betrayal. I call it an education."',
     },
 ];
 
 const notes = [
     {
         statement:
-            "I generally work between the hours of 9am-5pm PST (or whatever timezone I'm in that day). That being said, I flex my time depending on the urgency of a project or how in the zone I am",
+            "I generally work between the hours of 9am-5pm PST (or whatever timezone I'm in that day). That being said, I flex my time depending on the urgency of a project or how in the zone I am.",
     },
     {
         statement:
@@ -32,11 +32,11 @@ const notes = [
     },
     {
         statement:
-            "In the same vein, I'd say I have some (functional) knowledge around VC, startups, full stack development, visual design, product design, and doggos. Anything else is a toss up",
+            "In the same vein, I'd say I have some (functional) knowledge around VC, startups, full stack development, visual design, product design, and doggos. Anything else is a toss up.",
     },
     {
         statement:
-            "I use Notion a lot (no I'm not the cofounder) and I like building tools around my own workflows. If you're trying to improve your efficiency, I recommend checking Notion out",
+            "I use Notion a lot (no I'm not the cofounder) and I like building tools around my own workflows. If you're trying to improve your efficiency, I recommend checking Notion out.",
     },
     {
         statement:
@@ -57,7 +57,7 @@ export default function Work() {
             <div className={shared.container} style={{ display: "block" }}>
                 A lot of people on twitter tweet about their opinions and
                 values. Rather than do that, I wanted to host them all in house.
-                Here are some things that you should know about me
+                Here are some things that you should know about me:
                 <h1>Principles</h1>
                 {principles.map((principle) => {
                     const quote = principle.blurb.split(":")[1];
