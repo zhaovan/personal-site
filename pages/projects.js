@@ -80,7 +80,7 @@ export default function Projects() {
             </Head>
             <NavBar currPage="projects" />
 
-            <p className={shared.titleText}>Projects</p>
+            <p className={shared.titleText}>Projects!</p>
             <div
                 className={shared.container}
                 style={{ flexDirection: "column" }}
