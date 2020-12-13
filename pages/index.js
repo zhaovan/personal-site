@@ -107,9 +107,9 @@ export default function Home() {
                         </ul>
                     </div>
                 </div>
-                <div>
+                <div className={styles.tabletDiv}>
                     <img
-                        src="/illustration.png"
+                        src="/portrait.png"
                         alt="photo of me"
                         className={styles.photo}
                     />

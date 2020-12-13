@@ -9,7 +9,7 @@
 
 .description {
     text-align: left;
-    font-weight: 300;
+    font-weight: 400;
     font-family: Montserrat;
 }
 
@@ -64,7 +64,7 @@
     color: #8f5a51;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
     .project {
         /* margin: 2%; */
         padding: 12%;
@@ -72,6 +72,12 @@
     }
     .resumeTag {
         margin-top: 3%;
+    }
+}
+
+@media (min-width: 540px) and (max-width: 1024px) {
+    .project {
+        width: 100%;
     }
 }
 
