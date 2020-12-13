@@ -46,6 +46,8 @@
 
     .listStyle {
         padding-inline-start: 4%;
+        display: flex;
+        justify-content: center;
     }
     .line {
         width: 75%;
