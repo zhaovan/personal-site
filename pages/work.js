@@ -52,33 +52,36 @@ export default function Work() {
                 <link rel="icon" href="/icon.ico" />
             </Head>
             <NavBar currPage="work" />
-
-            <p className={shared.titleText}>Work!</p>
-            <div className={shared.container} style={{ display: "block" }}>
-                A lot of people on twitter tweet about their opinions and
-                values. Rather than do that, I wanted to host them all in house.
-                Here are some things that you should know about me:
-                <h1>Principles</h1>
-                {principles.map((principle) => {
-                    const quote = principle.blurb.split(":")[1];
-                    return (
-                        <>
-                            <h3>{principle.principle}</h3>
-                            <p>{principle.blurb}</p>
-                        </>
-                    );
-                })}
-                <h1>Other Notes:</h1>
-                <ul>
-                    {notes.map((note, i) => {
+            <div data-aos="zoom-up" data-aos-duration="500">
+                {" "}
+                <p className={shared.titleText}>Work!</p>
+                <div className={shared.container} style={{ display: "block" }}>
+                    A lot of people on twitter tweet about their opinions and
+                    values. Rather than do that, I wanted to host them all in
+                    house. Here are some things that you should know about me:
+                    <h1>Principles</h1>
+                    {principles.map((principle, i) => {
+                        const quote = principle.blurb.split(":")[1];
                         return (
-                            <li key={i} style={{ marginTop: "2%" }}>
-                                {note.statement}
-                            </li>
+                            <div key={i}>
+                                <h3>{principle.principle}</h3>
+                                <p>{principle.blurb}</p>
+                            </div>
                         );
                     })}
-                </ul>
+                    <h1>Other Notes:</h1>
+                    <ul>
+                        {notes.map((note, i) => {
+                            return (
+                                <li key={i} style={{ marginTop: "2%" }}>
+                                    {note.statement}
+                                </li>
+                            );
+                        })}
+                    </ul>
+                </div>
             </div>
+
             <Footer />
         </div>
     );

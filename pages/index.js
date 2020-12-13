@@ -25,12 +25,17 @@ export default function Home() {
                 <link rel="icon" href="/icon.ico" />
             </Head>
             <NavBar />
-            <div className={[shared.container, styles.container].join(" ")}>
+            <div
+                className={[shared.container, styles.container].join(" ")}
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+            >
                 <div>
                     <div className={styles.title}>
                         <Typewriter
                             onInit={(typewriter) => {
                                 typewriter
+                                    .pauseFor(1500)
                                     .typeString("Hey, I'm Ivan and I'm ")
                                     .typeString(intros[num])
                                     .start();
