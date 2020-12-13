@@ -11,7 +11,7 @@ export default function Home() {
     const intros = [
         "breaking code",
         "petting corgis",
-        "designings apps",
+        "designing apps",
         "watching shows",
         "climbing walls",
     ];
@@ -47,7 +47,7 @@ export default function Home() {
                         </p>
                         <ul>
                             <li>
-                                building <b>products</b> to help people at{" "}
+                                building <b>products</b> for{" "}
                                 <a
                                     href="https://intuscare.com/"
                                     target="_blank"
@@ -71,14 +71,14 @@ export default function Home() {
                                     href="http://brownentrepreneurship.com/"
                                     target="_blank"
                                 >
-                                    Entrepreneurship Program
+                                    Brown Entrepreneurship Program
                                 </a>
                                 ,{" "}
                                 <a
                                     href="https://brownrisdinnovation.com"
                                     target="_blank"
                                 >
-                                    BRIC
+                                    Brown RISD Innovation Community
                                 </a>{" "}
                                 and{" "}
                                 <a
@@ -89,7 +89,7 @@ export default function Home() {
                                 </a>
                             </li>
                             <li>
-                                making <b>investments</b> at{" "}
+                                making <b>investments</b> with{" "}
                                 <a
                                     href="https://www.vanwickleventures.com/"
                                     target="_blank"
