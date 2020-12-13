@@ -29,7 +29,6 @@ export default function AboutMe() {
                         style={{
                             marginTop: "5%",
                             fontSize: "18px",
-                            fontFamily: "Montserrat",
                         }}
                     >
                         <p>
