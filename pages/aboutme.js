@@ -14,14 +14,14 @@ export default function AboutMe() {
                 <link rel="icon" href="/icon.ico" />
             </Head>
             <NavBar currPage="aboutMe" />
-            <div data-aos="fade-up-left" data-aos-duration="500">
+            <div>
                 <p className={shared.titleText}>About Me!</p>
                 <div
                     className={[shared.container, styles.newContainer].join(
                         " "
                     )}
                 >
-                    <div style={{ marginTop: "3%" }}>
+                    <div style={{ marginTop: "3%" }} data-aos="fade-right">
                         <img
                             src="./about_img1.png"
                             className={styles.photo}
@@ -29,7 +29,7 @@ export default function AboutMe() {
                         />
                     </div>
 
-                    <div style={{ marginLeft: "4%" }}>
+                    <div style={{ marginLeft: "4%" }} data-aos="fade-left">
                         <div
                             style={{
                                 marginTop: "5%",
