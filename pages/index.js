@@ -35,7 +35,7 @@ export default function Home() {
                         <Typewriter
                             onInit={(typewriter) => {
                                 typewriter
-                                    .pauseFor(1500)
+                                    .pauseFor(1100)
                                     .typeString("Hey, I'm Ivan and I'm ")
                                     .typeString(intros[num])
                                     .start();
