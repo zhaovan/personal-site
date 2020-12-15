@@ -56,7 +56,9 @@
         flex-direction: column;
     }
     .photo {
-        width: 100%;
+        width: 70% !important;
+        align-self: center;
+        margin-left: 12.5%;
     }
     .oval {
         max-width: 60%;
@@ -102,12 +104,12 @@
 }
 
 .oval {
-    width: 350px;
+    width: 450px;
     height: 75px;
 
     border-radius: 100px / 50px;
     background: #000;
-    opacity: 0.3;
+    opacity: 0.2;
     z-index: -1;
     -webkit-animation: squish 1s infinite alternate;
     animation: squish 1s infinite alternate;
@@ -142,7 +144,7 @@
         flex-direction: column-reverse;
     }
     .photo {
-        width: 50%;
+        width: 100%;
         align-self: center;
     }
     .tabletDiv {
