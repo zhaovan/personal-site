@@ -19,7 +19,7 @@ export default function AboutMe() {
                     name="viewport"
                     content="width=device-width, initial-scale=1"
                 />
-                <meta property="og:image" content="./thumbnail.jpg" />
+                <meta property="og:image" content="./thumbnail.png" />
                 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
                 <meta
                     name="viewport"
