@@ -12,7 +12,7 @@ export default function Home() {
         "breaking code",
         "petting corgis",
         "designing apps",
-        "watching shows",
+        "baking cakes",
         "climbing walls",
     ];
 
