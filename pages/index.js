@@ -25,12 +25,11 @@ export default function Home() {
                 <link rel="icon" href="/icon.ico" />
                 <meta charset="utf-8" />
                 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-                <meta name="description" content="Ivan Zhao" />
                 <meta
                     name="viewport"
                     content="width=device-width, initial-scale=1"
                 />
-                <meta property="og:image" content="./thumbnail.jpg" />
+                <meta property="og:image" content="/thumbnail.jpg" />
                 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
                 <meta
                     name="viewport"
@@ -41,7 +40,7 @@ export default function Home() {
                     content="text/html; charset=utf-8"
                 />
                 <meta
-                    name="description"
+                    name="og:description"
                     content="Hi! I'm Ivan Zhao, a student at Brown trying to understand how we make decisions and the technology that drives it. Welcome to my personal site!"
                 />
             </Head>
