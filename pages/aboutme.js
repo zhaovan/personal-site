@@ -56,10 +56,10 @@ export default function AboutMe() {
                                 algorithmic decision making) and from a
                                 psychological perspective (especially around
                                 human factors). I'm also super passionate about
-                                inclusive design and accesibillity, specifically
-                                around topics in urban development and design,
-                                tech recruiting, and the venture capital/startup
-                                ecosystem.
+                                inclusive design and accessibillity,
+                                specifically around topics in urban development
+                                and design, tech recruiting, and the venture
+                                capital/startup ecosystem.
                             </p>
                             <p>
                                 Other things of interest (in no particular
