@@ -7,86 +7,71 @@ import { githubSquare } from "react-icons-kit/fa/githubSquare";
 import { envelope } from "react-icons-kit/fa/envelope";
 import Icon from "react-icons-kit";
 import styles from "../styles/Footer.module.css";
-import Typewriter from "typewriter-effect";
 
 const date = new Date();
+
+const links = [
+    {
+        link: "https://www.instagram.com/ivan_zhao88/",
+        type: "ig",
+    },
+    {
+        link: "https://twitter.com/zhaovan8",
+        type: "twitter",
+    },
+    {
+        link: "http://linkedin.com/in/ivanzhao8",
+        type: "li",
+    },
+    {
+        link: "https://medium.com/@ivanzhao8/",
+        type: "md",
+    },
+    {
+        link: "https://github.com/zhaovan",
+        type: "github",
+    },
+    {
+        link: "/Ivan_Zhao.pdf",
+        type: "resume",
+    },
+    {
+        link: "mailto:ivanzhao8@gmail.com",
+        type: "email",
+    },
+];
+
+const iconMap = {
+    ig: <Icon icon={instagram} size={20} />,
+    li: <Icon icon={linkedinSquare} size={20} />,
+    twitter: <Icon icon={twitterSquare} size={20} />,
+    md: <Icon icon={medium} size={20} />,
+    github: <Icon icon={githubSquare} size={20} />,
+    resume: <Icon icon={fileTextO} size={20} />,
+    email: <Icon icon={envelope} size={20} />,
+};
 
 export default function Footer() {
     return (
         <footer className={styles.footer}>
             <ul className={styles.list}>
-                <li className={styles.horizontal}>
-                    <a
-                        href="https://www.instagram.com/ivan_zhao88/"
-                        className={styles.noHighlight}
-                        target="_blank"
-                    >
-                        <Icon icon={instagram} />
-                    </a>
-                </li>
-                <li className={styles.horizontal}>
-                    <a
-                        href="https://twitter.com/zhaovan8"
-                        className={styles.noHighlight}
-                        target="_blank"
-                    >
-                        <Icon icon={twitterSquare} />
-                    </a>
-                </li>
-                <li className={styles.horizontal}>
-                    <a
-                        href="http://linkedin.com/in/ivanzhao8"
-                        className={styles.noHighlight}
-                        target="_blank"
-                    >
-                        <Icon icon={linkedinSquare} />
-                    </a>
-                </li>
-                <li className={styles.horizontal}>
-                    <a
-                        href="https://medium.com/@ivanzhao8/"
-                        className={styles.noHighlight}
-                        target="_blank"
-                    >
-                        <Icon icon={medium} />
-                    </a>
-                </li>
-                <li className={styles.horizontal}>
-                    <a
-                        href="https://github.com/zhaovan"
-                        className={styles.noHighlight}
-                        target="_blank"
-                    >
-                        <Icon icon={githubSquare} />
-                    </a>
-                </li>
-                <li className={styles.horizontal}>
-                    <a
-                        href="/Ivan_Zhao.pdf"
-                        target="_blank"
-                        className={styles.noHighlight}
-                    >
-                        <Icon icon={fileTextO} />
-                    </a>
-                </li>
-                <li className={styles.horizontal}>
-                    <a
-                        href="mailto:ivanzhao8@gmail.com"
-                        target="_blank"
-                        className={styles.noHighlight}
-                    >
-                        <Icon icon={envelope} />
-                    </a>
-                </li>
+                {links.map((e, i) => {
+                    const currIcon = iconMap[e.type];
+                    return (
+                        <li className={styles.horizontal} key={i}>
+                            <a
+                                href={e.link}
+                                className={styles.noHighlight}
+                                target="_blank"
+                            >
+                                {currIcon}
+                            </a>
+                        </li>
+                    );
+                })}
             </ul>
 
-            <div
-                style={{
-                    marginLeft: "2.5%",
-                    fontStyle: "italic",
-                    width: "100%",
-                }}
-            >
+            <div className={styles.footerText}>
                 © {date.getFullYear()} Ivan Zhao, made with ☕&nbsp; and 🍵
             </div>
         </footer>

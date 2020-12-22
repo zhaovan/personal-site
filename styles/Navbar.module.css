@@ -55,6 +55,12 @@
     }
 }
 
+@media (max-width: 320px) {
+    .listStyle {
+        flex-wrap: wrap;
+    }
+}
+
 .line {
     display: none;
 }

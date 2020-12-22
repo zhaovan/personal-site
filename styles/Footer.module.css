@@ -38,6 +38,15 @@
 
 @media (max-width: 480px) {
     .footer {
-        margin-bottom: 5%;
+        margin-bottom: 3rem;
     }
+    .footerText {
+        font-size: 14px;
+    }
+}
+
+.footerText {
+    margin-left: 2.5%;
+    font-style: italic;
+    width: 100%;
 }
