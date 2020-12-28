@@ -29,7 +29,7 @@ export default function Home() {
                     name="viewport"
                     content="width=device-width, initial-scale=1"
                 />
-                <meta property="og:image" content="/thumbnail.png" />
+                <meta name="og:image" content="/thumbnail.png" />
                 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
                 <meta
                     name="viewport"
@@ -44,9 +44,9 @@ export default function Home() {
                     name="og:description"
                     content="Hi! I'm Ivan Zhao, a student at Brown trying to understand how we make decisions and the technology that drives it. Welcome to my personal site!"
                 />
-                <meta property="og:title" content="Ivan Zhao" />
+                <meta name="og:title" content="Ivan Zhao" />
 
-                <meta property="og:url" content="https://ivanzhao.me" />
+                <meta name="og:url" content="https://ivanzhao.me" />
                 <meta name="twitter:card" content="/thumbnail.png" />
             </Head>
             <NavBar />
