@@ -9,7 +9,7 @@ export default {
         site_name: "Ivan's Personal Site",
         images: [
             {
-                url: "./thumbnail.png",
+                url: "/thumbnail.png",
             },
         ],
     },
