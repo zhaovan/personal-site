@@ -10,21 +10,8 @@ export default function AboutMe() {
     return (
         <div className={shared.page}>
             <Head>
-                <title>Ivan Zhao</title>
+                <title>About Me</title>
                 <link rel="icon" href="/icon.ico" />
-                <meta
-                    name="viewport"
-                    content="width=device-width, initial-scale=1"
-                />
-                <meta property="og:image" content="/thumbnail.png" />
-                <meta
-                    name="viewport"
-                    content="width=device-width, initial-scale=1"
-                />
-                <meta
-                    property="og:description"
-                    content="Hi! I'm Ivan Zhao, a student at Brown trying to understand how we make decisions and the technology that drives it. Welcome to my personal site!"
-                />
             </Head>
             <NavBar currPage="aboutMe" />
             <div>

@@ -23,31 +23,6 @@ export default function Home() {
             <Head>
                 <title>Ivan Zhao</title>
                 <link rel="icon" href="/icon.ico" />
-                <meta charSet="utf-8" />
-                <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-                <meta
-                    name="viewport"
-                    content="width=device-width, initial-scale=1"
-                />
-                <meta name="og:image" content="/thumbnail.png" />
-                <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-                <meta
-                    name="viewport"
-                    content="width=device-width, initial-scale=1"
-                />
-                <meta
-                    http-equiv="Content-Type"
-                    content="text/html"
-                    charSet="utf-8"
-                />
-                <meta
-                    name="og:description"
-                    content="Hi! I'm Ivan Zhao, a student at Brown trying to understand how we make decisions and the technology that drives it. Welcome to my personal site!"
-                />
-                <meta name="og:title" content="Ivan Zhao" />
-
-                <meta name="og:url" content="https://ivanzhao.me" />
-                <meta name="twitter:card" content="/thumbnail.png" />
             </Head>
             <NavBar />
             <div

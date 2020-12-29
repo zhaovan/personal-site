@@ -4,11 +4,19 @@ import "react-vertical-timeline-component/style.min.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+import SEO from "../next-seo.config";
+import { DefaultSeo } from "next-seo";
+
 function MyApp({ Component, pageProps }) {
     if (typeof window !== "undefined") {
         AOS.init();
     }
-    return <Component {...pageProps} />;
+    return (
+        <>
+            <DefaultSeo {...SEO} />
+            <Component {...pageProps} />
+        </>
+    );
 }
 
 export default MyApp;
