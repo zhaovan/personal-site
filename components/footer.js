@@ -24,7 +24,7 @@ const links = [
         type: "li",
     },
     {
-        link: "https://medium.com/@ivanzhao8/",
+        link: "https://medium.com/@zhaovan8/",
         type: "md",
     },
     {
