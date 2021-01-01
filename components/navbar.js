@@ -46,6 +46,11 @@ export default function NavBar({ currPage }) {
                         How I Work
                     </li>
                 </Link>
+                <Link href="https://zhaovan8.medium.com/">
+                    <li className={styles.horizontal} style={notActive}>
+                        Writing
+                    </li>
+                </Link>
             </ul>
             <hr className={styles.line} />
         </div>

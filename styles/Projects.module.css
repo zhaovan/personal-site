@@ -64,7 +64,7 @@
     color: #8f5a51;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 540px) {
     .project {
         /* margin: 2%; */
         padding: 12%;
@@ -80,22 +80,3 @@
         width: 100%;
     }
 }
-
-/* .project {
-    transform: translateX(100vh);
-} */
-/* .project {
-    animation: cd-move-in 1s;
-    animation-fill-mode: forwards;
-}
-@keyframes cd-move-in {
-    0% {
-        transform: translateX(-30vw);
-    }
-    65% {
-        transform: translateX(1.5vw);
-    }
-    100% {
-        transform: translateX(0vh);
-    }
-} */
