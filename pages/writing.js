@@ -45,7 +45,7 @@ export default function Writing({ allPostsData }) {
                             );
 
                             return (
-                                <div className={styles.postContainer}>
+                                <div className={styles.postContainer} key={i}>
                                     <Link href={link} className={styles.title}>
                                         <div className={styles.title}>
                                             {post.title}
