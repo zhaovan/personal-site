@@ -50,7 +50,7 @@
         DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 540px) {
     .grid {
         width: 100%;
         flex-direction: column;
@@ -143,7 +143,7 @@
         flex-direction: column-reverse;
     }
     .photo {
-        width: 100%;
+        width: 75%;
         align-self: center;
     }
     .tabletDiv {

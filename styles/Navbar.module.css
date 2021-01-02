@@ -32,15 +32,6 @@
     cursor: pointer;
 }
 
-/* @media (min-width: 480px) and (max-width: 745px) {
-    .horizontal {
-        margin: 4px;
-    }
-    .logo {
-        width: 10%;
-    }
-} */
-
 @media (max-width: 745px) {
     .logo {
         width: 25%;
@@ -88,4 +79,15 @@
     margin-right: 8%;
     margin-top: 1%;
     margin-bottom: 1%;
+}
+
+.blogPostBar {
+    background-color: #dae5ff;
+    padding-top: 1%;
+    padding-bottom: 0.5%;
+}
+
+.nonBlogPostBar {
+    padding-top: 1%;
+    padding-bottom: 0.5%;
 }

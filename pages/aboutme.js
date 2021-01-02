@@ -36,7 +36,7 @@ export default function AboutMe() {
                                 fontSize: "18px",
                             }}
                         >
-                            <p>
+                            <p className={styles.text}>
                                 I'm a dog lover from Seattle, WA. I love
                                 understanding decision making frameworks, both
                                 from a technical perspective (such as
@@ -48,7 +48,7 @@ export default function AboutMe() {
                                 and design, tech recruiting, and the venture
                                 capital/startup ecosystem.
                             </p>
-                            <p>
+                            <p className={styles.text}>
                                 Other things of interest (in no particular
                                 order): building a college-like community in a
                                 post-college world, redefining the home space,
@@ -70,13 +70,13 @@ export default function AboutMe() {
                                 , baking, crosswords, art history, rock
                                 climbing, dogs, the Oxford Comma, and musicals.
                             </p>
-                            <p>
+                            <p className={styles.text}>
                                 When I'm not constantly struggling with CSS, you
                                 can find me climbing walls (rock or manmade),
                                 hanging out with my dog, skiing, or playing
                                 games
                             </p>
-                            <p>
+                            <p className={styles.text}>
                                 If you're a student who identifies as LGBTQ+
                                 and/or is building a startup, I would absolutely
                                 LOVE to hear from you and chat! Feel free to

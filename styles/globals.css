@@ -22,3 +22,11 @@ a:hover {
 * {
     box-sizing: border-box;
 }
+
+/* p,
+ol,
+li,
+div {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+} */

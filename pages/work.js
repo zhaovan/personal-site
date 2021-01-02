@@ -32,10 +32,6 @@ const notes = [
     },
     {
         statement:
-            "In the same vein, I'd say I have some (functional) knowledge around VC, startups, full stack development, visual design, product design, and doggos. Anything else is a toss up.",
-    },
-    {
-        statement:
             "I use Notion a lot (no I'm not the cofounder) and I like building tools around my own workflows. If you're trying to improve your efficiency, I recommend checking Notion out.",
     },
     {
@@ -52,9 +48,9 @@ export default function Work() {
                 <link rel="icon" href="/icon.ico" />
             </Head>
             <NavBar currPage="work" />
+            <p className={shared.titleText}>Work!</p>
             <div data-aos="zoom-up" data-aos-duration="500">
                 {" "}
-                <p className={shared.titleText}>Work!</p>
                 <div className={shared.container} style={{ display: "block" }}>
                     A lot of people on twitter tweet about their opinions and
                     values. Rather than do that, I wanted to host them all in
