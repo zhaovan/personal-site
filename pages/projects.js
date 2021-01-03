@@ -30,7 +30,7 @@ const projects = [
         name: "Tarrey Town Audio",
         description:
             "A lightweight audio player experience to replicate the side quest from Legend of Zelda: Breath of the Wild. ",
-        website: "https://github.com/zhaovan/tarrey-town",
+        website: "https://zhaovan.github.io/tarrey-town/",
         tags: ["development"],
     },
     {
