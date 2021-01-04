@@ -10,6 +10,8 @@ next: "on-2020"
 
 I think being honest and vulnerable is a hard thing to do. It’s hard to be introspective, to realize that at the end of the day, we are all humans making our way in this world. I guess I was feeling sentimental and a bit emotional, but in honor of National Coming Out Day, here’s an essay I wrote for a queer scholarship I applied to. Although I didn’t end up qualifying, it meant a lot for me to process these emotions and get them down. I hope it helps someone out there.
 
+## Essay
+
 I flopped on my bed at 5pm that Sunday, exhausted, sweaty, delirious. It was the Sunday after we had just been kicked off campus for coronavirus protection procedures. I had spent the day moving boxes, driving between houses, and picking up various people. Given that Brown moved up the date that we had to leave by, I felt both emotionally and physically overwhelmed. Nevertheless, I remained steadfast and calm, dutifully carrying out the tasks that my friends had asked me to do.
 
 Over the past couple of years, I constantly struggled with being okay with myself (and what being okay really meant). Growing up in a family that valued discipline and respect meant that I was constantly being beaten for any form of “backtalk” or conversations where I stood up for myself. In having these constant interactions where certain ideals were forcibly ingrained into my head, it resulted in me shifting towards the extreme opposite: supporting others to an extent that is detrimental to my own health. Or in other words, being taken advantage of.
