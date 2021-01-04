@@ -7,15 +7,11 @@ prev: "designer"
 next: "loved"
 ---
 
-![](img/1__ifxg3rd5qIgjwOcOQVwp3Q.png)
-
 The travel, tourism, and hospitality industry has been extremely hard to define. With the growth of giants such as Airbnb and Expedia, which allow a one-stop shop for all your travel needs, it has become increasingly easier for individuals themselves to book their own trips, rather than using traditional methods. In 2019, travel and tourism alone contributed approximately [2.9 trillion dollars](https://www.statista.com/statistics/233223/travel-and-tourism--total-economic-contribution-worldwide/) to GDP in the U.S. Additionally, the U.S. leads the world in international travel and tourism exports and ranks third in terms of total visitation. However, the current industry leaders for the technical side of distribution aren’t adapting to the new technology. That, tacked on with COVID’s prevention of normal travel, means that airlines are scrambling to cut costs, increase cashflow, and adopt new technologies and ideas more rapidly. So what does this mean for the travel industry? In order to understand this, it’s important to first consider two things: current trends in the travel startup ecosystem and changes being made in the travel industry.
 
 In the past decade, there have been a few unicorns that have modeled their company around creating infrastructure for developers to do their jobs easier. Stripe, Plaid, and Twilio, just to name a few, are all companies that have been extremely successful and have grown rapidly in this space. Their API service provides ease of use for developers creating software around payments and texting, allowing those users to easily scale their own product as their user base grows. So it’s no surprise that this business model/idea spread to other industries that lagged behind. Specifically, the process of booking a ticket.
 
 ### A Little Bit of Travel History
-
-![](img/1__wDsY9IP77KrImcjch__zeCQ.png)
 
 In order to understand what motivates companies to build software infrastructure for travel, we need to break down the history of travelling a little bit. Say you’re a traveler who’s interested in flying from Chicago to Miami. During the pre-covid era, this task would have been extremely simple. Go to Google, type in “flights from Chicago to Miami,” and bam! You have a wide array of flights to choose from with built in functionality to compare dates. In fact, the concept of a [frictionless travel experience](https://newsroom.expedia.com/2019-11-13-Research-Shows-Reducing-Friction-Matters-Expedia-Group-Prioritizes-for-Travelers-and-Partners) was one of Expedia’s main value props that they provided to travelers hungry for adventure. The old segmented platforms made it extremely difficult for a user to go through the entire process and book a ticket seamlessly.
 
