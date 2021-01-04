@@ -28,7 +28,7 @@ export default function Home() {
             <div
                 className={[shared.container, styles.container].join(" ")}
                 data-aos="zoom-in"
-                data-aos-duration="1000"
+                data-aos-duration="2000"
             >
                 <div>
                     <div className={styles.title}>
