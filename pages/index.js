@@ -27,8 +27,8 @@ export default function Home() {
             <NavBar />
             <div
                 className={[shared.container, styles.container].join(" ")}
-                data-aos="zoom-in"
-                data-aos-duration="2000"
+                data-aos="flip-up"
+                data-aos-duration="1500"
             >
                 <div>
                     <div className={styles.title}>
