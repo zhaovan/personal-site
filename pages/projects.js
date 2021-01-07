@@ -22,7 +22,7 @@ const projects = [
     {
         name: "Staying Informed Just to Feel Something",
         description:
-            "A web app that allows users to search for tweets from hot topics or trends with the sentiment values and truth scores attached to them ",
+            "A web app that allows users to search for tweets that are either hot topics or trends. Tweets are returned with a truth and sentiment score attached after running through a CNN model ",
         website: "https://github.com/zhaovan/twitter-hackathon",
         tags: ["design", "development"],
     },
