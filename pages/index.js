@@ -25,12 +25,8 @@ export default function Home() {
                 <link rel="icon" href="/icon.ico" />
             </Head>
             <NavBar />
-            <div
-                className={[shared.container, styles.container].join(" ")}
-                data-aos="flip-up"
-                data-aos-duration="1500"
-            >
-                <div>
+            <div className={[shared.container, styles.container].join(" ")}>
+                <div data-aos="flip-up" data-aos-duration="1500">
                     <div className={styles.title}>
                         <Typewriter
                             onInit={(typewriter) => {
@@ -44,7 +40,7 @@ export default function Home() {
                     </div>
 
                     <div className={styles.textBox}>
-                        <p className="animate__slideInUp">
+                        <p>
                             I love building tools, workflows, and automation so
                             that I can spend less time doing work and more time
                             thinking about the random, crazy stuff in life. I've
@@ -112,7 +108,11 @@ export default function Home() {
                         </ul>
                     </div>
                 </div>
-                <div className={styles.tabletDiv}>
+                <div
+                    className={styles.tabletDiv}
+                    data-aos="fade-left"
+                    data-aos-duration="1500"
+                >
                     <img
                         src="/portrait.png"
                         alt="photo of me"
