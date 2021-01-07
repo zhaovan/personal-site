@@ -66,7 +66,7 @@ const projects = [
         name: "Seattle's Startup Ecosystem",
         description:
             "Full-year reasearch project on social variables that contributed to tech entrepreneurship in the Greater Seattle Area",
-        website: "/research_paper",
+        website: "/research_paper.pdf",
         tags: ["research"],
     },
 ];
