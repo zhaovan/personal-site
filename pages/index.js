@@ -26,7 +26,7 @@ export default function Home() {
             </Head>
             <NavBar />
             <div className={[shared.container, styles.container].join(" ")}>
-                <div data-aos="flip-up" data-aos-duration="1500">
+                <div data-aos="flip-up" data-aos-duration="750">
                     <div className={styles.title}>
                         <Typewriter
                             onInit={(typewriter) => {
@@ -111,7 +111,7 @@ export default function Home() {
                 <div
                     className={styles.tabletDiv}
                     data-aos="fade-left"
-                    data-aos-duration="1500"
+                    data-aos-duration="750"
                 >
                     <img
                         src="/portrait.png"

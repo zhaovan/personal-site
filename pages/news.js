@@ -17,6 +17,7 @@ import { heartbeat } from "react-icons-kit/fa/heartbeat";
 import { rocket } from "react-icons-kit/fa/rocket";
 import { home } from "react-icons-kit/fa/home";
 import { book } from "react-icons-kit/fa/book";
+import { envelopeO } from "react-icons-kit/fa/envelopeO";
 import Icon from "react-icons-kit";
 
 const news = [
@@ -30,12 +31,21 @@ const news = [
         logo: "fintech",
     },
     {
+        date: "Jan 2021",
+        title: "Engineering",
+        company: "OthersideAI",
+        website: "https://www.othersideai.com/",
+        bodyText:
+            "Taking a semester off to work at OthersideAI, a gpt3 enabled email assistance service.",
+        logo: "mail",
+    },
+    {
         date: "October 2020-Present",
         title: "Investment Partner",
         company: "Dorm Room Fund",
         website: "http://dormroomfund.com/",
         bodyText:
-            "Joined Dorm Room Fund on the Boston team. Excited to invest in the next generation of startup founders on a national scale 🇺🇸",
+            "Joined Dorm Room Fund on the Boston team. Excited to invest in the next generation of startup founders on a national scale 🇺🇸.",
         logo: "vc",
     },
     {
@@ -44,7 +54,7 @@ const news = [
         company: "Tea Time",
         website: "http://teatime.substack.com/",
         bodyText:
-            "Started Tea Time with a couple of friends, a community for LGBTQ+ people interested in tech and tech adjacent industries",
+            "Started Tea Time with a couple of friends, a community for LGBTQ+ people interested in tech and tech adjacent industries.",
         logo: "community",
     },
     {
@@ -53,7 +63,7 @@ const news = [
         company: "Van Wickle Ventures",
         website: "https://www.vanwickleventures.com/",
         bodyText:
-            "Joined Van Wickle Ventures, Brown's student-run evergreen VC fund as a student associate",
+            "Joined Van Wickle Ventures, Brown's student-run evergreen VC fund as a student associate.",
         logo: "vc",
     },
     {
@@ -62,7 +72,7 @@ const news = [
         company: "Intus Care",
         website: "https://intuscare.com/",
         bodyText:
-            "Started at Intus Care as a software engineer and product manager, building out the initial MVP and ML algorithms ",
+            "Started at Intus Care as a software engineer and product manager, building out the initial MVP and ML algorithms.",
         logo: "healthtech",
     },
     {
@@ -71,7 +81,7 @@ const news = [
         company: "IDEO Colab",
         website: "https://www.ideocolab.com/",
         bodyText:
-            "Attended IDEO Colab's Makeathon in Cambridge where I helped make digital communication easier using BERT models",
+            "Attended IDEO Colab's Makeathon in Cambridge where I helped make digital communication easier using BERT models.",
         logo: "design",
     },
     {
@@ -80,7 +90,7 @@ const news = [
         company: "Loftium",
         website: "https://loftium.com/",
         bodyText:
-            "Worked at Loftium as an Operations Intern! Joined the Renter Operations Team where I helped with maximizing Airbnb performance and created a Messenger Chatbot",
+            "Worked at Loftium as an Operations Intern! Joined the Renter Operations Team where I helped with maximizing Airbnb performance and created a Messenger Chatbot.",
         logo: "proptech",
     },
     {
@@ -89,7 +99,7 @@ const news = [
         company: "Brown",
         website: "https://www.brown.edu/",
         bodyText:
-            "Moved to Providence and started at Brown where I plan on double-majoring in Applied Math and Computer Science (wish me luck hehe)",
+            "Moved to Providence and started at Brown where I plan on double-majoring in Applied Math and Computer Science (wish me luck hehe).",
         logo: "school",
     },
 ];
@@ -102,6 +112,7 @@ const iconMap = {
     fintech: <Icon icon={dollar} className={styles.icon} />,
     vc: <Icon icon={briefcase} className={styles.icon} />,
     community: <Icon icon={users} className={styles.icon} />,
+    mail: <Icon icon={envelopeO} className={styles.icon} />,
 };
 
 export default function News() {
