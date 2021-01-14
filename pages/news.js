@@ -31,7 +31,7 @@ const news = [
         logo: "fintech",
     },
     {
-        date: "Jan 2021",
+        date: "Jan 2021-Present",
         title: "Engineering",
         company: "OthersideAI",
         website: "https://www.othersideai.com/",
