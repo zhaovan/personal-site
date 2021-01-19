@@ -30,15 +30,15 @@ const news = [
             "Signed on to join Blend as a software engineering intern for next summer! Excited to make impact in meaningful ways!",
         logo: "fintech",
     },
-    {
-        date: "Jan 2021-Present",
-        title: "Engineering",
-        company: "OthersideAI",
-        website: "https://www.othersideai.com/",
-        bodyText:
-            "Taking a semester off to work at OthersideAI, a gpt3 enabled email assistance service.",
-        logo: "mail",
-    },
+    // {
+    //     date: "Jan 2021-Present",
+    //     title: "Engineering",
+    //     company: "OthersideAI",
+    //     website: "https://www.othersideai.com/",
+    //     bodyText:
+    //         "Taking a semester off to work at OthersideAI, a gpt3 enabled email assistance service.",
+    //     logo: "mail",
+    // },
     {
         date: "October 2020-Present",
         title: "Investment Partner",
