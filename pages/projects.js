@@ -43,14 +43,14 @@ const projects = [
     {
         name: "Rhyme Time",
         description:
-            "DL Model using LSTM's to webscrape, preprocess and parse, and then produce limericks",
+            "Python script that webscrapes, preprocesses, parses, and then, using a LSTM model, generates limericks",
         website: "https://github.com/zhaovan/lstm-rhyme-time",
         tags: ["classwork", "development"],
     },
     {
         name: "Communify",
         description:
-            "Mockup in Adobe XD for an iPad app for kids to learn about the coronavirus for Nick X Adobe Creative Jam",
+            "Mockup in Adobe XD for an iPad app for kids to learn about the coronavirus for Nick x Adobe Creative Jam",
         website:
             "https://xd.adobe.com/view/2f06327c-4cd1-408c-7c38-64d3b967668e-5937/",
         tags: ["product", "development"],
@@ -58,7 +58,7 @@ const projects = [
     {
         name: "Wander",
         description:
-            "A mobile app built in React Native and Firebase that serves as an aggregator for users to build and search for itineraries",
+            "A mobile app built in React Native and Firebase that serves as an aggregator for users to build and search for itineraries. Made during Hack Lodge '18",
         website: "https://github.com/zhaovan/wander",
         tags: ["design", "development"],
     },
