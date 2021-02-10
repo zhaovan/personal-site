@@ -17,7 +17,7 @@ import { heartbeat } from "react-icons-kit/fa/heartbeat";
 import { rocket } from "react-icons-kit/fa/rocket";
 import { home } from "react-icons-kit/fa/home";
 import { book } from "react-icons-kit/fa/book";
-import { envelopeO } from "react-icons-kit/fa/envelopeO";
+import { thumbTack } from "react-icons-kit/fa/thumbTack";
 import Icon from "react-icons-kit";
 
 const news = [
@@ -30,15 +30,15 @@ const news = [
             "Signed on to join Blend as a software engineering intern for next summer! Excited to make impact in meaningful ways!",
         logo: "fintech",
     },
-    // {
-    //     date: "Jan 2021-Present",
-    //     title: "Engineering",
-    //     company: "OthersideAI",
-    //     website: "https://www.othersideai.com/",
-    //     bodyText:
-    //         "Taking a semester off to work at OthersideAI, a gpt3 enabled email assistance service.",
-    //     logo: "mail",
-    // },
+    {
+        date: "Jan 2021-Present",
+        title: "Software Engineering",
+        company: "Ask Iggy",
+        website: "https://www.askiggy.com/",
+        bodyText:
+            "Taking a semester off to work at Ask Iggy, the world's first location enrichment API startup..",
+        logo: "thumbtack",
+    },
     {
         date: "October 2020-Present",
         title: "Investment Partner",
@@ -112,7 +112,7 @@ const iconMap = {
     fintech: <Icon icon={dollar} className={styles.icon} />,
     vc: <Icon icon={briefcase} className={styles.icon} />,
     community: <Icon icon={users} className={styles.icon} />,
-    mail: <Icon icon={envelopeO} className={styles.icon} />,
+    thumbtack: <Icon icon={thumbTack} className={styles.icon} />,
 };
 
 export default function News() {
