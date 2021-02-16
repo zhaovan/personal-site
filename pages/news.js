@@ -36,7 +36,7 @@ const news = [
         company: "Ask Iggy",
         website: "https://www.askiggy.com/",
         bodyText:
-            "Taking a semester off to work at Ask Iggy, the world's first location enrichment API startup..",
+            "Taking a semester off to work at Ask Iggy, the world's first location enrichment API startup.",
         logo: "thumbtack",
     },
     {
