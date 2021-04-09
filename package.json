@@ -8,7 +8,9 @@
     "start": "next start"
   },
   "dependencies": {
+    "@mailchimp/mailchimp_marketing": "^3.0.34",
     "aos": "^2.3.4",
+    "feed": "^4.2.2",
     "gray-matter": "^4.0.2",
     "moment": "^2.29.1",
     "next": "10.0.3",

@@ -8,7 +8,7 @@ const projects = [
   {
     name: "Prism Investor Track",
     description:
-      "An LGBTQ+ focused diversity track through Dorm Room Fund giving student an opportunity to learn about the world of venture and investing!",
+      "An LGBTQ+ focused diversity track through Dorm Room Fund giving students an opportunity to learn about the world of venture and investing!",
     website: "https://prism.dormroomfund.com",
     tags: ["diversity"],
   },

@@ -1,0 +1,52 @@
+.formContainer {
+  border: 1px black solid;
+  width: 70%;
+  align-self: center;
+  background-color: rgb(13 42 148/18%);
+  padding: 1% 2%;
+  border-radius: 5px;
+  margin-bottom: 4%;
+}
+
+.subscribeText {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 0.5%;
+}
+
+.flavorText {
+  margin-bottom: 1%;
+}
+
+.emailInput {
+  padding: 4px 2px 4px 8px;
+  width: 45%;
+  margin-right: 2%;
+  border-radius: 5px;
+  border-color: white;
+  font-size: 16px;
+}
+
+.bottomText {
+  margin-top: 1%;
+}
+
+.button {
+  border-radius: 5px;
+  padding-left: 2%;
+  padding-right: 2%;
+  height: 28px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: rgba(243, 244, 246);
+  border-color: white;
+  transition: 0.2s;
+  box-shadow: 1px 1px 5px black;
+}
+
+.button:hover {
+  opacity: 0.6;
+
+  transform: translateY(-2px);
+}
