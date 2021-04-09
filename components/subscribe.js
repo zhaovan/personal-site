@@ -6,9 +6,11 @@ export default function Subscribe() {
   const inputEl = useRef(null);
   // 2. Hold a message in state to handle the response from our API.
   const [message, setMessage] = useState('');
+  const [loading, setLoading] = useState(false);
 
   const subscribe = async (e) => {
     e.preventDefault();
+    setLoading(true);
 
     // 3. Send a request to our API with the user's email address.
     const res = await fetch('/api/subscribe', {
@@ -20,6 +22,7 @@ export default function Subscribe() {
       },
       method: 'POST',
     });
+    setLoading(false);
 
     const { error } = await res.json();
 
@@ -50,7 +53,7 @@ export default function Subscribe() {
         type='email'
       />
       <button type='submit' className={styles.button}>
-        Subscribe
+        {loading ? 'Subscribing...' : 'Subscribe'}
       </button>
       <div className={styles.bottomText}>{message ? message : ''}</div>
     </form>
