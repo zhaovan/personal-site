@@ -18,7 +18,6 @@ export default async (req, res) => {
         Authorization: 'Token ' + apiKey,
       },
     });
-    console.log(apiRes);
 
     if (apiRes.status == 400 && apiRes.statusText == 'Bad Request') {
       return res.status(500).json({ error: "You've already subscribed!" });
