@@ -1,9 +1,4 @@
-import mailchimp from '@mailchimp/mailchimp_marketing';
-
-mailchimp.setConfig({
-  apiKey: process.env.MAILCHIMP_API_KEY,
-  server: process.env.MAILCHIMP_API_SERVER, // e.g. us1
-});
+const apiKey = process.env.BUTTONDOWN_API_KEY;
 
 export default async (req, res) => {
   const { email } = req.body;
@@ -13,20 +8,26 @@ export default async (req, res) => {
   }
 
   try {
-    await mailchimp.lists.addListMember(process.env.MAILCHIMP_AUDIENCE_ID, {
-      email_address: email,
-      status: 'subscribed',
+    const apiRes = await fetch('https://api.buttondown.email/v1/subscribers', {
+      method: 'POST',
+      body: JSON.stringify({
+        email: email,
+      }),
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: 'Token ' + apiKey,
+      },
     });
+    console.log(apiRes);
+
+    if (apiRes.status == 400 && apiRes.statusText == 'Bad Request') {
+      return res.status(500).json({ error: "You've already subscribed!" });
+    }
 
     return res.status(201).json({ error: '' });
   } catch (error) {
-    if (error.response.body.title == 'Member Exists') {
-      return res
-        .status(500)
-        .json({
-          error: "You've already subscribed! No need to do it again :)",
-        });
-    }
+    console.log(error);
+
     return res.status(500).json({ error: error.message || error.toString() });
   }
 };

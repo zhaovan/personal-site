@@ -39,20 +39,27 @@ export default function Subscribe() {
   };
 
   return (
-    <form onSubmit={subscribe} className={styles.formContainer}>
+    <form
+      onSubmit={subscribe}
+      className={styles.formContainer}
+      // action='https://buttondown.email/api/emails/embed-subscribe/zhaovan'
+      // method='post'
+      // target='popupwindow'
+      // onsubmit="window.open('https://buttondown.email/zhaovan', 'popupwindow')"
+    >
       <div className={styles.subscribeText}>Subscribe to my newsletter!</div>
       <div className={styles.flavorText}>
         Get emails from me about life updates, stray thoughts, and questions!
       </div>
       <input
-        id='email-input'
+        id='bd-email'
         name='email'
         placeholder='example@gmail.com'
         className={styles.emailInput}
         ref={inputEl}
         type='email'
       />
-      <button type='submit' className={styles.button}>
+      <button type='submit' value='Subscribe' className={styles.button}>
         {loading ? 'Subscribing...' : 'Subscribe'}
       </button>
       <div className={styles.bottomText}>{message ? message : ''}</div>
