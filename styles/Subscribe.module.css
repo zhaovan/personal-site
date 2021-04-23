@@ -50,3 +50,31 @@
 
   transform: translateY(-2px);
 }
+
+@media (max-width: 768px) {
+  .subscribeText {
+    margin-bottom: 2%;
+  }
+  .flavorText {
+    margin-bottom: 4%;
+  }
+
+  .formContainer {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .button {
+    width: 80%;
+    align-self: center;
+  }
+  .emailInput {
+    width: 100%;
+    margin-bottom: 4%;
+  }
+  .bottomText {
+    text-align: center;
+    margin-bottom: 4%;
+  }
+}
