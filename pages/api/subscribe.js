@@ -11,19 +11,23 @@ export default async (req, res) => {
     const apiRes = await fetch('https://api.buttondown.email/v1/subscribers', {
       method: 'POST',
       body: JSON.stringify({
-        email: email,
+        email: email
       }),
       headers: {
         'Content-Type': 'application/json',
-        Authorization: 'Token ' + apiKey,
-      },
+        Authorization: 'Token ' + apiKey
+      }
     });
 
-    if (apiRes.status == 400 && apiRes.statusText == 'Bad Request') {
-      return res.status(500).json({ error: "You've already subscribed!" });
+    if (apiRes.status == 200) {
+      return res.status(201).json({ error: '' });
     }
 
-    return res.status(201).json({ error: '' });
+    return res
+      .status(500)
+      .json({
+        error: "Either you've already subscribed or something went wrong :("
+      });
   } catch (error) {
     console.log(error);
 
