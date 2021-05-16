@@ -63,6 +63,7 @@
     width: 100% !important;
     display: flex;
     flex-direction: column;
+    padding: 5%;
   }
 
   .button {

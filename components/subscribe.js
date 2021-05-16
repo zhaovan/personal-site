@@ -15,12 +15,12 @@ export default function Subscribe() {
     // 3. Send a request to our API with the user's email address.
     const res = await fetch('/api/subscribe', {
       body: JSON.stringify({
-        email: inputEl.current.value,
+        email: inputEl.current.value
       }),
       headers: {
-        'Content-Type': 'application/json',
+        'Content-Type': 'application/json'
       },
-      method: 'POST',
+      method: 'POST'
     });
     setLoading(false);
 
@@ -50,6 +50,11 @@ export default function Subscribe() {
       <div className={styles.subscribeText}>Subscribe to my newsletter!</div>
       <div className={styles.flavorText}>
         Get emails from me about life updates, stray thoughts, and questions!
+        (RSS fan?{' '}
+        <a href='https://buttondown.email/zhaovan/rss' target='_blank'>
+          I got you
+        </a>
+        )
       </div>
       <input
         id='bd-email'

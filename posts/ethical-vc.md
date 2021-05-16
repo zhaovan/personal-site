@@ -1,7 +1,7 @@
 ---
 title: The case for a more ethical venture scene
 description: >-
-  How speculative design and intential processes can give us a first step for a better future
+  How speculative design and intentional processes can give us a first step for a better future
 date: '2021-04-13T04:06:45Z'
 duration: 6 min
 prev: on-2020
