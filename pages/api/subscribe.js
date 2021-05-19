@@ -19,15 +19,13 @@ export default async (req, res) => {
       }
     });
 
-    if (apiRes.status == 200) {
+    if (apiRes.status == 201) {
       return res.status(201).json({ error: '' });
     }
 
-    return res
-      .status(500)
-      .json({
-        error: "Either you've already subscribed or something went wrong :("
-      });
+    return res.status(500).json({
+      error: "Either you've already subscribed or something went wrong :("
+    });
   } catch (error) {
     console.log(error);
 

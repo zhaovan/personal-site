@@ -25,6 +25,7 @@ export default function Subscribe() {
     setLoading(false);
 
     const { error } = await res.json();
+    console.log(error);
 
     if (error) {
       // 4. If there was an error, update the message in state.
@@ -51,9 +52,11 @@ export default function Subscribe() {
       <div className={styles.flavorText}>
         Get emails from me about life updates, stray thoughts, and questions!
         (RSS fan?{' '}
-        <a href='https://buttondown.email/zhaovan/rss' target='_blank'>
-          I got you
-        </a>
+        <b>
+          <a href='https://buttondown.email/zhaovan/rss' target='_blank'>
+            I got you
+          </a>
+        </b>
         )
       </div>
       <input
