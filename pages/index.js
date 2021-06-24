@@ -13,7 +13,7 @@ export default function Home() {
     'petting corgis',
     'designing apps',
     'baking cakes',
-    'climbing walls',
+    'climbing walls'
   ];
 
   const num = Math.floor(Math.random() * intros.length);
@@ -26,20 +26,25 @@ export default function Home() {
       </Head>
       <NavBar />
       <div className={[shared.container, styles.container].join(' ')}>
-        <div data-aos='flip-up' data-aos-duration='750'>
+        <div data-aos='fade-up' data-aos-duration='750'>
           <div className={styles.title}>
             <Typewriter
               onInit={(typewriter) => {
                 typewriter
-                  .pauseFor(1050)
                   .typeString("Hey, I'm Ivan and I'm ")
                   .typeString(intros[num])
                   .start();
               }}
+              options={{ changeDelay: 15, delay: 45 }}
             />
           </div>
 
-          <div className={styles.textBox}>
+          <div
+            className={styles.textBox}
+            data-aos='fade-up'
+            data-aos-delay='2750'
+            data-aos-duration='1000'
+          >
             <p>
               I love building tools, workflows, and automation so that I can
               spend less time doing work and more time thinking about the
@@ -91,7 +96,8 @@ export default function Home() {
         <div
           className={styles.tabletDiv}
           data-aos='fade-left'
-          data-aos-duration='750'
+          data-aos-delay='2750'
+          data-aos-duration='1000'
         >
           <img src='/portrait.png' alt='photo of me' className={styles.photo} />
           <div className={styles.oval} style={{ margin: 'auto' }}></div>
