@@ -1,6 +1,7 @@
+import { useState, useEffect } from 'react';
 import Head from 'next/head';
+
 import styles from '../styles/Home.module.css';
-import Link from 'next/link';
 import NavBar from '../components/navbar';
 import Typewriter from 'typewriter-effect';
 
@@ -8,6 +9,8 @@ import Footer from '../components/footer';
 import shared from '../styles/Shared.module.css';
 
 export default function Home() {
+  const [windowHeight, setWindowHeight] = useState();
+
   const intros = [
     'breaking code',
     'petting corgis',
@@ -16,6 +19,14 @@ export default function Home() {
     'climbing walls'
   ];
 
+  if (typeof window !== 'undefined') {
+    useEffect(() => {
+      setWindowHeight(window.innerHeight);
+    }, []);
+  }
+  console.log(windowHeight <= 1366);
+
+  // const isTablet = window.innerHeight <= 1024;
   const num = Math.floor(Math.random() * intros.length);
 
   return (
@@ -96,7 +107,6 @@ export default function Home() {
         <div
           className={styles.tabletDiv}
           data-aos='fade-left'
-          data-aos-delay='2750'
           data-aos-duration='1000'
         >
           <img src='/portrait.png' alt='photo of me' className={styles.photo} />
