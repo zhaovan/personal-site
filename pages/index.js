@@ -44,7 +44,7 @@ export default function Home() {
           <div
             className={styles.textBox}
             data-aos='fade-up'
-            data-aos-delay='2150'
+            data-aos-delay='2000'
             data-aos-duration='800'
           >
             <p>
