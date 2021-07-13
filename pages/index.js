@@ -45,12 +45,7 @@ export default function Home() {
             />
           </div>
 
-          <div
-            className={styles.textBox}
-            data-aos='fade-up'
-            data-aos-delay='2000'
-            data-aos-duration='800'
-          >
+          <div className={styles.textBox}>
             <p>
               I love building tools, workflows, and automation so that I can
               spend less time doing work and more time thinking about the
