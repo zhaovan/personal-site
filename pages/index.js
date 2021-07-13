@@ -19,6 +19,11 @@ export default function Home() {
 
   // const isTablet = window.innerHeight <= 1024;
   const num = Math.floor(Math.random() * intros.length);
+  useEffect(() => {
+    if (window === 'undefined') {
+      return;
+    }
+  }, []);
 
   return (
     <div className={shared.page}>
@@ -44,7 +49,7 @@ export default function Home() {
           <div
             className={styles.textBox}
             data-aos='fade-up'
-            data-aos-delay='2000'
+            data-aos-delay='1500'
             data-aos-duration='800'
           >
             <p>
