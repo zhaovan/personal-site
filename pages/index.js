@@ -17,7 +17,6 @@ export default function Home() {
     'climbing walls'
   ];
 
-  // const isTablet = window.innerHeight <= 1024;
   const num = Math.floor(Math.random() * intros.length);
   useEffect(() => {
     if (window === 'undefined') {
@@ -49,7 +48,7 @@ export default function Home() {
           <div
             className={styles.textBox}
             data-aos='fade-up'
-            data-aos-delay='1500'
+            data-aos-delay='2000'
             data-aos-duration='800'
           >
             <p>
