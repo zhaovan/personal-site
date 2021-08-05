@@ -3,6 +3,7 @@ import shared from '../styles/Shared.module.css';
 import Footer from '../components/footer';
 import Head from 'next/head';
 import styles from '../styles/Projects.module.css';
+import { useState } from 'react';
 
 const projects = [
   {
@@ -85,7 +86,17 @@ const projects = [
   }
 ];
 
+const projectTags = [
+  'research',
+  'design',
+  'development',
+  'product',
+  'classwork',
+  'diversity'
+];
+
 export default function Projects() {
+  const [filteredProjects, setFilteredProjects] = useState([]);
   return (
     <div className={shared.page}>
       <Head>
@@ -96,10 +107,10 @@ export default function Projects() {
 
       <p className={shared.titleText}>Projects!</p>
       <div className={shared.container} style={{ flexDirection: 'column' }}>
-        <div className={shared.firstText}>
+        <p className={shared.firstText}>
           I sometimes work on things. Here's a couple of them that (sort of)
           turned out.
-        </div>
+        </p>
 
         <div className={styles.projectContainer}>
           {projects.map((project, i) => {
@@ -123,17 +134,15 @@ export default function Projects() {
                         ? styles.classwork
                         : styles.dev;
                     return (
-                      <div className={[currStyle, styles.resumeTag].join(' ')}>
+                      <p className={[currStyle, styles.resumeTag].join(' ')}>
                         {tag}
-                      </div>
+                      </p>
                     );
                   })}
                 </div>
 
                 <div>
-                  <div className={styles.description}>
-                    {project.description}
-                  </div>
+                  <p className={styles.description}>{project.description}</p>
                 </div>
               </div>
             );
