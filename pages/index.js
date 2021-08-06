@@ -7,6 +7,7 @@ import Typewriter from 'typewriter-effect';
 
 import Footer from '../components/footer';
 import shared from '../styles/Shared.module.css';
+import portrait from '../public/portrait.png';
 
 export default function Home() {
   const intros = [
@@ -18,11 +19,6 @@ export default function Home() {
   ];
 
   const num = Math.floor(Math.random() * intros.length);
-  useEffect(() => {
-    if (window === 'undefined') {
-      return;
-    }
-  }, []);
 
   return (
     <div className={shared.page}>
@@ -32,7 +28,12 @@ export default function Home() {
       </Head>
       <NavBar />
       <div className={[shared.container, styles.container].join(' ')}>
-        <div data-aos='fade-up' data-aos-duration='750'>
+        <div
+          data-aos='fade-up'
+          data-aos-duration='750'
+          data-aos-delay='50'
+          styles={{ marginBottom: '3rem' }}
+        >
           <div className={styles.title}>
             <Typewriter
               onInit={(typewriter) => {
@@ -65,7 +66,7 @@ export default function Home() {
                 <a href='https://www.loftium.com/' target='_blank'>
                   Loftium
                 </a>
-                , and <a href='https://www.mojotech.com/'>Mojotech</a>
+                , and <a href='https://www.askiggy.com/'>Ask Iggy</a>
               </li>
               <li>
                 supporting <b>ecosystems</b> at{' '}
@@ -83,8 +84,8 @@ export default function Home() {
               </li>
               <li>
                 making <b>investments</b> with{' '}
-                <a href='https://www.vanwickleventures.com/' target='_blank'>
-                  Van Wickle Ventures
+                <a href='https://shl.vc/' target='_blank'>
+                  shl.vc
                 </a>{' '}
                 and{' '}
                 <a href='https://www.dormroomfund.com/' target='_blank'>
@@ -98,8 +99,9 @@ export default function Home() {
           className={styles.tabletDiv}
           data-aos='fade-left'
           data-aos-duration='1000'
+          data-aos-delay='50'
         >
-          <img src='/portrait.png' alt='photo of me' className={styles.photo} />
+          <img src={portrait} alt='photo of me' className={styles.photo} />
           <div className={styles.oval} style={{ margin: 'auto' }}></div>
         </div>
       </div>

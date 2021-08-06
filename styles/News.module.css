@@ -1,13 +1,13 @@
 .timeline {
-    margin-top: 2%;
-    margin-bottom: 2%;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
 .timeline::before {
-    background: black;
+  background: black;
 }
 
 .icon {
-    width: 100%;
-    height: 75%;
+  width: 100%;
+  height: 75%;
 }

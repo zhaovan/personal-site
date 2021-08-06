@@ -4,6 +4,7 @@
   margin: auto;
   margin-top: 2%;
   margin-bottom: 4%;
+  /* color: lightgrey; */
 }
 
 .page {
@@ -20,6 +21,7 @@
   font-size: 32px;
   font-weight: 700;
   margin: 0% 35%;
+  /* color: lightgrey; */
 }
 
 .titleText {
@@ -27,7 +29,7 @@
 }
 .titleText:before {
   content: '';
-  z-index: -1;
+  z-index: 1;
   left: -0.5em;
   top: -0.1em;
   border-width: 2px;
@@ -44,7 +46,7 @@
 }
 .titleText:after {
   content: '';
-  z-index: -1;
+  z-index: 1;
   left: -0.5em;
   top: 0.1em;
   padding: 0.1em 0.25em;
@@ -64,7 +66,6 @@
 .firstText {
   text-align: center;
   font-size: 20px;
-  margin: 0;
 }
 
 @media (max-width: 480px) {
