@@ -5,6 +5,16 @@ import Head from 'next/head';
 import AboutImage from '../public/about_img.png';
 import Footer from '../components/footer';
 
+const hobbies = [
+  'baking',
+  'crosswords',
+  'art history',
+  'rock climbing',
+  'dogs',
+  'cocktail making',
+  'musicals'
+];
+
 export default function AboutMe() {
   return (
     <div className={shared.page}>
@@ -32,57 +42,36 @@ export default function AboutMe() {
               }}
             >
               <p className={styles.text}>
-                I'm a dog lover from Seattle, WA. I love understanding decision
-                making frameworks, both from a technical perspective (such as
+                I'm a dog lover from Seattle, WA, curious about decision making
+                frameworks, both from a technical perspective (such as
                 algorithmic decision making) and from a psychological
-                perspective (especially around human factors). I'm also an
-                advocate for inclusive design and accessibillity, specifically
-                around topics in urbanism, tech recruiting, and the venture
-                capital/startup ecosystem.
+                perspective (especially around human factors). I'm also
+                passionate about D&I and accessibility in urbanism, tech
+                recruiting, and the venture capital/startup ecosystem.
               </p>
               <p className={styles.text}>
-                Other things of interest (in no particular order): building a
-                college-like community in a post-college world, redefining the
-                home space, LGBTQ+ initiatives in the startup and venture
-                capital scene,&nbsp;
-                <a href='http://www.celestegame.com/' target='_blank'>
-                  Celeste
-                </a>
-                ,&nbsp;
-                <a
-                  href='http://www.tuesdayknightgames.com/tworoomsandaboom'
-                  target='_blank'
-                >
-                  social deduction games
-                </a>
-                , baking, crosswords, art history, rock climbing, dogs, the
-                Oxford Comma, and musicals.
-              </p>
-              <p className={styles.text}>
-                When I'm not constantly struggling with CSS, you can find me
-                climbing walls (rock or manmade), hanging out with my dog,
-                skiing, or playing games.
-              </p>
-              <p className={styles.text}>
-                Some questions I'm thinking about:
-                <ul className={styles.questions}>
-                  <li>
-                    Marginalized communities often "bear the burden" in
-                    advocating for themselves in systems of power that work
-                    negatively against them. How can we change and break the
-                    system so that this isn't the case?
+                <b>Other things of interest (in no particular order):</b>
+                <ul>
+                  <li className={styles.hobbyItem}>
+                    <a href='http://www.celestegame.com/' target='_blank'>
+                      Celeste
+                    </a>
                   </li>
-                  <li>
-                    Thinking is commonly done in individualized cases. How can
-                    we create tools around collective thought that provide more
-                    interesting ways to brainstorm innovative ideas?
+                  <li className={styles.hobbyItem}>
+                    <a
+                      href='http://www.tuesdayknightgames.com/tworoomsandaboom'
+                      target='_blank'
+                    >
+                      social deduction games
+                    </a>
                   </li>
-                  <li>
-                    The internet is full of resources but there are many people
-                    that have paved the way and thought around a lot of the
-                    topics already. How can we create curated information flows
-                    to maximize societal learning?
-                  </li>
+                  {hobbies.map((e) => {
+                    return (
+                      <li key={e} className={styles.hobbyItem}>
+                        {e}
+                      </li>
+                    );
+                  })}
                 </ul>
               </p>
               <p className={styles.text}>

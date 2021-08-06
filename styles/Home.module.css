@@ -9,7 +9,7 @@
 }
 
 .title {
-  font-size: 40px;
+  font-size: 36px;
   font-weight: 600;
 }
 
@@ -29,7 +29,7 @@
 
 @media (min-width: 1024px) and (max-width: 1200px) {
   .oval {
-    width: 350px !i;
+    width: 350px !important;
   }
 }
 
@@ -117,7 +117,7 @@
 
 .textBox {
   margin-top: 2%;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5em;
   width: 80%;
 }

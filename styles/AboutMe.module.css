@@ -7,6 +7,10 @@
   box-shadow: 10px 10px;
 }
 
+.hobbyItem {
+  margin: 0.25rem 0rem;
+}
+
 .questions {
   font-style: italic;
 }

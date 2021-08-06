@@ -4,7 +4,6 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import NavBar from '../components/navbar';
 import Typewriter from 'typewriter-effect';
-import Image from 'next/image';
 
 import Footer from '../components/footer';
 import shared from '../styles/Shared.module.css';
@@ -29,7 +28,12 @@ export default function Home() {
       </Head>
       <NavBar />
       <div className={[shared.container, styles.container].join(' ')}>
-        <div data-aos='fade-up' data-aos-duration='750' data-aos-delay='50'>
+        <div
+          data-aos='fade-up'
+          data-aos-duration='750'
+          data-aos-delay='50'
+          styles={{ marginBottom: '3rem' }}
+        >
           <div className={styles.title}>
             <Typewriter
               onInit={(typewriter) => {
@@ -62,7 +66,7 @@ export default function Home() {
                 <a href='https://www.loftium.com/' target='_blank'>
                   Loftium
                 </a>
-                , and <a href='https://www.mojotech.com/'>Mojotech</a>
+                , and <a href='https://www.askiggy.com/'>Ask Iggy</a>
               </li>
               <li>
                 supporting <b>ecosystems</b> at{' '}
@@ -80,8 +84,8 @@ export default function Home() {
               </li>
               <li>
                 making <b>investments</b> with{' '}
-                <a href='https://www.vanwickleventures.com/' target='_blank'>
-                  Van Wickle Ventures
+                <a href='https://shl.vc/' target='_blank'>
+                  shl.vc
                 </a>{' '}
                 and{' '}
                 <a href='https://www.dormroomfund.com/' target='_blank'>

@@ -47,12 +47,12 @@ export default function NavBar({ currPage, blogPost }) {
               Writing
             </li>
           </Link>
-          <Link href='/work'>
+          <Link href='/values'>
             <li
               className={styles.horizontal}
-              style={currPage == 'work' ? active : notActive}
+              style={currPage == 'values' ? active : notActive}
             >
-              How I Work
+              Values
             </li>
           </Link>
         </ul>

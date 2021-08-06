@@ -22,10 +22,6 @@ const principles = [
 ];
 
 const notes = [
-  // {
-  //     statement:
-  //         "I generally work between the hours of 9am-5pm PST (or whatever timezone I'm in that day). That being said, I flex my time depending on the urgency of a project or how in the zone I am.",
-  // },
   {
     statement:
       'I believe in being reachable to anyone. If I can somehow help you, please reach out to me.'
@@ -43,16 +39,16 @@ export default function Work() {
   return (
     <div className={shared.page}>
       <Head>
-        <title>How I Work</title>
+        <title>Values</title>
         <link rel='icon' href='/icon.ico' />
       </Head>
-      <NavBar currPage='work' />
-      <p className={shared.titleText}>Work!</p>
+      <NavBar currPage='Values' />
+      <p className={shared.titleText}>Values!</p>
       <div data-aos='zoom-up' data-aos-duration='500'>
         {' '}
         <div className={shared.container} style={{ display: 'block' }}>
           Before working together, I think it's helpful to understand things
-          that I value and care about" As such, here are some things that you
+          that I value and care about. As such, here are some things that you
           should know about me:
           <h1>Principles</h1>
           {principles.map((principle, i) => {
