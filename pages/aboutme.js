@@ -2,7 +2,7 @@ import NavBar from '../components/navbar';
 import styles from '../styles/AboutMe.module.css';
 import shared from '../styles/Shared.module.css';
 import Head from 'next/head';
-
+import AboutImage from '../public/about_img.png';
 import Footer from '../components/footer';
 
 export default function AboutMe() {
@@ -18,7 +18,7 @@ export default function AboutMe() {
         <div className={[shared.container, styles.newContainer].join(' ')}>
           <div style={{ marginTop: '3%' }} data-aos='fade-right'>
             <img
-              src='./about_img1.png'
+              src={AboutImage}
               className={styles.photo}
               alt='This is a terrible photo of me but with cute cats'
             />
@@ -28,7 +28,7 @@ export default function AboutMe() {
             <div
               style={{
                 marginTop: '5%',
-                fontSize: '18px',
+                fontSize: '18px'
               }}
             >
               <p className={styles.text}>
@@ -78,10 +78,10 @@ export default function AboutMe() {
                     interesting ways to brainstorm innovative ideas?
                   </li>
                   <li>
-                    The internet is full of resources, but we often deal with
-                    choice paralysis when looking at topics. How can we make
-                    more informed decisions around the things in our daily
-                    lives?
+                    The internet is full of resources but there are many people
+                    that have paved the way and thought around a lot of the
+                    topics already. How can we create curated information flows
+                    to maximize societal learning?
                   </li>
                 </ul>
               </p>

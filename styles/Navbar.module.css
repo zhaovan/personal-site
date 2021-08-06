@@ -1,93 +1,93 @@
 .horizontal {
-    display: inline;
-    margin: 24px;
-    font-size: 18px;
-    position: relative;
+  display: inline;
+  margin: 24px;
+  font-size: 18px;
+  position: relative;
 }
 
 .horizontal:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .horizontal:before {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #000;
-    visibility: hidden;
-    transition: all 0.3s ease-in-out;
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
 }
 
 .horizontal:hover:before {
-    visibility: visible;
-    width: 100%;
+  visibility: visible;
+  width: 100%;
 }
 
 .logo {
-    width: 4%;
-    height: 4%;
-    cursor: pointer;
+  width: 4rem;
+  /* min-width: 4rem; */
+  cursor: pointer;
 }
 
 @media (max-width: 745px) {
-    .logo {
-        width: 25%;
-        margin-left: 37.5%;
-    }
-    .horizontal {
-        margin: 0px 2%;
-    }
-    .outerBar {
-        display: contents !important;
-    }
+  .logo {
+    width: 25%;
+    margin-left: 37.5%;
+  }
+  .horizontal {
+    margin: 0px 2%;
+  }
+  .outerBar {
+    display: contents !important;
+  }
 
-    .listStyle {
-        padding-inline-start: 4%;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-    .line {
-        width: 75%;
-        margin-bottom: 4%;
-        display: block !important;
-    }
+  .listStyle {
+    padding-inline-start: 4%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .line {
+    width: 75%;
+    margin-bottom: 4%;
+    display: block !important;
+  }
 }
 
 @media (max-width: 320px) {
-    .listStyle {
-        flex-wrap: wrap;
-    }
+  .listStyle {
+    flex-wrap: wrap;
+  }
 }
 
 .line {
-    display: none;
+  display: none;
 }
 
 .listStyle {
-    list-style: none;
-    min-width: 100%;
-    /* align-self: flex-end" */
+  list-style: none;
+  min-width: 100%;
+  /* align-self: flex-end" */
 }
 
 .outerBar {
-    display: flex;
-    margin-left: 8%;
-    margin-right: 8%;
-    margin-top: 1%;
-    margin-bottom: 1%;
+  display: flex;
+  margin-left: 8%;
+  margin-right: 8%;
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
 
 .blogPostBar {
-    background-color: #dae5ff;
-    padding-top: 1%;
-    padding-bottom: 0.5%;
+  background-color: #dae5ff;
+  padding-top: 1%;
+  padding-bottom: 0.5%;
 }
 
 .nonBlogPostBar {
-    padding-top: 1%;
-    padding-bottom: 0.5%;
+  padding-top: 1%;
+  padding-bottom: 0.5%;
 }
