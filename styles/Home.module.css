@@ -8,6 +8,10 @@
   /* margin-top: 10%; */
 }
 
+.textBoxWrapper {
+  margin-bottom: 3rem;
+}
+
 .title {
   font-size: 36px;
   font-weight: 600;

@@ -32,7 +32,7 @@ export default function Home() {
           data-aos='fade-up'
           data-aos-duration='750'
           data-aos-delay='50'
-          styles={{ marginBottom: '3rem' }}
+          className={styles.textBoxWrapper}
         >
           <div className={styles.title}>
             <Typewriter
