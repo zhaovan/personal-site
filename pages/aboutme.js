@@ -37,7 +37,6 @@ export default function AboutMe() {
           <div style={{ marginLeft: '4%' }} data-aos='fade-left'>
             <div
               style={{
-                marginTop: '5%',
                 fontSize: '18px'
               }}
             >
