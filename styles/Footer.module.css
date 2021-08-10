@@ -1,4 +1,10 @@
-.horizontal {
+.horizontal:first-child {
+  display: inline;
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+.horizontal:not(:first-child) {
   display: inline;
   margin: 8px;
   font-size: 18px;
