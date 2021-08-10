@@ -38,11 +38,12 @@ export default function Home() {
             <Typewriter
               onInit={(typewriter) => {
                 typewriter
+                  .pauseFor(750)
                   .typeString("Hey, I'm Ivan and I'm ")
                   .typeString(intros[num])
                   .start();
               }}
-              options={{ changeDelay: 15, delay: 45 }}
+              options={{ delay: 40 }}
             />
           </div>
 

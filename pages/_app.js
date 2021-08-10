@@ -8,9 +8,6 @@ import SEO from '../next-seo.config';
 import { DefaultSeo } from 'next-seo';
 
 function MyApp({ Component, pageProps }) {
-  // if (typeof window !== 'undefined') {
-  //   AOS.init();
-  // }
   useEffect(() => {
     AOS.init();
   }, []);
