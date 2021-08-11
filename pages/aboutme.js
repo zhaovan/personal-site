@@ -11,7 +11,6 @@ const hobbies = [
   'art history',
   'rock climbing',
   'dogs',
-  'cocktail making',
   'musicals'
 ];
 
@@ -26,7 +25,7 @@ export default function AboutMe() {
       <div>
         <p className={shared.titleText}>About Me!</p>
         <div className={[shared.container, styles.newContainer].join(' ')}>
-          <div style={{ marginTop: '3%' }} data-aos='fade-right'>
+          <div style={{ margin: 'auto' }} data-aos='fade-right'>
             <img
               src={AboutImage}
               className={styles.photo}
@@ -49,29 +48,18 @@ export default function AboutMe() {
                 recruiting, and the venture capital/startup ecosystem.
               </p>
               <p className={styles.text}>
-                <b>Other things of interest (in no particular order):</b>
-                <ul>
-                  <li className={styles.hobbyItem}>
-                    <a href='http://www.celestegame.com/' target='_blank'>
-                      Celeste
-                    </a>
-                  </li>
-                  <li className={styles.hobbyItem}>
-                    <a
-                      href='http://www.tuesdayknightgames.com/tworoomsandaboom'
-                      target='_blank'
-                    >
-                      social deduction games
-                    </a>
-                  </li>
-                  {hobbies.map((e) => {
-                    return (
-                      <li key={e} className={styles.hobbyItem}>
-                        {e}
-                      </li>
-                    );
-                  })}
-                </ul>
+                <b>Other things of interest (in no particular order): </b>
+                <a href='http://www.celestegame.com/' target='_blank'>
+                  Celeste
+                </a>
+                ,{' '}
+                <a
+                  href='http://www.tuesdayknightgames.com/tworoomsandaboom'
+                  target='_blank'
+                >
+                  social deduction games
+                </a>
+                , baking, crosswords, art history, rock climbing, and musicals
               </p>
               <p className={styles.text}>
                 If you're a student who identifies as LGBTQ+ and/or is building
