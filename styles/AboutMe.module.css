@@ -6,7 +6,7 @@
   box-shadow: 10px 10px;
 }
 
-.hobbyItem {
+.linkItem {
   margin: 0.25rem 0rem;
 }
 
@@ -15,7 +15,7 @@
 }
 
 .text {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 @media (max-width: 1150px) {

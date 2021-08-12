@@ -5,13 +5,19 @@ import Head from 'next/head';
 import AboutImage from '../public/about_img.png';
 import Footer from '../components/footer';
 
-const hobbies = [
-  'baking',
-  'crosswords',
-  'art history',
-  'rock climbing',
-  'dogs',
-  'musicals'
+const links = [
+  {
+    text: 'Capitalism, Poverty and Class in Ratatouille',
+    link: 'https://www.youtube.com/watch?v=EC2gRvG1RlI'
+  },
+  {
+    link: 'https://www.youtube.com/watch?v=4UUJQH7GLms',
+    text: 'Why the How to Train Your Dragon has the best opening ever'
+  },
+  {
+    link: 'https://placesjournal.org/article/post-it-note-city/',
+    text: 'The Post-It Note City'
+  }
 ];
 
 export default function AboutMe() {
@@ -34,41 +40,47 @@ export default function AboutMe() {
           </div>
 
           <div style={{ marginLeft: '4%' }} data-aos='fade-left'>
-            <div
-              style={{
-                fontSize: '18px'
-              }}
-            >
+            <div>
               <p className={styles.text}>
-                I'm a dog lover from Seattle, WA, curious about decision making
-                frameworks, both from a technical perspective (such as
-                algorithmic decision making) and from a psychological
-                perspective (especially around human factors). I'm also
-                passionate about D&I and accessibility in urbanism, tech
-                recruiting, and the venture capital/startup ecosystem.
+                I'm a dog lover from Seattle, WA, trying to fill this world with{' '}
+                <b>
+                  baked goods, good vibes, strong drinks, and playful software.
+                </b>
               </p>
               <p className={styles.text}>
-                <b>Other things of interest (in no particular order): </b>
-                <a href='http://www.celestegame.com/' target='_blank'>
-                  Celeste
+                Honestly, I'm still trying to figure out what I want to do in
+                life but right now I'm excited about
+                <a href='https://numinous.productions/ttft' target='_blank'>
+                  tools for thought
                 </a>
                 ,{' '}
-                <a
-                  href='http://www.tuesdayknightgames.com/tworoomsandaboom'
-                  target='_blank'
-                >
-                  social deduction games
+                <a href='https://culdesac.com' target='_blank'>
+                  well designed cities
                 </a>
-                , baking, crosswords, art history, rock climbing, and musicals
+                , and{' '}
+                <a href='http://www.celestegame.com/' target='_blank'>
+                  transformative and beautiful games.
+                </a>
+                I love reading random articles about society, culture, art, and
+                technology so if you find anything you like, please feel free to
+                DM me on{' '}
+                <a href='https://twitter.com/zhaovan8' target='_blank'>
+                  Twitter.
+                </a>
               </p>
               <p className={styles.text}>
-                If you're a student who identifies as LGBTQ+ and/or is building
-                a startup, I would absolutely LOVE to hear from you and chat!
-                Feel free to email me at{' '}
-                <a href='mailto:izhao@dormroomfund.com'>
-                  izhao@dormroomfund.com
-                </a>
-                .
+                <b>Some essays and videos that I love:</b>
+                <ul>
+                  {links.map((currLink) => {
+                    return (
+                      <li className={styles.linkItem}>
+                        <a href={currLink.link} target='_blank'>
+                          {currLink.text}
+                        </a>
+                      </li>
+                    );
+                  })}
+                </ul>
               </p>
             </div>
           </div>
