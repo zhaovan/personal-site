@@ -12,7 +12,7 @@ const links = [
   },
   {
     link: 'https://www.youtube.com/watch?v=4UUJQH7GLms',
-    text: 'Why the How to Train Your Dragon has the best opening ever'
+    text: 'Why How to Train Your Dragon has the best opening ever'
   },
   {
     link: 'https://placesjournal.org/article/post-it-note-city/',
@@ -31,7 +31,7 @@ export default function AboutMe() {
       <div>
         <p className={shared.titleText}>About Me!</p>
         <div className={[shared.container, styles.newContainer].join(' ')}>
-          <div style={{ margin: 'auto' }} data-aos='fade-right'>
+          <div className={styles.photoWrapper} data-aos='fade-right'>
             <img
               src={AboutImage}
               className={styles.photo}
@@ -60,10 +60,10 @@ export default function AboutMe() {
                 , and{' '}
                 <a href='http://www.celestegame.com/' target='_blank'>
                   transformative and beautiful games.
-                </a>
-                I love reading random articles about society, culture, art, and
-                technology so if you find anything you like, please feel free to
-                DM me on{' '}
+                </a>{' '}
+                I'm probably reading some random articles about society,
+                culture, art, and technology so if you find anything you like,
+                please feel free to DM me on{' '}
                 <a href='https://twitter.com/zhaovan8' target='_blank'>
                   Twitter.
                 </a>
@@ -71,9 +71,9 @@ export default function AboutMe() {
               <p className={styles.text}>
                 <b>Some essays and videos that I love:</b>
                 <ul>
-                  {links.map((currLink) => {
+                  {links.map((currLink, i) => {
                     return (
-                      <li className={styles.linkItem}>
+                      <li className={styles.linkItem} key={i}>
                         <a href={currLink.link} target='_blank'>
                           {currLink.text}
                         </a>

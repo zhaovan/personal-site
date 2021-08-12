@@ -24,6 +24,11 @@
   }
   .photo {
     margin-top: 1%;
+    width: 50%;
+  }
+  .photoWrapper {
+    display: flex;
+    justify-content: center;
   }
   .jack {
     width: 100%;
