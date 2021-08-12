@@ -25,6 +25,7 @@
   .photo {
     margin-top: 1%;
     width: 50%;
+    margin-bottom: 1rem;
   }
   .photoWrapper {
     display: flex;
@@ -32,5 +33,11 @@
   }
   .jack {
     width: 100%;
+  }
+}
+
+@media (max-width: 750px) {
+  .photo {
+    width: 75% !important;
   }
 }
