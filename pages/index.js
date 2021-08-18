@@ -73,10 +73,6 @@ export default function Home() {
                 supporting <b>ecosystems</b> at{' '}
                 <a href='https://reboothq.substack.com' target='_blank'>
                   Reboot
-                </a>
-                ,{' '}
-                <a href='https://brownrisdinnovation.com' target='_blank'>
-                  Brown RISD Innovation Community
                 </a>{' '}
                 and{' '}
                 <a href='https://teatime.substack.com/' target='_blank'>
