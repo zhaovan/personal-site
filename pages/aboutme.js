@@ -49,7 +49,7 @@ export default function AboutMe() {
               </p>
               <p className={styles.text}>
                 Honestly, I'm still trying to figure out what I want to do in
-                life but right now I'm excited about
+                life but right now I'm excited about{' '}
                 <a href='https://numinous.productions/ttft' target='_blank'>
                   tools for thought
                 </a>
@@ -59,7 +59,7 @@ export default function AboutMe() {
                 </a>
                 , and{' '}
                 <a href='http://www.celestegame.com/' target='_blank'>
-                  transformative and beautiful games.
+                  transformative games.
                 </a>{' '}
                 I'm probably reading some random articles about society,
                 culture, art, and technology so if you find anything you like,
