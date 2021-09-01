@@ -31,7 +31,7 @@
   content: '';
   z-index: 1;
   left: -0.5em;
-  top: -0.1em;
+  top: -0.3em;
   border-width: 2px;
   border-style: solid;
   border-color: red;
@@ -48,7 +48,7 @@
   content: '';
   z-index: 1;
   left: -0.5em;
-  top: 0.1em;
+  top: 0.15em;
   padding: 0.1em 0.25em;
   border-width: 2px;
   border-style: solid;
@@ -68,6 +68,18 @@
   font-size: 20px;
 }
 
+@media (min-width: 1150px) and (max-width: 1440px) {
+  .titleText:after {
+    top: -0.08rem;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 1150px) {
+  .titleText:after {
+    top: -0.25rem;
+  }
+}
+
 @media (max-width: 480px) {
   .titleText {
     margin: 8% 25%;
@@ -78,5 +90,11 @@
   }
   .page {
     padding-bottom: 7.5rem;
+  }
+  .titleText:before {
+    top: -0.7rem;
+  }
+  .titleText:after {
+    top: -0.4rem;
   }
 }

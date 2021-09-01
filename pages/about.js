@@ -1,5 +1,5 @@
 import NavBar from '../components/navbar';
-import styles from '../styles/AboutMe.module.css';
+import styles from '../styles/About.module.css';
 import shared from '../styles/Shared.module.css';
 import Head from 'next/head';
 import AboutImage from '../public/about_img.png';
@@ -20,16 +20,16 @@ const links = [
   }
 ];
 
-export default function AboutMe() {
+export default function About() {
   return (
     <div className={shared.page}>
       <Head>
-        <title>About Me</title>
+        <title>About</title>
         <link rel='icon' href='/icon.ico' />
       </Head>
-      <NavBar currPage='aboutMe' />
+      <NavBar currPage='about' />
+      <p className={shared.titleText}>About</p>
       <div>
-        <p className={shared.titleText}>About Me!</p>
         <div className={[shared.container, styles.newContainer].join(' ')}>
           <div className={styles.photoWrapper} data-aos='fade-right'>
             <img
@@ -61,12 +61,33 @@ export default function AboutMe() {
                 <a href='http://www.celestegame.com/' target='_blank'>
                   transformative games.
                 </a>{' '}
-                I'm probably reading some random articles about society,
-                culture, art, and technology so if you find anything you like,
-                please feel free to DM me on{' '}
-                <a href='https://twitter.com/zhaovan8' target='_blank'>
-                  Twitter.
+              </p>
+              <p className={styles.text}>
+                I fundamentally believe that technology, used judiciously, can
+                build a better future. I spend a lot of time on building
+                ecosystems for better futures{' '}
+                <a href='https://reboothq.substack.com' target='_blank'>
+                  Reboot
+                </a>{' '}
+                and
+                <a href='https://www.dormroomfund.com/' target='_blank'>
+                  Dorm Room Fund
                 </a>
+                , and invest in diverse founders at{' '}
+                <a href='https://shl.vc/' target='_blank'>
+                  shl.vc
+                </a>{' '}
+                I've also previouswly worked on improving in home-care for
+                elderly patients at{' '}
+                <a href='https://intuscare.com/' target='_blank'>
+                  Intus Care
+                </a>
+                , giving people the opportunity to live in cities at{' '}
+                <a href='https://www.loftium.com/' target='_blank'>
+                  Loftium
+                </a>
+                , and allowing developers the ability to access location data at{' '}
+                <a href='https://www.askiggy.com/'>Ask Iggy</a>
               </p>
               <p className={styles.text}>
                 <b>Some essays and videos that I love:</b>

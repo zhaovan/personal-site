@@ -3,7 +3,12 @@
   height: auto;
   /* height: 75%; */
   border-radius: 50%;
+  border: 5px black solid;
   box-shadow: 10px 10px;
+}
+
+.photoWrapper {
+  width: 110%;
 }
 
 .linkItem {
@@ -28,6 +33,7 @@
     margin-bottom: 1rem;
   }
   .photoWrapper {
+    width: 100%;
     display: flex;
     justify-content: center;
   }

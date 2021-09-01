@@ -6,6 +6,13 @@ import styles from '../styles/Projects.module.css';
 
 const projects = [
   {
+    name: "Collaborative NFT's",
+    description:
+      'Project built during ETH Summer that allows users to mint and create their own NFTs that other people can pick up to evolve',
+    website: 'https://github.com/zhaovan/scaffold-eth',
+    tags: ['development']
+  },
+  {
     name: 'CSV Upload',
     description:
       'CSV Upload tool using Iggy API to enrich spreadsheet files with location enrichment.',

@@ -10,16 +10,6 @@ import shared from '../styles/Shared.module.css';
 import portrait from '../public/portrait.png';
 
 export default function Home() {
-  const intros = [
-    'breaking code',
-    'petting corgis',
-    'designing apps',
-    'baking cakes',
-    'climbing walls'
-  ];
-
-  const num = Math.floor(Math.random() * intros.length);
-
   return (
     <div className={shared.page}>
       <Head>
@@ -34,62 +24,20 @@ export default function Home() {
           data-aos-delay='50'
           className={styles.textBoxWrapper}
         >
-          <div className={styles.title}>
-            <Typewriter
-              onInit={(typewriter) => {
-                typewriter
-                  .pauseFor(750)
-                  .typeString("Hey, I'm Ivan and I'm ")
-                  .typeString(intros[num])
-                  .start();
-              }}
-              options={{ delay: 40 }}
-            />
-          </div>
-
+          <p className={styles.title}>👋 Hey there, I'm Ivan!</p>
           <div className={styles.textBox}>
             <p>
-              I love building tools, workflows, and automation so that I can
-              spend less time doing work and more time thinking about the
-              random, crazy stuff in life. I've most recently been:
+              Welcome to my tiny corner of the internet where I'm probably
+              tinkering with random software and tools. I've most recently been
+              building better banking software at{' '}
+              <a href='https://blendlabs.com' target='_blank'>
+                Blend
+              </a>{' '}
+              and am currently thinking about interfaces at{' '}
+              <a href='https://brown.edu' target='_blank'>
+                Brown.
+              </a>
             </p>
-            <ul>
-              <li>
-                building <b>products</b> for{' '}
-                <a
-                  href='https://intuscare.com/'
-                  target='_blank'
-                  className={styles.sketch}
-                >
-                  Intus Care
-                </a>
-                ,{' '}
-                <a href='https://www.loftium.com/' target='_blank'>
-                  Loftium
-                </a>
-                , and <a href='https://www.askiggy.com/'>Ask Iggy</a>
-              </li>
-              <li>
-                supporting <b>ecosystems</b> at{' '}
-                <a href='https://reboothq.substack.com' target='_blank'>
-                  Reboot
-                </a>{' '}
-                and{' '}
-                <a href='https://teatime.substack.com/' target='_blank'>
-                  Tea Time
-                </a>
-              </li>
-              <li>
-                making <b>investments</b> with{' '}
-                <a href='https://shl.vc/' target='_blank'>
-                  shl.vc
-                </a>{' '}
-                and{' '}
-                <a href='https://www.dormroomfund.com/' target='_blank'>
-                  Dorm Room Fund
-                </a>
-              </li>
-            </ul>
           </div>
         </div>
         <div

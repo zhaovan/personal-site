@@ -44,7 +44,11 @@ export default function Work() {
       </Head>
       <NavBar currPage='Values' />
       <p className={shared.titleText}>Values!</p>
-      <div data-aos='zoom-up' data-aos-duration='500'>
+      <div
+        data-aos='zoom-up'
+        data-aos-duration='500'
+        style={{ paddingBottom: '4rem' }}
+      >
         {' '}
         <div className={shared.container} style={{ display: 'block' }}>
           Before working together, I think it's helpful to understand things

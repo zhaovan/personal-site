@@ -15,12 +15,12 @@ export default function NavBar({ currPage, blogPost }) {
           </div>
         </Link>
         <ul className={styles.listStyle}>
-          <Link href='/aboutme'>
+          <Link href='/about'>
             <li
               className={styles.horizontal}
-              style={currPage == 'aboutMe' ? active : notActive}
+              style={currPage == 'about' ? active : notActive}
             >
-              About Me
+              About
             </li>
           </Link>
           <Link href='/news'>
