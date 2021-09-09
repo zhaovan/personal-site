@@ -38,7 +38,7 @@
     margin-left: 37.5%;
   }
   .horizontal {
-    margin: 0px 2%;
+    margin: 0 0.5rem;
   }
   .outerBar {
     display: contents !important;
@@ -62,7 +62,17 @@
     flex-wrap: wrap;
   }
 }
+@media (max-width: 426px) {
+  .listStyle {
+    padding-inline-end: 1rem;
+  }
+}
 
+.wrapper {
+  min-width: 4rem;
+  display: flex;
+  align-items: center;
+}
 .line {
   display: none;
 }
@@ -71,6 +81,8 @@
   list-style: none;
   min-width: 100%;
   /* align-self: flex-end" */
+  display: flex;
+  align-items: center;
 }
 
 .outerBar {
@@ -83,11 +95,9 @@
 
 .blogPostBar {
   background-color: #dae5ff;
-  padding-top: 1%;
   padding-bottom: 0.5%;
 }
 
 .nonBlogPostBar {
-  padding-top: 1%;
   padding-bottom: 0.5%;
 }

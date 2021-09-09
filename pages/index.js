@@ -28,7 +28,7 @@ export default function Home() {
           <div className={styles.textBox}>
             <p>
               Welcome to my tiny corner of the internet where I'm probably
-              tinkering with random software and tools. I've most recently been
+              tinkering with random software and tools. Most recently, I've been
               building better banking software at{' '}
               <a href='https://blendlabs.com' target='_blank'>
                 Blend

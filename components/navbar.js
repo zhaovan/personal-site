@@ -10,7 +10,7 @@ export default function NavBar({ currPage, blogPost }) {
     <div className={blogPost ? styles.blogPostBar : styles.nonBlogPostBar}>
       <div className={styles.outerBar}>
         <Link href='/'>
-          <div style={{ minWidth: '4rem' }}>
+          <div className={styles.wrapper}>
             <img src={doggo} alt='Dog Illustration' className={styles.logo} />
           </div>
         </Link>
