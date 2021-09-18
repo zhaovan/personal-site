@@ -69,7 +69,7 @@ export default function About() {
                 <a href='https://reboothq.substack.com' target='_blank'>
                   Reboot
                 </a>{' '}
-                and
+                and{" "}
                 <a href='https://www.dormroomfund.com/' target='_blank'>
                   Dorm Room Fund
                 </a>
