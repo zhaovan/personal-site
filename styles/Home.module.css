@@ -5,11 +5,10 @@
   /* flex-direction: column; */
   justify-content: center;
   align-items: center;
-  /* margin-top: 10%; */
 }
 
 .textBoxWrapper {
-  margin-bottom: 3rem;
+  /* margin-bottom: 3rem; */
 }
 
 .title {
@@ -118,6 +117,8 @@
   line-height: 1.5em;
   width: 80%;
 }
+
+
 
 @media (min-width: 540px) and (max-width: 1024px) {
   .container {

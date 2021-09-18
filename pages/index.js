@@ -47,7 +47,7 @@ export default function Home() {
           data-aos-delay='50'
         >
           <img src={portrait} alt='photo of me' className={styles.photo} />
-          <div className={styles.oval} style={{ margin: 'auto' }}></div>
+          {/* <div className={styles.oval} style={{ margin: 'auto' }}></div> */}
         </div>
       </div>
       <Footer />
