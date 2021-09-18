@@ -39,15 +39,15 @@ export default function About() {
             />
           </div>
 
-          <div style={{ marginLeft: '4%' }} data-aos='fade-left'>
+          <div style={{ marginLeft: '4%' }} >
             <div>
-              <p className={styles.text}>
+              <p className={styles.text} data-aos='fade-left' data-duration="1000">
                 I'm a dog lover from Seattle, WA, trying to fill this world with{' '}
                 <b>
                   baked goods, good vibes, strong drinks, and playful software.
                 </b>
               </p>
-              <p className={styles.text}>
+              <p className={styles.text} data-aos='fade-left' data-duration="1000">
                 Honestly, I'm still trying to figure out what I want to do in
                 life but right now I'm excited about{' '}
                 <a href='https://numinous.productions/ttft' target='_blank'>
@@ -62,7 +62,7 @@ export default function About() {
                   transformative games.
                 </a>{' '}
               </p>
-              <p className={styles.text}>
+              <p className={styles.text} data-aos='fade-left' data-duration="1000">
                 I fundamentally believe that technology, used judiciously, can
                 build a better future. I spend a lot of time on building
                 ecosystems for better futures{' '}
@@ -89,7 +89,7 @@ export default function About() {
                 , and allowing developers the ability to access location data at{' '}
                 <a href='https://www.askiggy.com/'>Ask Iggy</a>
               </p>
-              <p className={styles.text}>
+              <p className={styles.text} data-aos='fade-left' >
                 <b>Some essays and videos that I love:</b>
                 <ul>
                   {links.map((currLink, i) => {
