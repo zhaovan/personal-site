@@ -2,7 +2,7 @@ import NavBar from '../components/navbar';
 import styles from '../styles/About.module.css';
 import shared from '../styles/Shared.module.css';
 import Head from 'next/head';
-import AboutImage from '../public/about_img.png';
+import AboutImage from '../public/ivan.png';
 import Footer from '../components/footer';
 
 const links = [
