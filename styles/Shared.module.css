@@ -28,10 +28,10 @@
   position: relative;
 }
 .titleText:before {
-  content: '';
+  content: "";
   z-index: 1;
-  left: -0.5em;
-  top: -0.37em;
+  left: -0.5rem;
+  top: -0.6rem;
   border-width: 2px;
   border-style: solid;
   border-color: red;
@@ -45,10 +45,10 @@
   padding: 0.1em 0.25em;
 }
 .titleText:after {
-  content: '';
+  content: "";
   z-index: 1;
-  left: -0.5em;
-  top: 0.15em;
+  left: -0.5rem;
+  top: 0.15rem;
   padding: 0.1em 0.25em;
   border-width: 2px;
   border-style: solid;
