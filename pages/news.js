@@ -6,7 +6,7 @@ import {
 } from "react-vertical-timeline-component";
 
 import styles from "../styles/News.module.css";
-import Head from "next/head";
+import Header from "../components/header";
 
 import shared from "../styles/Shared.module.css";
 
@@ -127,10 +127,7 @@ const iconMap = {
 export default function News() {
   return (
     <div className={shared.page}>
-      <Head>
-        <title>News</title>
-        <link rel="icon" href="/icon.ico" />
-      </Head>
+      <Header title={"News"} />
       <NavBar currPage="news" />
       <p className={shared.titleText}>News!</p>
       <div className={shared.container} style={{ flexDirection: "column" }}>

@@ -1,7 +1,7 @@
 import NavBar from "../components/navbar";
 import styles from "../styles/About.module.css";
 import shared from "../styles/Shared.module.css";
-import Head from "next/head";
+import Header from "../components/header";
 import AboutImage from "../public/ivan2.svg";
 import Footer from "../components/footer";
 
@@ -23,10 +23,7 @@ const links = [
 export default function About() {
   return (
     <div className={shared.page}>
-      <Head>
-        <title>About</title>
-        <link rel="icon" href="/icon.ico" />
-      </Head>
+      <Header title={"About "} />
       <NavBar currPage="about" />
       <p className={shared.titleText}>About</p>
       <div>
@@ -40,22 +37,14 @@ export default function About() {
           </div>
 
           <div style={{ marginLeft: "4%" }}>
-            <div>
-              <p
-                className={styles.text}
-                data-aos="fade-left"
-                data-duration="1000"
-              >
+            <div data-aos="fade-left" data-duration="1000">
+              <p className={styles.text}>
                 I'm a dog lover from Seattle, WA, trying to fill this world with{" "}
                 <b>
                   baked goods, good vibes, strong drinks, and playful software.
                 </b>
               </p>
-              <p
-                className={styles.text}
-                data-aos="fade-left"
-                data-duration="1000"
-              >
+              <p className={styles.text}>
                 Honestly, I'm still trying to figure out what I want to do in
                 life but right now I'm excited about{" "}
                 <a href="https://numinous.productions/ttft" target="_blank">
@@ -70,14 +59,10 @@ export default function About() {
                   transformative games.
                 </a>{" "}
               </p>
-              <p
-                className={styles.text}
-                data-aos="fade-left"
-                data-duration="1000"
-              >
+              <p className={styles.text}>
                 I fundamentally believe that technology, used judiciously, can
-                build a better future. I spend a lot of time on building
-                ecosystems for better futures{" "}
+                build a better future. I'm working on creating ecosystems for
+                better futures at{" "}
                 <a href="https://reboothq.substack.com" target="_blank">
                   Reboot
                 </a>{" "}
@@ -85,9 +70,9 @@ export default function About() {
                 <a href="https://www.dormroomfund.com/" target="_blank">
                   Dorm Room Fund
                 </a>
-                , and invest in diverse founders at{" "}
+                , and investing in diverse founders at{" "}
                 <a href="https://shl.vc/" target="_blank">
-                  shl.vc
+                  shl.vc.
                 </a>{" "}
                 I've also previously worked on improving in home-care for
                 elderly patients at{" "}
@@ -101,7 +86,7 @@ export default function About() {
                 , and allowing developers the ability to access location data at{" "}
                 <a href="https://www.askiggy.com/">Ask Iggy</a>
               </p>
-              <p className={styles.text} data-aos="fade-left">
+              <p className={styles.text}>
                 <b>Some essays and videos that I love:</b>
                 <ul>
                   {links.map((currLink, i) => {

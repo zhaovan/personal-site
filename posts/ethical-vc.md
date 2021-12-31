@@ -2,10 +2,10 @@
 title: The case for a more ethical venture scene
 description: >-
   How speculative design and intentional processes can give us a first step for a better future
-date: '2021-04-13T04:06:45Z'
+date: "2021-04-13T04:06:45Z"
 duration: 7 min
 prev: on-2020
-next:
+next: fall-visions
 ---
 
 _Originally posted on the [Reboot Newsletter](https://reboothq.substack.com/p/venture)_

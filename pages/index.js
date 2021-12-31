@@ -1,10 +1,7 @@
-import { useState, useEffect } from "react";
-import Head from "next/head";
-
+import Header from "../components/header";
+import BottomNavbar from "../components/BottomNavbar";
 import styles from "../styles/Home.module.css";
 import NavBar from "../components/navbar";
-import Typewriter from "typewriter-effect";
-
 import Footer from "../components/footer";
 import shared from "../styles/Shared.module.css";
 import portrait from "../public/portrait.png";
@@ -12,10 +9,7 @@ import portrait from "../public/portrait.png";
 export default function Home() {
   return (
     <div className={shared.page}>
-      <Head>
-        <title>Ivan Zhao</title>
-        <link rel="icon" href="/icon.ico" />
-      </Head>
+      <Header title={"Ivan Zhao"} />
       <NavBar />
       <div className={[shared.container, styles.container].join(" ")}>
         <div
@@ -43,6 +37,7 @@ export default function Home() {
           {/* <div className={styles.oval} style={{ margin: 'auto' }}></div> */}
         </div>
       </div>
+      {/* <BottomNavbar /> */}
       <Footer />
     </div>
   );
