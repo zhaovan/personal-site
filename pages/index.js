@@ -1,10 +1,10 @@
 import Header from "../components/header";
-import BottomNavbar from "../components/BottomNavbar";
+// import BottomNavbar from "../components/BottomNavbar";
 import styles from "../styles/Home.module.css";
 import NavBar from "../components/navbar";
 import Footer from "../components/footer";
 import shared from "../styles/Shared.module.css";
-import portrait from "../public/portrait.png";
+import cabin from "../public/home.gif";
 
 export default function Home() {
   return (
@@ -33,8 +33,7 @@ export default function Home() {
           data-aos-duration="1000"
           data-aos-delay="50"
         >
-          <img src={portrait} alt="photo of me" className={styles.photo} />
-          {/* <div className={styles.oval} style={{ margin: 'auto' }}></div> */}
+          <img src={cabin} alt="photo of me" className={styles.photo} />
         </div>
       </div>
       {/* <BottomNavbar /> */}
