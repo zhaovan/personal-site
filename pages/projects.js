@@ -3,7 +3,7 @@ import shared from "../styles/Shared.module.css";
 import Footer from "../components/footer";
 import Header from "../components/header";
 import styles from "../styles/Projects.module.css";
-import projects from "./data/projects";
+import projects from "../data/projects";
 
 export default function Projects() {
   return (
