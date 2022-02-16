@@ -1,9 +1,10 @@
 ---
 title: Me — a designer?
 description: >-
-    Parsing what that title means to me
+  Parsing what that title means to me
 date: "2019-11-07T06:35:21.522Z"
 duration: 3 min
+tag: personal
 prev: college-friendship
 next: "gds-ndc"
 ---

@@ -1,9 +1,10 @@
 ---
 title: A strong desire to be loved.
 description: >-
-    Doesn't everyone want that?
+  Doesn't everyone want that?
 date: "2020-10-12T03:15:33.359Z"
 duration: "4 min"
+tag: personal
 prev: "gds-ndc"
 next: "on-2020"
 ---

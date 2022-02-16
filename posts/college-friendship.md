@@ -1,10 +1,11 @@
 ---
 title: How Moving to College Redefined my Notion of Friendship
 description: >-
-    Because sometimes it takes moving across the U.S. to reevaluate yourself and
-    your relationships with others.
+  Because sometimes it takes moving across the U.S. to reevaluate yourself and
+  your relationships with others.
 date: "2019-10-01T04:40:36.395Z"
 duration: "4 min"
+tag: personal
 prev: college
 next: designer
 ---

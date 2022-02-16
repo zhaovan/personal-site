@@ -4,8 +4,9 @@ description: >-
   Short essays for the Fall edition of Visions Magazine
 date: "2021-12-29T04:06:45Z"
 duration: 3 min
-prev: ethical-vc
-next:
+tag: creative nonfic
+prev: graphic-novel
+next: remember
 ---
 
 Hey friends!

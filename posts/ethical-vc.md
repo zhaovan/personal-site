@@ -4,11 +4,16 @@ description: >-
   How speculative design and intentional processes can give us a first step for a better future
 date: "2021-04-13T04:06:45Z"
 duration: 7 min
+tag: opinion
 prev: on-2020
 next: fall-visions
 ---
 
 _Originally posted on the [Reboot Newsletter](https://reboothq.substack.com/p/venture)_
+
+_A short piece on venture and the role we play in it_
+
+---
 
 Hop on Twitter any day of the week and you’ll probably see a four-letter monosyllabic word raising a round on a $4B valuation. You might think, “There’s no way this app is worth four billion dollars, especially if they’re not making any money.” Before I got into venture and startups, I was right there with you (and honestly still am).
 

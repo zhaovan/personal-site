@@ -1,10 +1,11 @@
 ---
 title: "College: Freshman Year — Transformations"
 description:
-    A short description of some of the biggest changes I experienced my freshman
-    year and why my friends are great
+  A short description of some of the biggest changes I experienced my freshman
+  year and why my friends are great
 date: "2019-06-25T21:41:34.088Z"
 duration: 12 min
+tag: personal
 prev:
 next: college-friendship
 ---
@@ -15,10 +16,10 @@ A couple of weeks ago, I wrapped up my first year of college. It was a whirlwind
 
 Going into Freshman year, I was pretty unsure about what I wanted to study. I knew that I liked math (at the time ahaha now pure math is the bane of my existence) and I knew that I liked application-based math. AP Econ in high school was one of my favorite classes (shoutout to Ms. Landau) and I definitely wanted to take more econ classes in college. As such, I decided to pursue a track in Brown’s joint program in Computer Science and Economics. I ended up taking:
 
--   Mathematical Microeconomics
--   Multivariable Calculus
--   Integrated Introduction to Computer Science
--   ENGN 9 (if you know you know)
+- Mathematical Microeconomics
+- Multivariable Calculus
+- Integrated Introduction to Computer Science
+- ENGN 9 (if you know you know)
 
 Given that my brother studied Finance and Accounting in college, I thought that I might give this route a try. And then, three things happened:
 
@@ -36,10 +37,10 @@ I think this quote from the book sums up my feelings about the industry:
 
 Like every other quintessential CS major out there, I attended a hackathon in the fall. Not only was it my first hackathon, but I also knew basically 0 useful languages (I knew functional languages hehe). But, ya know, I thought to myself, “_It’ll still be fine right? Not everyone who comes to these types of competitions knows how to code or is super technical.”_ **Boyyyyyy, was I wrong haha**. EVERYONE WAS A LITTLE TOO PREPARED. There were people who:
 
--   Brought their own hardware
--   Walked around talking about their projects
--   Threw around AI, Blockchain, ML, Deep Learning, and so many other things that I literally didn’t understand
--   Coded in wayyyyyy too many languages
+- Brought their own hardware
+- Walked around talking about their projects
+- Threw around AI, Blockchain, ML, Deep Learning, and so many other things that I literally didn’t understand
+- Coded in wayyyyyy too many languages
 
 Meanwhile, I was just chilling there, very confused about what the entire heck was going on. I distinctly remember setting up the _Wix_ site, doing the good ol’ drag-and-drop when my friend who I was on the team with me mentioned that he was having troubling with calling the function from the site and wanted to ask the _Wix_ mentor. Dutifully (and meekly because at this point I’ve been doing my math homework which was super rough) I went up and asked the guy to help me. He directed me to their webpage which had instructions for this and proceeded to explain the code to me. At this point, I had no clue what the code was and sat their nodding literally SO CONFUSED about the entire thing and came back to the table. Needless to say, I did not hookup the website to our ML model. Or much else.
 

@@ -2,10 +2,10 @@
   /* min-height: 100vh; */
   padding: 0 0.5rem;
   display: flex;
+  height: 50vh;
   /* flex-direction: column; */
   justify-content: center;
   align-items: center;
-  /* margin-top: 10vh !important; */
 }
 
 .title {
@@ -108,10 +108,12 @@
     flex-direction: column-reverse;
   }
   .photo {
+    margin-top: 5vh;
     width: 65%;
     align-self: center;
   }
   .tabletDiv {
+    margin-top: 5vh;
     display: flex;
     flex-direction: column;
     margin-bottom: 4%;
@@ -125,10 +127,13 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 540px) {
   .photo {
     width: 80% !important;
-    margin-left: 10%;
+    /* margin-left: 10%; */
+  }
+  .tabletDiv {
+    margin-top: 15vh;
   }
   .oval {
     width: 100%;

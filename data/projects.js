@@ -1,5 +1,20 @@
 const projects = [
   {
+    name: "Holotable",
+    description:
+      "A holographic table for vibes and play, interested in what it could mean to bridge tech and furniture",
+    website: "https://medium.com/@amy_qu/the-holotable-1f6c3d8c1ddf",
+    tags: ["classwork", "design"],
+  },
+  {
+    name: "Memory Garden",
+    description:
+      "Speculative prototype exploring the concept of memory and remembering in the physical and digital space",
+    website:
+      "https://zhaovan8.medium.com/memory-garden-a-way-to-remember-5347bd7587d2",
+    tags: ["classwork", "design"],
+  },
+  {
     name: "Watcher",
     description:
       "A personal search engine based off Vannevar Bush's Memex. Made for a class on Collective Cognition",

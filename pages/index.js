@@ -23,7 +23,14 @@ export default function Home() {
             <p>
               Welcome to my tiny corner of the internet where I'm probably
               tinkering with random software and tools, climbing up walls or
-              buildings, or eating my way through a city.
+              buildings, or eating my way through a city. I just started a
+              redbubble, which you can check out{" "}
+              <a
+                href="https://redbubble.com/people/zhaovan/shop"
+                target="_blank"
+              >
+                here!
+              </a>
             </p>
           </div>
         </div>
