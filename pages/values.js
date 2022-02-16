@@ -42,7 +42,7 @@ export default function Work() {
         <title>Values</title>
         <link rel="icon" href="/icon.ico" />
       </Head>
-      <NavBar currPage="Values" />
+      <NavBar currPage="values" />
       <p className={shared.titleText}>Values!</p>
       <div
         data-aos="zoom-up"
