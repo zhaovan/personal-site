@@ -43,7 +43,7 @@ export default function Home() {
           <img src={cabin} alt="photo of me" className={styles.photo} />
         </div>
       </div>
-      {/* <BottomNavbar /> */}
+
       <Footer />
     </div>
   );

@@ -51,6 +51,7 @@
   .container {
     flex-direction: column-reverse;
     width: 90% !important;
+    margin-bottom: 15vh !important;
   }
 }
 
