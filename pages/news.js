@@ -103,7 +103,7 @@ const news = [
     logo: "proptech",
   },
   {
-    date: "Sept 2018 - Present",
+    date: "Sept 2018",
     title: "Student",
     company: "Brown",
     website: "https://www.brown.edu/",

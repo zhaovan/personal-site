@@ -2,8 +2,8 @@ import NavBar from "../components/navbar";
 import styles from "../styles/About.module.css";
 import shared from "../styles/Shared.module.css";
 import Header from "../components/header";
-import AboutImage from "../public/ivan2.svg";
 import Footer from "../components/footer";
+import AboutImage from "../public/media/about_ivan.jpg";
 
 const links = [
   {
@@ -23,12 +23,14 @@ const links = [
 export default function About() {
   return (
     <div className={shared.page}>
-      <Header title={"About "} />
+      <Header title={"About"} />
       <NavBar currPage="about" />
       <p className={shared.titleText}>About</p>
       <div>
         <div className={[shared.container, styles.newContainer].join(" ")}>
           <div className={styles.photoWrapper} data-aos="fade-right">
+            <div className={styles.circle} />
+            <div className={styles.triangle} />
             <img
               src={AboutImage}
               className={styles.photo}

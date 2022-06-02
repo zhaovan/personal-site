@@ -1,7 +1,7 @@
 export default {
     title: "Ivan's Personal Site",
     description:
-        "Hi! I'm Ivan Zhao, a student at Brown trying to understand how we make decisions and the technology that drives it. Welcome to my personal site!",
+        "Hey there, I'm Ivan. I'm probably taking photos, writing code, baking bread, and napping.",
     openGraph: {
         type: "website",
         locale: "en_IE",

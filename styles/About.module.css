@@ -2,11 +2,41 @@
   width: 100%;
   height: auto;
   margin-top: 1rem;
-  box-shadow: -0.75rem 1.25rem 10px;
+  border-radius: 20px;
+  box-shadow: 0.5rem 1rem 10px;
+  z-index: 99;
 }
 
 .photoWrapper {
   width: 140%;
+  position: relative;
+}
+
+.circle {
+  height: 100px;
+  width: 100px;
+  background-color: gold;
+  /* border-color: gold;
+  border-width: 5px;
+  border-style: dotted; */
+  left: -0.5rem;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 5;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  position: absolute;
+  z-index: 5;
+  border-left: 50px solid transparent;
+  transform: rotate(-30deg);
+  top: 2rem;
+  left: 5rem;
+  border-right: 50px solid transparent;
+
+  border-bottom: 50px solid #dae5ff;
 }
 
 .linkItem {
