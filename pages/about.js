@@ -3,7 +3,7 @@ import styles from "../styles/About.module.css";
 import shared from "../styles/Shared.module.css";
 import Header from "../components/header";
 import Footer from "../components/footer";
-import AboutImage from "../public/media/about_ivan.jpg";
+import AboutImage from "../public/media/about_ivan.jpeg";
 
 const links = [
   {

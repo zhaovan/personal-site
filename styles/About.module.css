@@ -4,7 +4,7 @@
   margin-top: 1rem;
   border-radius: 20px;
   box-shadow: 0.5rem 1rem 10px;
-  z-index: 99;
+  /* z-index: 99; */
 }
 
 .photoWrapper {
@@ -73,5 +73,14 @@
 @media (max-width: 750px) {
   .photo {
     width: 75% !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .circle {
+    left: 125px;
+  }
+  .triangle {
+    left: 200px;
   }
 }
