@@ -30,7 +30,7 @@ export default function About() {
         <div className={[shared.container, styles.newContainer].join(" ")}>
           <div className={styles.photoWrapper} data-aos="fade-right">
             <div className={styles.circle} />
-            <div className={styles.triangle} />
+            {/* <div className={styles.triangle} /> */}
             <img
               src={AboutImage}
               className={styles.photo}
@@ -48,7 +48,7 @@ export default function About() {
               </p>
               <p className={styles.text}>
                 Honestly, I'm still trying to figure out what I want to do in
-                life but right now I'm excited about{" "}
+                life but some topics that thrill me are{" "}
                 <a href="https://numinous.productions/ttft" target="_blank">
                   tools for thought
                 </a>
@@ -63,30 +63,9 @@ export default function About() {
               </p>
               <p className={styles.text}>
                 I fundamentally believe that technology, used judiciously, can
-                build a better future. I'm working on creating ecosystems for
-                better futures at{" "}
-                <a href="https://reboothq.substack.com" target="_blank">
-                  Reboot
-                </a>{" "}
-                and{" "}
-                <a href="https://www.dormroomfund.com/" target="_blank">
-                  Dorm Room Fund
-                </a>
-                , and investing in diverse founders at{" "}
-                <a href="https://shl.vc/" target="_blank">
-                  shl.vc.
-                </a>{" "}
-                I've also previously worked on improving in home-care for
-                elderly patients at{" "}
-                <a href="https://intuscare.com/" target="_blank">
-                  Intus Care
-                </a>
-                , giving people the opportunity to live in cities at{" "}
-                <a href="https://www.loftium.com/" target="_blank">
-                  Loftium
-                </a>
-                , and allowing developers the ability to access location data at{" "}
-                <a href="https://www.askiggy.com/">Ask Iggy</a>
+                build a better future. I'm in my era of hobby and exploration
+                and am obsessed with film photography (and mixed media art
+                forms), short stories and poetry, and mixology.
               </p>
               <p className={styles.text}>
                 <b>Some essays and videos that I love:</b>

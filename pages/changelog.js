@@ -5,7 +5,7 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 
-import styles from "../styles/News.module.css";
+import styles from "../styles/Changelog.module.css";
 import Header from "../components/header";
 
 import shared from "../styles/Shared.module.css";
@@ -20,9 +20,27 @@ import { book } from "react-icons-kit/fa/book";
 import { thumbTack } from "react-icons-kit/fa/thumbTack";
 import Icon from "react-icons-kit";
 
-const news = [
+const changelog = [
   {
-    date: "May 2021 - August 2021",
+    date: "Sep 2018 - May 2022",
+    title: "Student",
+    company: "Brown",
+    website: "https://www.brown.edu/",
+    bodyText:
+      "Graudated from Brown with a degree in Applied Math and Computer Science (woo!)",
+    logo: "school",
+  },
+  {
+    date: "May 2021 - Jul 2021",
+    title: "Program Organizer",
+    company: "Dorm Room Fund",
+    website: "https://prism.dormroomfund.com",
+    bodyText:
+      "Founded Prism, an LGBTQ+ crash course for college students looking to break into startups and venture.",
+    logo: "vc",
+  },
+  {
+    date: "May 2021 - Aug 2021",
     title: "Software Engineering Intern",
     company: "Blend",
     website: "https://blend.com/",
@@ -49,7 +67,7 @@ const news = [
     logo: "school",
   },
   {
-    date: "October 2020 - Present",
+    date: "Oct 2020 - May 2022",
     title: "Investment Partner",
     company: "Dorm Room Fund",
     website: "http://dormroomfund.com/",
@@ -58,7 +76,7 @@ const news = [
     logo: "vc",
   },
   {
-    date: "July 2020 - Present",
+    date: "Jul 2020 - Jul 2021",
     title: "Cofounder",
     company: "Tea Time",
     website: "http://teatime.substack.com/",
@@ -90,26 +108,17 @@ const news = [
     company: "IDEO Colab",
     website: "https://www.ideocolab.com/",
     bodyText:
-      "Attended IDEO Colab's Makeathon in Cambridge where I helped make digital communication easier using BERT models.",
+      "Attended IDEO Colab's Makeathon in Cambridge where I we built emotional communication tools using BERT models.",
     logo: "design",
   },
   {
-    date: "June 2019 - Aug 2019",
+    date: "Jun 2019 - Aug 2019",
     title: "Operations Intern",
     company: "Loftium",
     website: "https://loftium.com/",
     bodyText:
       "Worked at Loftium as an Operations Intern! Joined the Renter Operations Team where I helped with maximizing Airbnb performance and created a Messenger Chatbot.",
     logo: "proptech",
-  },
-  {
-    date: "Sept 2018",
-    title: "Student",
-    company: "Brown",
-    website: "https://www.brown.edu/",
-    bodyText:
-      "Moved to Providence and started at Brown where I plan on double-majoring in Applied Math and Computer Science (wish me luck hehe).",
-    logo: "school",
   },
 ];
 
@@ -124,20 +133,20 @@ const iconMap = {
   thumbtack: <Icon icon={thumbTack} className={styles.icon} />,
 };
 
-export default function News() {
+export default function Changelog() {
   return (
     <div className={shared.page}>
-      <Header title={"News"} />
-      <NavBar currPage="news" />
-      <p className={shared.titleText}>News!</p>
+      <Header title={"Changelog"} />
+      <NavBar currPage="changelog" />
+      <p className={shared.titleText}>Changelog!</p>
       <div className={shared.container} style={{ flexDirection: "column" }}>
         <div className={shared.firstText}>
           I sometimes do things. Here's a way to keep track of some of them
           (nonexhaustive by any means)
         </div>
         <VerticalTimeline layout="1-column-left" className={styles.timeline}>
-          {news.map((newsItem, i) => {
-            const currColor = i % 2 == 0 ? "#FF9AA2" : "#C7CEEA";
+          {changelog.map((newsItem, i) => {
+            const currColor = i % 2 == 0 ? "gold" : "#C7CEEA";
             const currIcon = iconMap[newsItem.logo];
             return (
               <VerticalTimelineElement

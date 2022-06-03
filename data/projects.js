@@ -4,7 +4,7 @@ const projects = [
     description:
       "A holographic table for vibes and play, interested in what it could mean to bridge tech and furniture",
     website: "https://medium.com/@amy_qu/the-holotable-1f6c3d8c1ddf",
-    tags: ["classwork", "design"],
+    tags: ["design"],
   },
   {
     name: "Memory Garden",
@@ -12,14 +12,14 @@ const projects = [
       "Speculative prototype exploring the concept of memory and remembering in the physical and digital space",
     website:
       "https://zhaovan8.medium.com/memory-garden-a-way-to-remember-5347bd7587d2",
-    tags: ["classwork", "design"],
+    tags: ["design"],
   },
   {
     name: "Watcher",
     description:
       "A personal search engine based off Vannevar Bush's Memex. Made for a class on Collective Cognition",
     website: "https://watcher-memex.herokuapp.com/",
-    tags: ["development", "classwork"],
+    tags: ["development"],
   },
   {
     name: "Collaborative NFT's",
@@ -47,42 +47,42 @@ const projects = [
     description:
       "A mobile app built in React Native on PostgreSQL and Express for users to create a voting plan for the upcoming 2020 election.",
     website: "https://rollcall.vote/",
-    tags: ["product", "development"],
+    tags: ["development", "design"],
   },
   {
     name: "Lunch Meet",
     description:
       "A lightweight video calling app made for IvyHacks that allows users to randomly find other working professionals, students, and people who want to chat with someone during their lunch break.",
     website: "https://lunchmeat.herokuapp.com/",
-    tags: ["design", "development"],
+    tags: ["development", "design"],
   },
   {
     name: "Staying Informed Just to Feel Something",
     description:
       "A web app that allows users to search for tweets that are either hot topics or trends. Tweets are returned with a truth and sentiment score attached after running through a CNN model ",
     website: "https://github.com/zhaovan/twitter-hackathon",
-    tags: ["design", "development"],
+    tags: ["development", "design"],
   },
   {
     name: "Tarrey Town Audio",
     description:
       "A lightweight audio player experience to replicate the side quest from Legend of Zelda: Breath of the Wild. ",
     website: "https://zhaovan.github.io/tarrey-town/",
-    tags: ["development"],
+    tags: ["development", "design"],
   },
   {
     name: "Optical Music Recognition",
     description:
       "Python script for reading sheet music images and converting them to MIDI file using bounding boxes, feature detection, and a CNN",
     website: "https://github.com/zhaovan/optical-music-recognition",
-    tags: ["classwork", "development"],
+    tags: ["development"],
   },
   {
     name: "Rhyme Time",
     description:
       "Python script that webscrapes, preprocesses, parses, and then, using a LSTM model, generates limericks",
     website: "https://github.com/zhaovan/lstm-rhyme-time",
-    tags: ["classwork", "development"],
+    tags: ["development"],
   },
   {
     name: "Communify",
@@ -90,14 +90,14 @@ const projects = [
       "Mockup in Adobe XD for an iPad app for kids to learn about the coronavirus for Nick x Adobe Creative Jam",
     website:
       "https://xd.adobe.com/view/2f06327c-4cd1-408c-7c38-64d3b967668e-5937/",
-    tags: ["product", "development"],
+    tags: ["design"],
   },
   {
     name: "Wander",
     description:
       "A mobile app built in React Native and Firebase that serves as an aggregator for users to build and search for itineraries. Made during Hack Lodge '18",
     website: "https://github.com/zhaovan/wander",
-    tags: ["design", "development"],
+    tags: ["development", "design"],
   },
   {
     name: "Seattle's Startup Ecosystem",

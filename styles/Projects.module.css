@@ -31,8 +31,30 @@
   box-shadow: 5px 5px;
 }
 
+.project:nth-child(-n + 2) {
+  margin-top: 0;
+}
+
+.clickable {
+  cursor: pointer;
+  opacity: 0.5;
+  transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.clickable:hover {
+  opacity: 1;
+}
+
+.filterContainer {
+  margin: 0 4rem 0;
+}
+
+.clicked {
+  opacity: 1;
+}
+
 .resumeTag {
-  font-family: 'Inconsolata', 'Consolas', monospace;
+  font-family: "Inconsolata", "Consolas", monospace;
   font-size: 0.9rem;
   padding: 1px 4px;
   display: inline-block;
@@ -51,12 +73,12 @@
 
 .design {
   background-color: #bacbf4;
-  color: #475e99;
+  color: black;
 }
 
-.classwork {
-  background-color: #ffc966;
-  color: #b27300;
+.diversity {
+  background-color: gold;
+  color: black;
 }
 
 .research {
