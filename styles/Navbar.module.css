@@ -64,6 +64,12 @@
     display: block !important;
   }
 }
+/* tablet sizing */
+@media (max-width: 768px) {
+  .logo:hover {
+    animation: none;
+  }
+}
 
 @media (max-width: 320px) {
   .listStyle {

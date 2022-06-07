@@ -81,7 +81,7 @@
 }
 
 .uiux {
-  background-color: #62c370;
+  background-color: #badefc;
   color: #333;
 }
 
@@ -107,6 +107,7 @@
   /* background-color: #333; */
   height: 5vh;
   margin-bottom: 2vh;
+  border-radius: 5px;
 }
 
 @media (max-width: 540px) {

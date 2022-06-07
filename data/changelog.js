@@ -5,7 +5,7 @@ const changelog = [
     company: "Brown",
     website: "https://www.brown.edu/",
     bodyText:
-      "Graudated from Brown with a degree in Applied Math and Computer Science (woo!)",
+      "Graduated from Brown with a degree in Applied Math and Computer Science (woo!)",
     logo: "school",
   },
   {

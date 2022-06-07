@@ -19,7 +19,7 @@ const filters = [
 const tagToColors = {
   featured: "#ffc0cb",
   "3d modeling": "#9ad1d4",
-  "ui/ux": "#62c370",
+  "ui/ux": "#BADEFC",
   diversity: "#ffd700",
   research: "#DDA0DD",
   development: "#eaeaea",
@@ -122,7 +122,7 @@ export default function Projects() {
 
             const gradient =
               colors.length > 1
-                ? "linear-gradient(to right top," + colorString + ")"
+                ? "linear-gradient(90deg," + colorString + ")"
                 : colorString;
 
             return (
@@ -151,7 +151,7 @@ export default function Projects() {
                 <div>
                   <p className={styles.description}>{project.description}</p>
                 </div>
-                <div style={{ marginBottom: "3%" }}>
+                <div>
                   {project.tags.map((tag) => {
                     const currStyle = setProjectStyle(tag);
                     return (
