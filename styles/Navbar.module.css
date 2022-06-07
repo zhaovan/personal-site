@@ -32,6 +32,14 @@
   cursor: pointer;
 }
 
+.logo:hover {
+  animation-name: spinBack, spin;
+  animation-duration: 300ms, 300ms;
+  animation-delay: 0ms, 300ms; /* add this */
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
 @media (max-width: 745px) {
   .logo {
     width: 25%;
@@ -97,5 +105,20 @@
   background-color: #dae5ff;
 }
 
-/* .nonBlogPostBar {
-} */
+@keyframes spin {
+  from {
+    transform: rotate(-40deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinBack {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-40deg);
+  }
+}

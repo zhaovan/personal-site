@@ -6,13 +6,47 @@ import styles from "../styles/Projects.module.css";
 import projects from "../data/projects";
 import { useState, useEffect } from "react";
 
-const filters = ["design", "development", "diversity", "research"];
+const filters = [
+  "featured",
+  "3d modeling",
+  "graphic design",
+  "ui/ux",
+  "development",
+  "diversity",
+  "research",
+];
+
+const tagToColors = {
+  featured: "#ffc0cb",
+  "3d modeling": "#9ad1d4",
+  "ui/ux": "#62c370",
+  diversity: "#ffd700",
+  research: "#DDA0DD",
+  development: "#eaeaea",
+  "graphic design": "#f25757",
+};
+
+function setProjectStyle(tag) {
+  const currStyle =
+    tag == "ui/ux"
+      ? styles.uiux
+      : tag == "research"
+      ? styles.research
+      : tag == "diversity"
+      ? styles.diversity
+      : tag == "3d modeling"
+      ? styles.modeling
+      : tag == "graphic design"
+      ? styles.graphicDesign
+      : tag == "featured"
+      ? styles.featured
+      : styles.dev;
+  return currStyle;
+}
 
 export default function Projects() {
   const [selectedFilters, setSelectedFilters] = useState([]);
   const [projectList, setProjects] = useState(projects);
-  console.log(projectList);
-  console.log(selectedFilters);
 
   function filterProjects() {
     if (selectedFilters.length === 0) {
@@ -44,19 +78,11 @@ export default function Projects() {
         <p className={styles.filterContainer}>
           {/* Filter: */}
           {filters.map((filter, i) => {
-            console.log(filter);
-            const currStyle =
-              filter == "design"
-                ? styles.design
-                : filter == "research"
-                ? styles.research
-                : filter == "diversity"
-                ? styles.diversity
-                : styles.dev;
-
+            const currStyle = setProjectStyle(filter);
             const clicked = selectedFilters.includes(filter);
             return (
               <p
+                key={i}
                 className={[
                   currStyle,
                   styles.resumeTag,
@@ -64,12 +90,14 @@ export default function Projects() {
                   clicked ? styles.clicked : "",
                 ].join(" ")}
                 onClick={() => {
+                  // Checks if the filter is already in the list
+                  // if not, adds it to the state array
                   if (!selectedFilters.includes(filter)) {
                     var newFilters = selectedFilters;
                     newFilters.push(filter);
-                    console.log(newFilters);
                     setSelectedFilters(newFilters);
                   } else {
+                    // else, removes it from the array by splicing
                     const index = selectedFilters.indexOf(filter);
                     var newFilters = selectedFilters;
                     newFilters.splice(index, 1);
@@ -85,33 +113,53 @@ export default function Projects() {
         </p>
         <div className={styles.projectContainer}>
           {projectList.map((project, i) => {
+            const colors = [];
+
+            for (const tag of project.tags) {
+              colors.push(tagToColors[tag]);
+            }
+            const colorString = colors.join(",");
+
+            const gradient =
+              colors.length > 1
+                ? "linear-gradient(to right top," + colorString + ")"
+                : colorString;
+
             return (
               <div className={styles.project} data-aos="fade-up" key={i}>
+                {colors.length > 1 ? (
+                  <div
+                    className={styles.projectHeaderGraphic}
+                    style={{
+                      backgroundImage: gradient,
+                    }}
+                  />
+                ) : (
+                  <div
+                    className={styles.projectHeaderGraphic}
+                    style={{
+                      backgroundColor: gradient,
+                    }}
+                  />
+                )}
+
                 <div className={styles.name}>
                   <a href={project.website} target="_blank">
                     {project.name}
                   </a>
                 </div>
+                <div>
+                  <p className={styles.description}>{project.description}</p>
+                </div>
                 <div style={{ marginBottom: "3%" }}>
                   {project.tags.map((tag) => {
-                    const currStyle =
-                      tag == "design"
-                        ? styles.design
-                        : tag == "research"
-                        ? styles.research
-                        : tag == "diversity"
-                        ? styles.diversity
-                        : styles.dev;
+                    const currStyle = setProjectStyle(tag);
                     return (
                       <div className={[currStyle, styles.resumeTag].join(" ")}>
                         {tag}
                       </div>
                     );
                   })}
-                </div>
-
-                <div>
-                  <p className={styles.description}>{project.description}</p>
                 </div>
               </div>
             );

@@ -15,122 +15,25 @@ import { briefcase } from "react-icons-kit/fa/briefcase";
 import { users } from "react-icons-kit/fa/users";
 import { heartbeat } from "react-icons-kit/fa/heartbeat";
 import { rocket } from "react-icons-kit/fa/rocket";
+import { microphone } from "react-icons-kit/fa/microphone";
 import { home } from "react-icons-kit/fa/home";
 import { book } from "react-icons-kit/fa/book";
 import { thumbTack } from "react-icons-kit/fa/thumbTack";
+import { code } from "react-icons-kit/fa/code";
+import { frownO } from "react-icons-kit/fa/frownO";
 import Icon from "react-icons-kit";
 
-const changelog = [
-  {
-    date: "Sep 2018 - May 2022",
-    title: "Student",
-    company: "Brown",
-    website: "https://www.brown.edu/",
-    bodyText:
-      "Graudated from Brown with a degree in Applied Math and Computer Science (woo!)",
-    logo: "school",
-  },
-  {
-    date: "May 2021 - Jul 2021",
-    title: "Program Organizer",
-    company: "Dorm Room Fund",
-    website: "https://prism.dormroomfund.com",
-    bodyText:
-      "Founded Prism, an LGBTQ+ crash course for college students looking to break into startups and venture.",
-    logo: "vc",
-  },
-  {
-    date: "May 2021 - Aug 2021",
-    title: "Software Engineering Intern",
-    company: "Blend",
-    website: "https://blend.com/",
-    bodyText:
-      "Joined Blend on the consumer banking team, working on powering the next generation of consumer lending.",
-    logo: "fintech",
-  },
-  {
-    date: "Jan 2021 - May 2021",
-    title: "Software Engineering",
-    company: "Ask Iggy",
-    website: "https://www.askiggy.com/",
-    bodyText:
-      "Taking a semester off to work at Ask Iggy, the world's first location enrichment API startup.",
-    logo: "thumbtack",
-  },
-  {
-    date: "Feb 2021 - May 2021",
-    title: "Fellow",
-    company: "Reboot",
-    website: "https://reboothq.substack.com/",
-    bodyText:
-      "Joined Reboot as a student fellow in the TechxRace group where I wrote about the state of venture",
-    logo: "school",
-  },
-  {
-    date: "Oct 2020 - May 2022",
-    title: "Investment Partner",
-    company: "Dorm Room Fund",
-    website: "http://dormroomfund.com/",
-    bodyText:
-      "Joined Dorm Room Fund on the Boston team. Excited to invest in the next generation of startup founders on a national scale 🇺🇸.",
-    logo: "vc",
-  },
-  {
-    date: "Jul 2020 - Jul 2021",
-    title: "Cofounder",
-    company: "Tea Time",
-    website: "http://teatime.substack.com/",
-    bodyText:
-      "Started Tea Time with a couple of friends, a community for LGBTQ+ people interested in tech and tech adjacent industries.",
-    logo: "community",
-  },
-  {
-    date: "Dec 2019 - Present",
-    title: "Associate",
-    company: "Van Wickle Ventures",
-    website: "https://www.vanwickleventures.com/",
-    bodyText:
-      "Joined Van Wickle Ventures, Brown's student-run evergreen VC fund as a student associate.",
-    logo: "vc",
-  },
-  {
-    date: "Nov 2019 - May 2020",
-    title: "Software Engineer and PM",
-    company: "Intus Care",
-    website: "https://intuscare.com/",
-    bodyText:
-      "Started at Intus Care as a software engineer and product manager, building out the initial MVP and ML algorithms.",
-    logo: "healthtech",
-  },
-  {
-    date: "Oct 2019",
-    title: "Participant",
-    company: "IDEO Colab",
-    website: "https://www.ideocolab.com/",
-    bodyText:
-      "Attended IDEO Colab's Makeathon in Cambridge where I we built emotional communication tools using BERT models.",
-    logo: "design",
-  },
-  {
-    date: "Jun 2019 - Aug 2019",
-    title: "Operations Intern",
-    company: "Loftium",
-    website: "https://loftium.com/",
-    bodyText:
-      "Worked at Loftium as an Operations Intern! Joined the Renter Operations Team where I helped with maximizing Airbnb performance and created a Messenger Chatbot.",
-    logo: "proptech",
-  },
-];
+import changelog from "../data/changelog";
 
 const iconMap = {
   school: <Icon icon={book} className={styles.icon} />,
   design: <Icon icon={rocket} className={styles.icon} />,
-  proptech: <Icon icon={home} className={styles.icon} />,
-  healthtech: <Icon icon={heartbeat} className={styles.icon} />,
-  fintech: <Icon icon={dollar} className={styles.icon} />,
-  vc: <Icon icon={briefcase} className={styles.icon} />,
+
+  job: <Icon icon={briefcase} className={styles.icon} />,
   community: <Icon icon={users} className={styles.icon} />,
-  thumbtack: <Icon icon={thumbTack} className={styles.icon} />,
+  podcast: <Icon icon={microphone} className={styles.icon} />,
+  code: <Icon icon={code} className={styles.icon} />,
+  sad: <Icon icon={frownO} className={styles.icon} />,
 };
 
 export default function Changelog() {

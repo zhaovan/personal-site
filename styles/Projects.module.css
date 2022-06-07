@@ -26,7 +26,7 @@
   border-radius: 10px;
   padding: 2%;
   margin: 3%;
-  text-align: center;
+  /* text-align: center; */
   justify-content: center;
   box-shadow: 5px 5px;
 }
@@ -37,8 +37,8 @@
 
 .clickable {
   cursor: pointer;
-  opacity: 0.5;
-  transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+  opacity: 0.6;
+  transition: 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .clickable:hover {
@@ -46,7 +46,8 @@
 }
 
 .filterContainer {
-  margin: 0 4rem 0;
+  margin: 0 0 1rem;
+  text-align: center;
 }
 
 .clicked {
@@ -65,25 +66,47 @@
   color: #333;
   background-color: #eaeaea;
 }
-
-.product {
-  background-color: #a58383;
-  color: #ebfaf2;
+.resumeTag:first-child {
+  margin-left: 0;
 }
 
-.design {
-  background-color: #bacbf4;
-  color: black;
+.featured {
+  background-color: #ffc0cb;
+}
+
+.modeling {
+  /* prussian blue */
+  background-color: #9ad1d4;
+  color: #333;
+}
+
+.uiux {
+  background-color: #62c370;
+  color: #333;
 }
 
 .diversity {
-  background-color: gold;
-  color: black;
+  /* gold */
+  background-color: #ffd700;
+  color: #333;
 }
 
 .research {
-  background-color: #f2c4b7;
-  color: #8f5a51;
+  /* polished pine */
+  background-color: #dda0dd;
+  color: #333;
+}
+
+.graphicDesign {
+  /* copper crayola */
+  background-color: #f25757;
+  color: #333;
+}
+
+.projectHeaderGraphic {
+  /* background-color: #333; */
+  height: 5vh;
+  margin-bottom: 2vh;
 }
 
 @media (max-width: 540px) {

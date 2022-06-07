@@ -47,14 +47,14 @@ export default function NavBar({ currPage, blogPost }) {
               Changelog
             </li>
           </Link>
-          <Link href="/values">
+          {/* <Link href="/values">
             <li
               className={styles.horizontal}
               style={currPage == "values" ? active : notActive}
             >
               Values
             </li>
-          </Link>
+          </Link> */}
         </ul>
         <hr className={styles.line} />
       </div>

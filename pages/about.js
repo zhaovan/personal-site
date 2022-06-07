@@ -43,12 +43,13 @@ export default function About() {
               <p className={styles.text}>
                 I'm a dog lover from Seattle, WA, trying to fill this world with{" "}
                 <b>
-                  baked goods, good vibes, strong drinks, and playful software.
+                  baked goods, good vibes, strong drinks, meaningful words, and
+                  playful software.
                 </b>
               </p>
               <p className={styles.text}>
                 Honestly, I'm still trying to figure out what I want to do in
-                life but some topics that thrill me are{" "}
+                life but some areas that thrill me are{" "}
                 <a href="https://numinous.productions/ttft" target="_blank">
                   tools for thought
                 </a>
@@ -64,9 +65,32 @@ export default function About() {
               <p className={styles.text}>
                 I fundamentally believe that technology, used judiciously, can
                 build a better future. I'm in my era of hobby and exploration
-                and am obsessed with film photography (and mixed media art
-                forms), short stories and poetry, and mixology.
+                and am currently obsessed with film photography, short stories
+                and poetry, and mixology. Catch me hanging out at random coffee
+                shops, at the top of a mountain, or naping at home with my dog.
               </p>
+              <p className={styles.text}>
+                Some of the main questions that drive the work that I'm most
+                interested in are:
+              </p>
+              <ul className={styles.text}>
+                <li>
+                  In what ways we can use technology (such as GPT-3) to push the
+                  limits of creativity?
+                </li>
+                <li>
+                  How can technology aid collective knowledge, collaboration,
+                  and communication?
+                </li>
+                <li>
+                  In what ways can we push formal boundaries of print, the
+                  internet, and video games to develop interactive experiences?
+                </li>
+                <li>
+                  How do the stories and lived experiences of families,
+                  represented in media and culture, change our notion of self?
+                </li>
+              </ul>
               <p className={styles.text}>
                 <b>Some essays and videos that I love:</b>
                 <ul>
