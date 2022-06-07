@@ -23,7 +23,7 @@ const tagToColors = {
   diversity: "#ffd700",
   research: "#DDA0DD",
   development: "#eaeaea",
-  "graphic design": "#f25757",
+  "graphic design": "#F08080",
 };
 
 function setProjectStyle(tag) {
