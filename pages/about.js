@@ -75,7 +75,7 @@ export default function About() {
               </p>
               <ul className={styles.text}>
                 <li>
-                  In what ways we can use technology (such as GPT-3) to push the
+                  In what ways can we use technology (such as GPT-3) to push the
                   limits of creativity?
                 </li>
                 <li>
