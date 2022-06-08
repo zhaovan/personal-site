@@ -1,5 +1,5 @@
 ---
-title: How Moving to College Redefined my Notion of Friendship
+title: "College: Redefining my Notion of Friendship"
 description: >-
   Because sometimes it takes moving across the U.S. to reevaluate yourself and
   your relationships with others.
