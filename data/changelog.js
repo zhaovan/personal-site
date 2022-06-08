@@ -3,10 +3,12 @@ const changelog = [
     date: "Jun 2022",
     title: "Interview",
     company: "IEEE",
-    website: "https://www.computer.org/publications/tech-news/build-your-career/pride-in-stem-ivan-zhao",
-    bodyText: "Had a short article on my college years posted for pride month for the computing society!",
-    logo: "podcast"
-  }
+    website:
+      "https://www.computer.org/publications/tech-news/build-your-career/pride-in-stem-ivan-zhao",
+    bodyText:
+      "Had a short article on my college years posted for pride month for the computing society!",
+    logo: "podcast",
+  },
   {
     date: "Sep 2018 - May 2022",
     title: "Student",
@@ -29,7 +31,8 @@ const changelog = [
     date: "Apr 2022",
     title: "Podcast Guest",
     company: "DRF Office Hours",
-    website: "https://open.spotify.com/episode/0vfu3wX4tv4nXPGybauKbT?si=b136ca50f0094323",
+    website:
+      "https://open.spotify.com/episode/0vfu3wX4tv4nXPGybauKbT?si=b136ca50f0094323",
     bodyText:
       "Joined the DRF Podcast to talk about Prism and what it means for the industry",
     logo: "podcast",
