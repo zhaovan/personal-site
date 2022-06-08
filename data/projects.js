@@ -44,7 +44,7 @@ const projects = [
     tags: ["graphic design"],
   },
   {
-    name: "Information Design Infographics",
+    name: "Info Design Infographics",
     description:
       "Series of posters made for a class on visualizing information, ranging from a poster about trips to a country infographic",
     website: "/Info_Design_FinalPrints.pdf",
@@ -61,7 +61,7 @@ const projects = [
     description:
       "Project built during ETH Summer that allows users to mint and create their own NFTs that other people can pick up to evolve",
     website: "https://github.com/zhaovan/scaffold-eth",
-    tags: ["development"],
+    tags: ["development", "ui/ux"],
   },
   {
     name: "CSV Upload",
@@ -94,7 +94,7 @@ const projects = [
   {
     name: "Staying Informed Just to Feel Something",
     description:
-      "A web app built during Twitter Hackathon using a CNN for snetiment analysis on tweets to label them with content warnings",
+      "A web app built during Twitter Hackathon using a CNN for sentiment analysis on tweets to label them with content warnings",
     website: "https://github.com/zhaovan/twitter-hackathon",
     tags: ["development", "ui/ux"],
   },

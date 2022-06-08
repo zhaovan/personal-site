@@ -122,7 +122,7 @@ export default function Projects() {
 
             const gradient =
               colors.length > 1
-                ? "linear-gradient(90deg," + colorString + ")"
+                ? "linear-gradient(45deg," + colorString + ")"
                 : colorString;
 
             return (
@@ -131,7 +131,7 @@ export default function Projects() {
                   <div
                     className={styles.projectHeaderGraphic}
                     style={{
-                      backgroundImage: gradient,
+                      background: gradient,
                     }}
                   />
                 ) : (
@@ -143,23 +143,27 @@ export default function Projects() {
                   />
                 )}
 
-                <div className={styles.name}>
-                  <a href={project.website} target="_blank">
-                    {project.name}
-                  </a>
-                </div>
-                <div>
-                  <p className={styles.description}>{project.description}</p>
-                </div>
-                <div>
-                  {project.tags.map((tag) => {
-                    const currStyle = setProjectStyle(tag);
-                    return (
-                      <div className={[currStyle, styles.resumeTag].join(" ")}>
-                        {tag}
-                      </div>
-                    );
-                  })}
+                <div className={styles.projectText}>
+                  <div className={styles.name}>
+                    <a href={project.website} target="_blank">
+                      {project.name}
+                    </a>
+                  </div>
+                  <div>
+                    <p className={styles.description}>{project.description}</p>
+                  </div>
+                  <div>
+                    {project.tags.map((tag) => {
+                      const currStyle = setProjectStyle(tag);
+                      return (
+                        <div
+                          className={[currStyle, styles.resumeTag].join(" ")}
+                        >
+                          {tag}
+                        </div>
+                      );
+                    })}
+                  </div>
                 </div>
               </div>
             );

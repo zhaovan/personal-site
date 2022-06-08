@@ -24,16 +24,34 @@
   width: 40%;
   border: solid;
   border-radius: 10px;
-  padding: 2%;
-  margin: 3%;
+  margin: 2.5%;
   /* text-align: center; */
   justify-content: center;
   box-shadow: 5px 5px;
 }
 
-.project:nth-child(-n + 2) {
-  margin-top: 0;
+.projectText {
+  padding: 3% 5%;
 }
+
+/* for large screens only where its double faced */
+@media (min-width: 1024px) {
+  .project:nth-child(-n + 2) {
+    margin-top: 0;
+  }
+  .project:hover {
+    animation-name: cardHover;
+    animation-duration: 200ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+}
+
+/* .project:hover > .projectHeaderGraphic {
+  animation: moveGradient 15s ease infinite;
+   transform: translate(5%, 5%); 
+} */
 
 .clickable {
   cursor: pointer;
@@ -104,10 +122,10 @@
 }
 
 .projectHeaderGraphic {
-  /* background-color: #333; */
   height: 5vh;
   margin-bottom: 2vh;
-  border-radius: 5px;
+  border-radius: 6px 6px 0 0;
+  background-size: 200% 200%;
 }
 
 @media (max-width: 540px) {
@@ -124,5 +142,23 @@
 @media (min-width: 540px) and (max-width: 1024px) {
   .project {
     width: 100%;
+  }
+}
+
+@keyframes cardHover {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(-3%, -3%);
+  }
+}
+
+@keyframes moveGradient {
+  0% {
+    background-position: -100% 0;
+  }
+  100% {
+    background-position: 100% 0;
   }
 }

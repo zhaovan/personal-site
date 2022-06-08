@@ -10,17 +10,15 @@ import Header from "../components/header";
 
 import shared from "../styles/Shared.module.css";
 
-import { dollar } from "react-icons-kit/fa/dollar";
+// Importing Icons
 import { briefcase } from "react-icons-kit/fa/briefcase";
 import { users } from "react-icons-kit/fa/users";
-import { heartbeat } from "react-icons-kit/fa/heartbeat";
 import { rocket } from "react-icons-kit/fa/rocket";
 import { microphone } from "react-icons-kit/fa/microphone";
-import { home } from "react-icons-kit/fa/home";
 import { book } from "react-icons-kit/fa/book";
-import { thumbTack } from "react-icons-kit/fa/thumbTack";
 import { code } from "react-icons-kit/fa/code";
 import { frownO } from "react-icons-kit/fa/frownO";
+
 import Icon from "react-icons-kit";
 
 import changelog from "../data/changelog";
