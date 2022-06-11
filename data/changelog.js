@@ -129,7 +129,7 @@ const changelog = [
   },
   {
     date: "Oct 2019",
-    title: "Participant",
+    title: "Fellow",
     company: "IDEO Colab",
     website: "https://www.ideocolab.com/",
     bodyText:
