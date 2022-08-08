@@ -21,6 +21,12 @@ const projects = [
     tags: ["ui/ux", "development", "featured"],
   },
   {
+    name: "Questions and Answers",
+    description: "a site built to answer any question you might have",
+    website: "https://www.questionsandanswers.app/",
+    tags: ["development"],
+  },
+  {
     name: "Holotable",
     description:
       "A holographic table for vibes and play, interested in what it could mean to bridge tech and furniture",
@@ -76,6 +82,14 @@ const projects = [
       "An LGBTQ+ focused diversity track through Dorm Room Fund giving students an opportunity to learn about the world of venture and investing!",
     website: "https://prism.dormroomfund.com",
     tags: ["diversity", "development", "featured"],
+  },
+  {
+    name: "Amazon Spheres Model",
+    description:
+      "3D model of the amazon spheres done in Blender. Unfortunately can't display as a Three.js site because I lost the files when my laptop got stolen :(",
+    website:
+      "https://drive.google.com/drive/folders/1tifo_agh619xITYwk4dGiCxcF0smVdQS?usp=sharing",
+    tags: ["3d modeling"],
   },
   {
     name: "Roll Call",

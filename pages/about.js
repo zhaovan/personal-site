@@ -67,7 +67,8 @@ export default function About() {
                 build a better future. I'm in my era of hobby and exploration
                 and am currently obsessed with film photography, short stories
                 and poetry, and mixology. Catch me hanging out at random coffee
-                shops, at the top of a mountain, or napping at home with my dog.
+                shops, hammocking at the top of a mountain, or napping at home
+                with my dog.
               </p>
               <p className={styles.text}>
                 Some of the main questions that drive the work that I'm most
