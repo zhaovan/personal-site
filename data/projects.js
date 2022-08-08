@@ -134,14 +134,6 @@ const projects = [
     tags: ["development"],
   },
   {
-    name: "Communify",
-    description:
-      "Mockup in Adobe XD for an iPad app for kids to learn about the coronavirus for Nick x Adobe Creative Jam",
-    website:
-      "https://xd.adobe.com/view/2f06327c-4cd1-408c-7c38-64d3b967668e-5937/",
-    tags: ["ui/ux"],
-  },
-  {
     name: "Seattle's Startup Ecosystem",
     description:
       "Full-year reasearch project on social variables that contributed to tech entrepreneurship in the Greater Seattle Area",
