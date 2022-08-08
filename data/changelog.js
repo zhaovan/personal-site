@@ -133,7 +133,7 @@ const changelog = [
     company: "IDEO Colab",
     website: "https://www.ideocolab.com/",
     bodyText:
-      "Attended IDEO Colab's Makeathon in Cambridge where I we built emotional communication tools using BERT models.",
+      "Attended IDEO Colab's Makeathon in Cambridge where a team and I built emotional communication tools into text and video calling using BERT models.",
     logo: "design",
   },
   {
