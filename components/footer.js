@@ -12,7 +12,7 @@ const date = new Date();
 
 const links = [
   {
-    link: "https://www.instagram.com/ivan_zhao88/",
+    link: "https://www.instagram.com/zhaovan8/",
     type: "ig",
   },
   {

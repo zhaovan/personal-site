@@ -31,6 +31,14 @@ export default function NavBar({ currPage, blogPost }) {
               Projects
             </li>
           </Link>
+          <Link href="/doodles">
+            <li
+              className={styles.horizontal}
+              style={currPage == "doodles" ? active : notActive}
+            >
+              Doodles
+            </li>
+          </Link>
           <Link href="/writing">
             <li
               className={styles.horizontal}
