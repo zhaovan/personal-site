@@ -25,12 +25,11 @@ export default function About() {
     <div className={shared.page}>
       <Header title={"About"} />
       <NavBar currPage="about" />
-      <p className={shared.titleText}>About</p>
+      <h1 className={shared.titleText}>About</h1>
       <div>
         <div className={[shared.container, styles.newContainer].join(" ")}>
           <div className={styles.photoWrapper} data-aos="fade-right">
             <div className={styles.circle} />
-            {/* <div className={styles.triangle} /> */}
             <img
               src={AboutImage}
               className={styles.photo}

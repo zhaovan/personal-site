@@ -21,6 +21,7 @@
   font-size: 32px;
   font-weight: 700;
   margin: 0 35% 2rem 35%;
+  margin-block-start: 0;
   /* color: lightgrey; */
 }
 
@@ -31,7 +32,7 @@
   content: "";
   z-index: 1;
   left: -0.5rem;
-  top: -0.6rem;
+  top: -0.4rem;
   border-width: 2px;
   border-style: solid;
   border-color: red;
@@ -44,11 +45,12 @@
   border-radius: 50%;
   padding: 0.1em 0.25em;
 }
+
 .titleText:after {
   content: "";
   z-index: 1;
   left: -0.5rem;
-  top: 0.15rem;
+  top: 0.4rem;
   padding: 0.1em 0.25em;
   border-width: 2px;
   border-style: solid;
@@ -70,13 +72,13 @@
 
 @media (min-width: 1150px) and (max-width: 1440px) {
   .titleText:after {
-    top: -0.08rem;
+    top: 0.12rem;
   }
 }
 
 @media (min-width: 480px) and (max-width: 1150px) {
   .titleText:after {
-    top: -0.35rem;
+    top: -0.15rem;
   }
 }
 

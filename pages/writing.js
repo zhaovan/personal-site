@@ -28,13 +28,13 @@ export default function Writing({ allPostsData }) {
         <link rel="icon" href="/icon.ico" />
       </Head>
       <NavBar currPage="writing" />
-      <p className={shared.titleText}>Writing!</p>
+      <h1 className={shared.titleText}>Writing!</h1>
       <div data-aos="zoom-up" data-aos-duration="500">
         <div className={shared.container} style={{ flexDirection: "column" }}>
-          <div className={shared.firstText}>
+          <p className={shared.firstText}>
             I sometimes write things! They're usually pretty informal but maybe
             you'll resonate with one of them...
-          </div>
+          </p>
           <div className={styles.blogContainer}>
             <Subscribe />
             {allPostsData.map((post, i) => {

@@ -12,15 +12,21 @@ export default function Doodles() {
     <div className={shared.page}>
       <Header title={"Doodles"} />
       <NavBar currPage={"doodles"} />
-      <p className={shared.titleText}>Doodles!</p>
-      <div className={[shared.container, styles.container].join(" ")}>
-        {images.map((image) => {
-          return (
-            <div className={styles.image}>
-              <Image src={image} layout="fixed" height={300} width={300} />
-            </div>
-          );
-        })}
+      <h1 className={shared.titleText}>Doodles!</h1>
+      <p className={shared.firstText}>
+        A hodge-podge of drawings and animations (and other things I enjoy
+        making)
+      </p>
+      <div data-aos="zoom-up" data-aos-duration="500">
+        <div className={[shared.container, styles.container].join(" ")}>
+          {images.map((image) => {
+            return (
+              <div className={styles.image}>
+                <Image src={image} layout="fixed" height={300} width={300} />
+              </div>
+            );
+          })}
+        </div>
       </div>
     </div>
   );

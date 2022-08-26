@@ -96,7 +96,7 @@ const projects = [
     description:
       "A mobile app built in React Native on PostgreSQL and Express for users to create a voting plan for the upcoming 2020 election.",
     website: "https://rollcall.vote/",
-    tags: ["development", "ui/ux"],
+    tags: ["development"],
   },
   {
     name: "Lunch Meet",
@@ -106,11 +106,19 @@ const projects = [
     tags: ["development", "ui/ux"],
   },
   {
+    name: "Scrapbooking",
+    description:
+      "XD prototype built for Adobe x Airbnb to explore the idea of scrapbooking as a way to document and share experiences after a trip",
+    website:
+      "https://xd.adobe.com/view/e3db2a09-4ecf-4ce6-b9cc-a490b8e0b19b-b688/?fullscreen",
+    tags: ["ui/ux"],
+  },
+  {
     name: "Staying Informed Just to Feel Something",
     description:
       "A web app built during Twitter Hackathon using a CNN for sentiment analysis on tweets to label them with content warnings",
     website: "https://github.com/zhaovan/twitter-hackathon",
-    tags: ["development", "ui/ux"],
+    tags: ["development"],
   },
   {
     name: "Tarrey Town Audio",

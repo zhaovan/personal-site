@@ -69,7 +69,7 @@ export default function Projects() {
       <Header title={"Projects"} />
       <NavBar currPage="projects" />
 
-      <p className={shared.titleText}>Projects!</p>
+      <h1 className={shared.titleText}>Projects!</h1>
       <div className={shared.container} style={{ flexDirection: "column" }}>
         <p className={shared.firstText}>
           I sometimes work on things. Here's a couple of them that (sort of)
