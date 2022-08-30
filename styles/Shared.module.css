@@ -32,7 +32,7 @@
   content: "";
   z-index: 1;
   left: -0.5rem;
-  top: -0.4rem;
+  top: -0.2rem;
   border-width: 2px;
   border-style: solid;
   border-color: red;
@@ -50,7 +50,7 @@
   content: "";
   z-index: 1;
   left: -0.5rem;
-  top: 0.4rem;
+  top: 0.65rem;
   padding: 0.1em 0.25em;
   border-width: 2px;
   border-style: solid;
@@ -72,13 +72,13 @@
 
 @media (min-width: 1150px) and (max-width: 1440px) {
   .titleText:after {
-    top: 0.12rem;
+    top: 0.45rem;
   }
 }
 
 @media (min-width: 480px) and (max-width: 1150px) {
   .titleText:after {
-    top: -0.15rem;
+    top: 0.225rem;
   }
 }
 
@@ -94,9 +94,9 @@
     padding-bottom: 7.5rem;
   }
   .titleText:before {
-    top: -0.7rem;
+    top: -0.1rem;
   }
   .titleText:after {
-    top: -0.4rem;
+    top: 0.2rem;
   }
 }
