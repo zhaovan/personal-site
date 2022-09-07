@@ -70,11 +70,11 @@ export default function Projects() {
       <NavBar currPage="projects" />
 
       <h1 className={shared.titleText}>Projects!</h1>
+      <p className={shared.firstText}>
+        I sometimes work on things. Here's a couple of them that (sort of)
+        turned out.
+      </p>
       <div className={shared.container} style={{ flexDirection: "column" }}>
-        <p className={shared.firstText}>
-          I sometimes work on things. Here's a couple of them that (sort of)
-          turned out.
-        </p>
         <p className={styles.filterContainer}>
           {/* Filter: */}
           {filters.map((filter, i) => {

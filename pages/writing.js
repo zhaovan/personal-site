@@ -29,12 +29,12 @@ export default function Writing({ allPostsData }) {
       </Head>
       <NavBar currPage="writing" />
       <h1 className={shared.titleText}>Writing!</h1>
+      <p className={shared.firstText}>
+        I sometimes write things! They're usually pretty informal but maybe
+        you'll resonate with one of them...
+      </p>
       <div data-aos="zoom-up" data-aos-duration="500">
         <div className={shared.container} style={{ flexDirection: "column" }}>
-          <p className={shared.firstText}>
-            I sometimes write things! They're usually pretty informal but maybe
-            you'll resonate with one of them...
-          </p>
           <div className={styles.blogContainer}>
             <Subscribe />
             {allPostsData.map((post, i) => {

@@ -40,11 +40,11 @@ export default function Changelog() {
       <Header title={"Changelog"} />
       <NavBar currPage="changelog" />
       <h1 className={shared.titleText}>Changelog!</h1>
+      <p className={shared.firstText}>
+        I sometimes do things. Here's a way to keep track of some of them
+        (nonexhaustive by any means)
+      </p>
       <div className={shared.container} style={{ flexDirection: "column" }}>
-        <p className={shared.firstText}>
-          I sometimes do things. Here's a way to keep track of some of them
-          (nonexhaustive by any means)
-        </p>
         <VerticalTimeline layout="1-column-left" className={styles.timeline}>
           {changelog.map((newsItem, i) => {
             const currColor = i % 2 == 0 ? "gold" : "#C7CEEA";
