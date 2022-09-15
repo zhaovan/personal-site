@@ -1,5 +1,13 @@
 const projects = [
   {
+    name: "Kernel Magazine",
+    description:
+      "A magazine under Reboot, a community and substack for reimagining technooptimism, where I worked on layout, illustration, web design, and web dev along with the rest of the team",
+    website: "https://kernelmag.io",
+    thumbnail: "/thumbnails/kernel.jpg",
+    tags: ["ui/ux", "development", "graphic design"],
+  },
+  {
     name: "Hangouts",
     description:
       "A Discord bot built in Python that creates 1:1 matchups in a specific channel",

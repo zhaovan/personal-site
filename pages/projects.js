@@ -4,6 +4,7 @@ import Footer from "../components/footer";
 import Header from "../components/header";
 import styles from "../styles/Projects.module.css";
 import projects from "../data/projects";
+import Image from "next/image";
 import { useState, useEffect } from "react";
 
 const filters = [
@@ -142,6 +143,16 @@ export default function Projects() {
                     }}
                   />
                 )}
+                {/* {project.thumbnail && (
+                  <div className={styles.imageWrapper}>
+                    <Image
+                      src={project.thumbnail}
+                      layout="responsive"
+                      width={400}
+                      height={300}
+                    />
+                  </div>
+                )} */}
 
                 <div className={styles.projectText}>
                   <div className={styles.name}>
