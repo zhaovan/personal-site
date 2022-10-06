@@ -31,14 +31,6 @@ export default function NavBar({ currPage, blogPost }) {
               Projects
             </li>
           </Link>
-          <Link href="/doodles">
-            <li
-              className={styles.horizontal}
-              style={currPage == "doodles" ? active : notActive}
-            >
-              Doodles
-            </li>
-          </Link>
           <Link href="/writing">
             <li
               className={styles.horizontal}
@@ -55,14 +47,6 @@ export default function NavBar({ currPage, blogPost }) {
               Changelog
             </li>
           </Link>
-          {/* <Link href="/values">
-            <li
-              className={styles.horizontal}
-              style={currPage == "values" ? active : notActive}
-            >
-              Values
-            </li>
-          </Link> */}
         </ul>
         <hr className={styles.line} />
       </div>
