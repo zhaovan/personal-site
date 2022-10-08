@@ -18,6 +18,9 @@ import { microphone } from "react-icons-kit/fa/microphone";
 import { book } from "react-icons-kit/fa/book";
 import { code } from "react-icons-kit/fa/code";
 import { frownO } from "react-icons-kit/fa/frownO";
+import { paintBrush } from "react-icons-kit/fa/paintBrush";
+
+import { pencil } from "react-icons-kit/fa/pencil";
 
 import Icon from "react-icons-kit";
 
@@ -26,7 +29,8 @@ import changelog from "../data/changelog";
 const iconMap = {
   school: <Icon icon={book} className={styles.icon} />,
   design: <Icon icon={rocket} className={styles.icon} />,
-
+  art: <Icon icon={paintBrush} className={styles.icon} />,
+  writing: <Icon icon={pencil} className={styles.icon} />,
   job: <Icon icon={briefcase} className={styles.icon} />,
   community: <Icon icon={users} className={styles.icon} />,
   podcast: <Icon icon={microphone} className={styles.icon} />,

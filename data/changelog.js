@@ -1,5 +1,24 @@
 const changelog = [
   {
+    date: "Oct 2022",
+    title: "Apature Showcase Artist",
+    company: "Kearny Street Workshop",
+    website:
+      "https://www.kearnystreet.org/events-blog/2021/9/15/apature-2021-visual-arts-agazf-r5drt",
+    bodyText:
+      "Showcasing my work at the Apature 2022 Comics, Zines, and Illustrations Exhibition",
+    logo: "art",
+  },
+  {
+    date: "Jun 2022",
+    title: "Hotline Writer",
+    company: "Pride Poets",
+    website: "https://www.pridepoets.com/",
+    bodyText:
+      "Wrote poems for the Pride Poetry Hotline, a hotline for LGBTQ+ people to call and receive a poem written by a queer poet.",
+    logo: "writing",
+  },
+  {
     date: "Jun 2022",
     title: "Interview",
     company: "IEEE",
