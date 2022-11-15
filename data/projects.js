@@ -35,6 +35,13 @@ const projects = [
     tags: ["development"],
   },
   {
+    name: "Designing the Metaverse: A Study of Design Research and Creative Practice from Speculative Fictions to Functioning Prototypes",
+    description:
+      "Research paper published in Future Technologies Conference on AR/VR integrations into physical forms, specifically work done on Pepper's ghost, holographic tables, and perception",
+    website: "https://link.springer.com/chapter/10.1007/978-3-031-18458-1_38",
+    tags: ["research"],
+  },
+  {
     name: "Holotable",
     description:
       "A holographic table for vibes and play, interested in what it could mean to bridge tech and furniture",
@@ -120,6 +127,13 @@ const projects = [
     website:
       "https://xd.adobe.com/view/e3db2a09-4ecf-4ce6-b9cc-a490b8e0b19b-b688/?fullscreen",
     tags: ["ui/ux"],
+  },
+  {
+    name: "Tea Time",
+    description:
+      "Speaker series and publication to build community for university students who identify as LBGTQ+ in the tech and tech adjacent scene.",
+    website: "https://teatime.substack.com/",
+    tags: ["diversity"],
   },
   {
     name: "Staying Informed Just to Feel Something",
