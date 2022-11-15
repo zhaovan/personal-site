@@ -35,7 +35,7 @@ const projects = [
     tags: ["development"],
   },
   {
-    name: "Designing the Metaverse: A Study of Design Research and Creative Practice from Speculative Fictions to Functioning Prototypes",
+    name: "Designing the Metaverse",
     description:
       "Research paper published in Future Technologies Conference on AR/VR integrations into physical forms, specifically work done on Pepper's ghost, holographic tables, and perception",
     website: "https://link.springer.com/chapter/10.1007/978-3-031-18458-1_38",
