@@ -36,7 +36,7 @@ export default function Writing({ allPostsData }) {
       <div data-aos="zoom-up" data-aos-duration="500">
         <div className={shared.container} style={{ flexDirection: "column" }}>
           <div className={styles.blogContainer}>
-            <Subscribe />
+            {/* <Subscribe /> */}
             {allPostsData.map((post, i) => {
               const link = `/writing/${post.id}`;
               const readableDate = moment(post.date).format("MMMM Do YYYY");
