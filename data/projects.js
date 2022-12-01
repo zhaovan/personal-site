@@ -1,5 +1,12 @@
 const projects = [
   {
+    name: "Blackout Poetry Generator",
+    description:
+      "A silly little app that makes blackout poems from any text you give it using markov models",
+    link: "https://blackout-poetry-generator.vercel.app/",
+    tags: ["development"],
+  },
+  {
     name: "Kernel Magazine",
     description:
       "A magazine under Reboot, a community and substack for reimagining technooptimism, where I worked on layout, illustration, web design, and web dev along with the rest of the team",
