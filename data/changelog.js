@@ -1,12 +1,20 @@
 const changelog = [
   {
+    date: "Jan 2023 - Present",
+    title: "Student",
+    company: "Type West",
+    website: "https://letterformarchive.org/education/",
+    bodyText: "Leaning back into my art era by enrolling in a post grad typography program at Type West!",
+    logo: "school"
+  },
+  {
     date: "Oct 2022",
     title: "Apature Showcase Artist",
     company: "Kearny Street Workshop",
     website:
       "https://www.kearnystreet.org/events-blog/2021/9/15/apature-2021-visual-arts-agazf-r5drt",
     bodyText:
-      "Showcasing my work at the Apature 2022 Comics, Zines, and Illustrations Exhibition",
+      "Showcasing my work at the Apature 2022 Comics, Zines, and Illustrations Exhibition".,
     logo: "art",
   },
   {
@@ -43,7 +51,7 @@ const changelog = [
     company: "Reboot Student Fellowship",
     website: "https://reboothq.substack.com/p/fellowship-22",
     bodyText:
-      "Ran version 2.0 of the Reboot Fellowship with my good friend Lucas",
+      "Ran version 2.0 of the Reboot Fellowship with my good friend Lucas.",
     logo: "community",
   },
   {
@@ -53,7 +61,7 @@ const changelog = [
     website:
       "https://open.spotify.com/episode/0vfu3wX4tv4nXPGybauKbT?si=b136ca50f0094323",
     bodyText:
-      "Joined the DRF Podcast to talk about Prism and what it means for the industry",
+      "Joined the DRF Podcast to talk about Prism and what it means for the industry.",
     logo: "podcast",
   },
   {
@@ -107,7 +115,7 @@ const changelog = [
     company: "Reboot",
     website: "https://reboothq.substack.com/",
     bodyText:
-      "Joined Reboot as a student fellow in the TechxRace group where I wrote about the state of venture",
+      "Joined Reboot as a student fellow in the TechxRace group where I wrote about the state of venture.",
     logo: "school",
   },
   {
@@ -161,7 +169,7 @@ const changelog = [
     company: "Loftium",
     website: "https://loftium.com/",
     bodyText:
-      "Worked at Loftium as an Operations Intern! Joined the Renter Operations Team where I helped with maximizing Airbnb performance and created a Messenger Chatbot.",
+      "Worked at Loftium as an ops intern.",
     logo: "job",
   },
 ];
