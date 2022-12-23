@@ -4,8 +4,9 @@ const changelog = [
     title: "Student",
     company: "Type West",
     website: "https://letterformarchive.org/education/",
-    bodyText: "Leaning back into my art era by enrolling in a post grad typography program at Type West!",
-    logo: "school"
+    bodyText:
+      "Leaning back into my art era by enrolling in a post grad typography program at Type West!",
+    logo: "school",
   },
   {
     date: "Oct 2022",
@@ -14,7 +15,7 @@ const changelog = [
     website:
       "https://www.kearnystreet.org/events-blog/2021/9/15/apature-2021-visual-arts-agazf-r5drt",
     bodyText:
-      "Showcasing my work at the Apature 2022 Comics, Zines, and Illustrations Exhibition".,
+      "Showcasing my work at the Apature 2022 Comics, Zines, and Illustrations Exhibition.",
     logo: "art",
   },
   {
@@ -168,8 +169,7 @@ const changelog = [
     title: "Operations Intern",
     company: "Loftium",
     website: "https://loftium.com/",
-    bodyText:
-      "Worked at Loftium as an ops intern.",
+    bodyText: "Worked at Loftium as an ops intern.",
     logo: "job",
   },
 ];
