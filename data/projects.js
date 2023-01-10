@@ -3,7 +3,7 @@ const projects = [
     name: "Blackout Poetry Generator",
     description:
       "A silly little app that makes blackout poems from any text you give it using markov models",
-    link: "https://blackout-poetry-generator.vercel.app/",
+    website: "https://blackout-poetry-generator.vercel.app/",
     tags: ["development"],
   },
   {
