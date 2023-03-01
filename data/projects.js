@@ -1,5 +1,12 @@
 const projects = [
   {
+    name: "Reboot Merch",
+    description:
+      "Merch store for Reboot hosted on Shopify, with illustrations and designs for posters, stickers, hats, totes, and shirts",
+    website: "https://shop.kernelmag.io/",
+    tags: ["graphic design"],
+  },
+  {
     name: "Blackout Poetry Generator",
     description:
       "A silly little app that makes blackout poems from any text you give it using markov models",
