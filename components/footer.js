@@ -28,7 +28,7 @@ const links = [
     type: "github",
   },
   {
-    link: "/Ivan_Zhao.pdf",
+    link: "/ivan-zhao-resume.pdf",
     type: "resume",
   },
   {
