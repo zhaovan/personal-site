@@ -3,7 +3,6 @@ import styles from "../styles/About.module.css";
 import shared from "../styles/Shared.module.css";
 import Header from "../components/header";
 import Footer from "../components/footer";
-import AboutImage from "../public/media/about_ivan.jpeg";
 
 const links = [
   {
@@ -31,7 +30,7 @@ export default function About() {
           <div className={styles.photoWrapper} data-aos="fade-right">
             <div className={styles.circle} />
             <img
-              src={AboutImage}
+              src={"/media/about.jpeg"}
               className={styles.photo}
               alt="This is a terrible photo of me but with cute cats"
             />

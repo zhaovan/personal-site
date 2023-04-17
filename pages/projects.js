@@ -4,7 +4,7 @@ import Footer from "../components/footer";
 import Header from "../components/header";
 import styles from "../styles/Projects.module.css";
 import projects from "../data/projects";
-import Image from "next/image";
+
 import { useState, useEffect } from "react";
 
 const filters = [
