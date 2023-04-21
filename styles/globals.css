@@ -37,9 +37,13 @@ a {
 
 p > a {
   background-color: #dae5ff;
-  transition: background-color 0.45s;
+  transition: background-color 0.15s;
   border-radius: 5px;
   padding: 0.05rem 0.1rem;
+}
+
+h3 {
+  margin: 0;
 }
 
 p > a:hover {
