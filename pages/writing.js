@@ -5,22 +5,13 @@ import shared from "../styles/Shared.module.css";
 
 import styles from "../styles/Writing.module.css";
 import Footer from "../components/footer";
-import { getSortedPostsData } from "../lib/posts";
+import publications from "../data/publications";
+// import { getSortedPostsData } from "../lib/posts";
 import Link from "next/link";
-import Subscribe from "../components/subscribe";
 
 import moment from "moment";
 
-export async function getStaticProps() {
-  const allPostsData = getSortedPostsData();
-  return {
-    props: {
-      allPostsData,
-    },
-  };
-}
-
-export default function Writing({ allPostsData }) {
+export default function Writing() {
   return (
     <div className={shared.page}>
       <Head>
@@ -30,31 +21,32 @@ export default function Writing({ allPostsData }) {
       <NavBar currPage="writing" />
       <h1 className={shared.titleText}>Writing!</h1>
       <p className={shared.firstText}>
-        I sometimes write things! They're usually pretty informal but maybe
-        you'll resonate with one of them...
+        Some selected work. For more informal personal stuff, try my{" "}
+        <Link href="https://thoughtswithcorgo.substack.com/">newsletter</Link>
       </p>
       <div data-aos="zoom-up" data-aos-duration="500">
-        <div className={shared.container} style={{ flexDirection: "column" }}>
-          <div className={styles.blogContainer}>
-            {/* <Subscribe /> */}
-            {allPostsData.map((post, i) => {
-              const link = `/writing/${post.id}`;
-              const readableDate = moment(post.date).format("MMMM Do YYYY");
+        <div className={shared.container}>
+          <ul>
+            {publications.map((pubs, i) => {
+              const genre = Object.keys(pubs)[0];
 
               return (
-                <div className={styles.postContainer} key={i}>
-                  <Link href={link} className={styles.title}>
-                    <h3 className={styles.title}>{post.title}</h3>
-                  </Link>
-                  <p className={styles.subTitle}>
-                    {readableDate} · {post.duration}
-                  </p>
-                  <div className={styles.description}>{post.description}</div>
-                  <hr className={styles.line} />
-                </div>
+                <span key={i}>
+                  <p>{genre}</p>
+                  {pubs[genre].map((pub, i) => {
+                    return (
+                      <li className={styles.publication}>
+                        <Link href={pub.link || ""} target="__blank">
+                          <b>{pub.title}</b>
+                        </Link>{" "}
+                        / <i>{pub.publication}</i> / {pub.date}
+                      </li>
+                    );
+                  })}
+                </span>
               );
             })}
-          </div>
+          </ul>
         </div>
       </div>
       <Footer />

@@ -26,38 +26,20 @@
   background-position-y: 100%;
 }
 
-.line {
-  border-width: 0.5px;
-  border-style: dashed;
-  margin-top: 1.5%;
+.publication {
+  margin-bottom: 16px;
+  margin-left: 48px;
 }
 
-.subTitle {
-  opacity: 0.4;
-  font-size: 16px;
-  font-family: "Overpass Mono", monospace;
-  margin: 1% 0;
+.publication > a {
+  background-color: #dae5ff;
+  transition: background-color 0.15s;
+  border-radius: 5px;
+  padding: 0.05rem 0.1rem;
 }
 
-.description {
-  font-style: italic;
-  margin-top: 1%;
-}
-
-.postContainer {
-  width: 70%;
-  align-self: center;
-  margin-bottom: 1%;
-}
-
-@keyframes shine {
-  from {
-    -webkit-mask-position: 150%;
-  }
-
-  to {
-    -webkit-mask-position: -50%;
-  }
+.publication > a:hover {
+  background-color: #94d8ef;
 }
 
 @media (max-width: 768px) {

@@ -3,9 +3,11 @@ import shared from "../styles/Shared.module.css";
 import Footer from "../components/footer";
 import Header from "../components/header";
 import styles from "../styles/Projects.module.css";
+
 import projects from "../data/projects";
-import Image from "next/image";
+
 import { useState, useEffect } from "react";
+import Project from "../components/project";
 
 const filters = [
   "featured",
@@ -76,7 +78,7 @@ export default function Projects() {
         turned out.
       </p>
       <div className={shared.container} style={{ flexDirection: "column" }}>
-        <p className={styles.filterContainer}>
+        <div className={styles.filterContainer}>
           {/* Filter: */}
           {filters.map((filter, i) => {
             const currStyle = setProjectStyle(filter);
@@ -111,7 +113,7 @@ export default function Projects() {
               </p>
             );
           })}
-        </p>
+        </div>
         <div className={styles.projectContainer}>
           {projectList.map((project, i) => {
             const colors = [];
@@ -127,56 +129,12 @@ export default function Projects() {
                 : colorString;
 
             return (
-              <div className={styles.project} data-aos="fade-up" key={i}>
-                {colors.length > 1 ? (
-                  <div
-                    className={styles.projectHeaderGraphic}
-                    style={{
-                      background: gradient,
-                    }}
-                  />
-                ) : (
-                  <div
-                    className={styles.projectHeaderGraphic}
-                    style={{
-                      backgroundColor: gradient,
-                    }}
-                  />
-                )}
-                {/* {project.thumbnail && (
-                  <div className={styles.imageWrapper}>
-                    <Image
-                      src={project.thumbnail}
-                      layout="responsive"
-                      width={400}
-                      height={300}
-                    />
-                  </div>
-                )} */}
-
-                <div className={styles.projectText}>
-                  <div className={styles.name}>
-                    <a href={project.website} target="_blank">
-                      {project.name}
-                    </a>
-                  </div>
-                  <div>
-                    <p className={styles.description}>{project.description}</p>
-                  </div>
-                  <div>
-                    {project.tags.map((tag) => {
-                      const currStyle = setProjectStyle(tag);
-                      return (
-                        <div
-                          className={[currStyle, styles.resumeTag].join(" ")}
-                        >
-                          {tag}
-                        </div>
-                      );
-                    })}
-                  </div>
-                </div>
-              </div>
+              <Project
+                key={i}
+                project={project}
+                gradient={gradient}
+                colors={colors}
+              />
             );
           })}
         </div>

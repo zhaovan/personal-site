@@ -1,6 +1,5 @@
 import styles from "../styles/Navbar.module.css";
 import Link from "next/link";
-import doggo from "../public/media/doggo.png";
 
 export default function NavBar({ currPage, blogPost }) {
   const active = { opacity: 1 };
@@ -11,7 +10,11 @@ export default function NavBar({ currPage, blogPost }) {
       <div className={styles.outerBar}>
         <Link href="/">
           <div className={styles.wrapper}>
-            <img src={doggo} alt="Dog Illustration" className={styles.logo} />
+            <img
+              src={"/media/doggo.png"}
+              alt="Dog Illustration"
+              className={styles.logo}
+            />
           </div>
         </Link>
         <ul className={styles.listStyle}>
@@ -29,6 +32,14 @@ export default function NavBar({ currPage, blogPost }) {
               style={currPage == "projects" ? active : notActive}
             >
               Projects
+            </li>
+          </Link>
+          <Link href="/explorations">
+            <li
+              className={styles.horizontal}
+              style={currPage == "explorations" ? active : notActive}
+            >
+              Explorations
             </li>
           </Link>
           <Link href="/writing">

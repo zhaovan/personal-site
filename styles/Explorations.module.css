@@ -1,0 +1,10 @@
+.image {
+  /* border: 2px solid black; */
+  margin: 48px auto;
+}
+
+.drawingContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
