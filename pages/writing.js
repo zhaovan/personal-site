@@ -6,7 +6,7 @@ import shared from "../styles/Shared.module.css";
 import styles from "../styles/Writing.module.css";
 import Footer from "../components/footer";
 import publications from "../data/publications";
-import { getSortedPostsData } from "../lib/posts";
+// import { getSortedPostsData } from "../lib/posts";
 import Link from "next/link";
 
 import moment from "moment";
