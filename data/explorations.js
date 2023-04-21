@@ -27,11 +27,11 @@ const work = [
         path: "/art/racoon.png",
       },
       {
-        path: "/art/ModularAlphabet.png",
-        aspectRatio: 11 / 8.5,
+        path: "/art/sketches.png",
       },
       {
-        path: "/art/sketches.png",
+        path: "/art/ModularAlphabet.png",
+        aspectRatio: 11 / 8.5,
       },
     ],
   },
