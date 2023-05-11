@@ -24,7 +24,7 @@
     "name": "Kernel Magazine",
     "description": "Literary magazine on tech, society, and power",
     "website": "https://kernelmag.io",
-    "thumbnail": "/thumbnails/kernelmagcover.png",
+    "thumbnail": "/thumbnails/KernelMagCover.png",
     "tags": ["ui/ux", "development", "graphic design"]
   },
   {

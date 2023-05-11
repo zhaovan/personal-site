@@ -42,6 +42,10 @@
   padding: 3% 5%;
 }
 
+.imageWrapper {
+  overflow: hidden;
+}
+
 /* for large screens only where its double faced */
 @media (min-width: 1024px) {
   .project:nth-child(-n + 2) {
