@@ -44,12 +44,7 @@ export default function Project({ project, gradient, colors }) {
       )}
       {project.thumbnail && (
         <div className={styles.imageWrapper}>
-          <Image
-            src={project.thumbnail}
-            height={(width - 6) * 0.75}
-            width={width - 6}
-            style={{ objectFit: "contain" }}
-          />
+          <Image src={project.thumbnail} height={width * 0.75} width={width} />
         </div>
       )}
 

@@ -21,9 +21,9 @@ export default function NavBar({ currPage, blogPost }) {
         </Link>
         <span>
           <ul className={styles.listStyle}>
-            {navLocation.map((page) => {
+            {navLocation.map((page, idx) => {
               return (
-                <Link href={`/${page}`}>
+                <Link href={`/${page}`} key={idx}>
                   <li
                     className={styles.horizontal}
                     style={currPage == page ? active : notActive}
