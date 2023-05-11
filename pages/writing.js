@@ -19,7 +19,6 @@ export default function Writing() {
         <link rel="icon" href="/icon.ico" />
       </Head>
       <NavBar currPage="writing" />
-      <h1 className={shared.titleText}>Writing!</h1>
       <p className={shared.firstText}>
         Some selected work. For more informal personal stuff, try my{" "}
         <Link href="https://thoughtswithcorgo.substack.com/">newsletter</Link>

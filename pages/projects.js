@@ -72,7 +72,6 @@ export default function Projects() {
       <Header title={"Projects"} />
       <NavBar currPage="projects" />
 
-      <h1 className={shared.titleText}>Projects!</h1>
       <p className={shared.firstText}>
         A collection of personal and passion projects
       </p>

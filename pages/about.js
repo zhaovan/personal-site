@@ -24,7 +24,6 @@ export default function About() {
     <div className={shared.page}>
       <Header title={"About"} />
       <NavBar currPage="about" />
-      <h1 className={shared.titleText}>About</h1>
       <div>
         <div className={[shared.container, styles.newContainer].join(" ")}>
           <div className={styles.photoWrapper} data-aos="fade-right">
