@@ -44,7 +44,11 @@ export default function Project({ project, gradient, colors }) {
       )}
       {project.thumbnail && (
         <div className={styles.imageWrapper}>
-          <Image src={project.thumbnail} height={width * 0.75} width={width} />
+          <Image
+            src={project.thumbnail}
+            height={(width - 2.56) * 0.75}
+            width={width - 2.56}
+          />
         </div>
       )}
 
