@@ -4,7 +4,7 @@ import Footer from "../components/footer";
 import Header from "../components/header";
 import styles from "../styles/Projects.module.css";
 
-import projects from "../data/projects";
+import projects from "../data/projects.json";
 
 import { useState, useEffect } from "react";
 import Project from "../components/project";

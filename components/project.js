@@ -1,6 +1,7 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import styles from "../styles/Projects.module.css";
 import Image from "next/image";
+import { useContainerDimensions } from "../hooks/useResize";
 
 function setProjectStyle(tag) {
   const currStyle =
@@ -21,8 +22,11 @@ function setProjectStyle(tag) {
 }
 
 export default function Project({ project, gradient, colors }) {
+  const componentRef = useRef(null);
+  const { width, _ } = useContainerDimensions(componentRef);
+
   return (
-    <div className={styles.project} data-aos="fade-up">
+    <div className={styles.project} data-aos="fade-up" ref={componentRef}>
       {colors.length > 1 ? (
         <div
           className={styles.projectHeaderGraphic}
@@ -38,11 +42,16 @@ export default function Project({ project, gradient, colors }) {
           }}
         />
       )}
-      {/* {project.thumbnail && (
-          <div className={styles.imageWrapper}>
-            <Image src={project.thumbnail} width={400} height={300} />
-          </div>
-        )} */}
+      {project.thumbnail && (
+        <div className={styles.imageWrapper}>
+          <Image
+            src={project.thumbnail}
+            height={(width - 6) * 0.75}
+            width={width - 6}
+            style={{ objectFit: "contain" }}
+          />
+        </div>
+      )}
 
       <div className={styles.projectText}>
         <div className={styles.name}>

@@ -12,14 +12,6 @@ const date = new Date();
 
 const links = [
   {
-    link: "https://www.instagram.com/zhaovan8/",
-    type: "ig",
-  },
-  {
-    link: "https://twitter.com/zhaovan8",
-    type: "twitter",
-  },
-  {
     link: "http://linkedin.com/in/ivanzhao8",
     type: "li",
   },
@@ -38,9 +30,8 @@ const links = [
 ];
 
 const iconMap = {
-  ig: <Icon icon={instagram} size={20} />,
   li: <Icon icon={linkedinSquare} size={20} />,
-  twitter: <Icon icon={twitterSquare} size={20} />,
+
   md: <Icon icon={medium} size={20} />,
   github: <Icon icon={githubSquare} size={20} />,
   resume: <Icon icon={fileTextO} size={20} />,
@@ -63,9 +54,7 @@ export default function Footer() {
         })}
       </ul>
 
-      <div className={styles.footerText}>
-        © {date.getFullYear()} Ivan Zhao, made with ☕ and 🍵
-      </div>
+      <div className={styles.footerText}> Made with ☕ by Ivan Zhao</div>
     </footer>
   );
 }

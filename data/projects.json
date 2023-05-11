@@ -1,0 +1,128 @@
+[
+  {
+    "name": "Reboot Merch",
+    "description": "Get your swag on!",
+    "website": "https://shop.kernelmag.io/",
+    "thumbnail": "/thumbnails/reboot-merch.png",
+    "tags": ["graphic design"]
+  },
+  {
+    "name": "Fellowship Zine",
+    "description": "Zine made for Reboot Student Fellowship",
+    "website": "",
+    "thumbnail": "/thumbnails/zine.png",
+    "tags": ["graphic design"]
+  },
+  {
+    "name": "Blackout Poetry Generator",
+    "description": "Generate poems using markov models",
+    "website": "https://blackout-poetry-generator.vercel.app/",
+    "thumbnail": "/thumbnails/poetry.gif",
+    "tags": ["development"]
+  },
+  {
+    "name": "Kernel Magazine",
+    "description": "Literary magazine on tech, society, and power",
+    "website": "https://kernelmag.io",
+    "thumbnail": "/thumbnails/kernelmagcover.png",
+    "tags": ["ui/ux", "development", "graphic design"]
+  },
+  {
+    "name": "Hangouts",
+    "description": "facilitating hangouts in discord",
+    "website": "https://github.com/zhaovan/discord-hangouts",
+    "thumbnail": "/thumbnails/hangouts.png",
+    "tags": ["development"]
+  },
+  {
+    "name": "Holotable",
+    "description": "speculative design on tech and furniture",
+    "website": "https://medium.com/@amy_qu/the-holotable-1f6c3d8c1ddf",
+    "thumbnail": "/thumbnails/holotable.gif",
+    "tags": ["3d modeling", "development", "featured"]
+  },
+
+  {
+    "name": "Info Design Infographics",
+    "description": "infographics on various topics",
+    "website": "/Info_Design_FinalPrints.pdf",
+    "thumbnail": "/thumbnails/infoviz.png",
+    "tags": ["graphic design", "featured"]
+  },
+  {
+    "name": "Watcher",
+    "description": "memex of my brain",
+    "website": "https://watcher-henna.vercel.app/",
+    "thumbnail": "/thumbnails/watcher.png",
+    "tags": ["development", "ui/ux", "featured"]
+  },
+  {
+    "name": "Prism Investor Track",
+    "description": "speaker series and community for queer students in venture",
+    "website": "https://prism.dormroomfund.com",
+    "thumbnail": "/thumbnails/prism.png",
+    "tags": ["diversity", "development", "featured"]
+  },
+  {
+    "name": "Amazon Spheres Model",
+    "description": "3d models of amazon spheres",
+    "website": "https://drive.google.com/drive/folders/1tifo_agh619xITYwk4dGiCxcF0smVdQS?usp=sharing",
+    "tags": ["3d modeling"],
+    "thumbnail": "/thumbnails/amazon-spheres.png"
+  },
+  {
+    "name": "Roll Call",
+    "description": "mobile app for informed election voting",
+    "website": "https://rollcall.vote/",
+    "thumbnail": "/thumbnails/roll-call.png",
+    "tags": ["development"]
+  },
+  {
+    "name": "Tea Time",
+    "description": "speaker series for the queer college community",
+    "website": "https://teatime.substack.com/",
+    "thumbnail": "/thumbnails/teatime.png",
+    "tags": ["diversity"]
+  },
+  {
+    "name": "Staying Informed Just to Feel Something",
+    "description": "adding content warning to twitter",
+    "website": "https://github.com/zhaovan/twitter-hackathon",
+    "thumbnail": "/thumbnails/twitterhackathon.png",
+    "tags": ["development"]
+  },
+  {
+    "name": "Tarrey Town Audio",
+    "description": "interactive audio experience on a quest from Zelda",
+    "website": "https://zhaovan.github.io/tarrey-town/",
+    "thumbnail": "/thumbnails/tarrey.png",
+    "tags": ["development", "ui/ux"]
+  },
+  {
+    "name": "Optical Music Recognition",
+    "description": "DL model on music sheet recognition",
+    "website": "https://github.com/zhaovan/optical-music-recognition",
+    "thumbnail": "/thumbnails/omr.png",
+    "tags": ["development", "featured"]
+  },
+  {
+    "name": "Rhyme Time",
+    "description": "poem generator with lstms",
+    "website": "https://github.com/zhaovan/lstm-rhyme-time",
+    "thumbnail": "/thumbnails/rhymetime.png",
+    "tags": ["development"]
+  },
+
+  {
+    "name": "Memory Garden",
+    "description": "speculative prototype on memory and space",
+    "website": "https://zhaovan8.medium.com/memory-garden-a-way-to-remember-5347bd7587d2",
+    "tags": ["3d modeling", "ui/ux"]
+  },
+  {
+    "name": "Seattle's Startup Ecosystem",
+    "description": "research project on entrepreneurship",
+    "website": "/research_paper.pdf",
+    "tags": ["research"]
+  }
+]
