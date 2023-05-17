@@ -1,14 +1,10 @@
-import Header from "../components/header";
 import styles from "../styles/Home.module.css";
-import NavBar from "../components/navbar";
-import Footer from "../components/footer";
+
 import shared from "../styles/Shared.module.css";
 
 export default function Home() {
   return (
     <div className={shared.page}>
-      <Header title={"Ivan Zhao"} />
-      <NavBar />
       <div className={[shared.container, styles.container].join(" ")}>
         <div
           data-aos="fade-up"
@@ -38,8 +34,6 @@ export default function Home() {
           />
         </div>
       </div>
-
-      <Footer />
     </div>
   );
 }

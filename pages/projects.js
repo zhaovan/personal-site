@@ -1,12 +1,9 @@
-import NavBar from "../components/navbar";
+import { useState } from "react";
 import shared from "../styles/Shared.module.css";
-import Footer from "../components/footer";
-import Header from "../components/header";
 import styles from "../styles/Projects.module.css";
 
 import projects from "../data/projects.json";
 
-import { useState, useEffect } from "react";
 import Project from "../components/project";
 
 const filters = [
@@ -67,11 +64,23 @@ export default function Projects() {
     setProjects(newProjectList);
   }
 
+  function handleFilterClick(filter) {
+    if (!selectedFilters.includes(filter)) {
+      var newFilters = selectedFilters;
+      newFilters.push(filter);
+      setSelectedFilters(newFilters);
+    } else {
+      // else, removes it from the array by splicing
+      const index = selectedFilters.indexOf(filter);
+      var newFilters = selectedFilters;
+      newFilters.splice(index, 1);
+      setSelectedFilters(newFilters);
+    }
+    filterProjects();
+  }
+
   return (
     <div className={shared.page}>
-      <Header title={"Projects"} />
-      <NavBar currPage="projects" />
-
       <p className={shared.firstText}>
         A collection of personal and passion projects
       </p>
@@ -90,22 +99,7 @@ export default function Projects() {
                   styles.clickable,
                   clicked ? styles.clicked : "",
                 ].join(" ")}
-                onClick={() => {
-                  // Checks if the filter is already in the list
-                  // if not, adds it to the state array
-                  if (!selectedFilters.includes(filter)) {
-                    var newFilters = selectedFilters;
-                    newFilters.push(filter);
-                    setSelectedFilters(newFilters);
-                  } else {
-                    // else, removes it from the array by splicing
-                    const index = selectedFilters.indexOf(filter);
-                    var newFilters = selectedFilters;
-                    newFilters.splice(index, 1);
-                    setSelectedFilters(newFilters);
-                  }
-                  filterProjects();
-                }}
+                onClick={() => handleFilterClick(filter)}
               >
                 {filter}
               </p>
@@ -137,8 +131,6 @@ export default function Projects() {
           })}
         </div>
       </div>
-
-      <Footer />
     </div>
   );
 }

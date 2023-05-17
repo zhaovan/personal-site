@@ -54,7 +54,7 @@ export default function Footer() {
         })}
       </ul>
 
-      <div className={styles.footerText}> Made with ☕ by Ivan Zhao</div>
+      <div className={styles.footerText}>Made with ☕ by Ivan Zhao</div>
     </footer>
   );
 }

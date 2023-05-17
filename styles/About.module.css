@@ -4,46 +4,32 @@
   margin-top: 1rem;
   border-radius: 20px;
   box-shadow: 0.5rem 1rem 10px;
-  /* z-index: 99; */
 }
 
 .photoWrapper {
   position: relative;
 }
 
-.circle {
+/* .circle {
   height: 100px;
   width: 100px;
   background-color: gold;
-  /* border-color: gold;
-  border-width: 5px;
-  border-style: dotted; */
+
   left: -0.5rem;
   border-radius: 50%;
   position: absolute;
   z-index: 5;
+} */
+
+.info {
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
-.triangle {
-  width: 0;
-  height: 0;
-  position: absolute;
-  z-index: 5;
-  border-left: 50px solid transparent;
-  transform: rotate(-30deg);
-  top: 2rem;
-  left: 5rem;
-  border-right: 50px solid transparent;
-
-  border-bottom: 50px solid #dae5ff;
-}
-
-.linkItem {
-  margin: 0.25rem 0rem;
-}
-
-.questions {
-  font-style: italic;
+.date {
+  width: 154px;
 }
 
 .text {
@@ -79,7 +65,16 @@
   .circle {
     left: 125px;
   }
-  .triangle {
-    left: 200px;
+
+  .date {
+    width: 90px;
+  }
+}
+
+@media (max-width: 765px) {
+  .info {
+    flex-direction: column;
+    align-items: start;
+    gap: 2px;
   }
 }

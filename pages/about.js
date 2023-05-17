@@ -1,113 +1,93 @@
-import NavBar from "../components/navbar";
 import styles from "../styles/About.module.css";
 import shared from "../styles/Shared.module.css";
-import Header from "../components/header";
-import Footer from "../components/footer";
 
-const links = [
-  {
-    text: "Capitalism, Poverty and Class in Ratatouille",
-    link: "https://www.youtube.com/watch?v=EC2gRvG1RlI",
-  },
-  {
-    link: "https://www.youtube.com/watch?v=4UUJQH7GLms",
-    text: "Why How to Train Your Dragon has the best opening ever",
-  },
-  {
-    link: "https://placesjournal.org/article/post-it-note-city/",
-    text: "The Post-It Note City",
-  },
-];
+import Image from "next/image";
+import Bio from "../data/bio.json";
+
+import Link from "next/link";
 
 export default function About() {
   return (
     <div className={shared.page}>
-      <Header title={"About"} />
-      <NavBar currPage="about" />
-      <div>
-        <div className={[shared.container, styles.newContainer].join(" ")}>
-          <div className={styles.photoWrapper} data-aos="fade-right">
-            <div className={styles.circle} />
-            <img
-              src={"/media/about.jpeg"}
-              className={styles.photo}
-              alt="This is a terrible photo of me but with cute cats"
-            />
-          </div>
+      <div className={[shared.container, styles.newContainer].join(" ")}>
+        <div className={styles.photoWrapper} data-aos="fade-right">
+          <div className={styles.circle} />
+          <Image
+            src={"/media/about.jpeg"}
+            className={styles.photo}
+            alt="This is a terrible photo of me but with cute cats"
+            width={400}
+            height={100}
+          />
+        </div>
 
-          <div style={{ marginLeft: "4%" }}>
-            <div data-aos="fade-left" data-duration="1000">
-              <p className={styles.text}>
-                I'm a dog lover from Seattle, WA, trying to fill this world with{" "}
-                <b>
-                  baked goods, good vibes, strong drinks, meaningful words, and
-                  playful software.
-                </b>
-              </p>
-              <p className={styles.text}>
-                Honestly, I'm still trying to figure out what I want to do in
-                life but some areas that thrill me are{" "}
-                <a href="https://numinous.productions/ttft" target="_blank">
-                  tools for thought
-                </a>
-                ,{" "}
-                <a href="https://culdesac.com" target="_blank">
-                  well designed cities
-                </a>
-                , and{" "}
-                <a href="http://www.celestegame.com/" target="_blank">
-                  transformative games.
-                </a>{" "}
-              </p>
-              <p className={styles.text}>
-                I fundamentally believe that technology, used judiciously, can
-                build a better future. I'm in my era of hobby and exploration
-                and am currently obsessed with film photography, short stories
-                and poetry, and mixology. Catch me hanging out at random coffee
-                shops, hammocking at the top of a mountain, or napping at home
-                with my dog.
-              </p>
-              <p className={styles.text}>
-                Some of the main questions that drive the work that I'm most
-                interested in are:
-              </p>
-              <ul className={styles.text}>
-                <li>
-                  In what ways can we use technology (such as GPT-3) to push the
-                  limits of creativity?
-                </li>
-                <li>
-                  How can technology aid collective knowledge, collaboration,
-                  and communication?
-                </li>
-                <li>
-                  In what ways can we push formal boundaries of print, the
-                  internet, and video games to develop interactive experiences?
-                </li>
-                <li>
-                  How do the stories and lived experiences of families,
-                  represented in media and culture, change our notion of self?
-                </li>
-              </ul>
-              <p className={styles.text}>
-                <b>Some essays and videos that I love:</b>
-                <ul>
-                  {links.map((currLink, i) => {
+        <div style={{ marginLeft: "4%" }}>
+          <div data-aos="fade-left" data-duration="1000">
+            <p className={styles.text}>
+              I'm a dog lover from Seattle, WA, trying to fill this world with{" "}
+              <b>
+                baked goods, good vibes, fun drinks, meaningful words, and
+                playful software.
+              </b>
+            </p>
+            <p className={styles.text}>
+              My creative and engineering practice revoles around tools,
+              computational systems, and play. Specifically, I'm interested in
+              the ways that computers and digital systems bring new affordances
+              that allow us to push the boundaries of current human capability.
+            </p>
+            <p className={styles.text}>
+              I fundamentally believe that to be human is to be creative, and
+              that the key to understanding certain structures in the world is
+              to have multidsciplinary interests. This idea manifests itself by
+              being enrolled at{" "}
+              <Link
+                href="https://letterformarchive.org/type-west-online/"
+                target="_blank"
+              >
+                Type West
+              </Link>
+              , a postgraduate type design program, and learning{" "}
+              <Link
+                href="https://withfriends.co/event/16016786/meet_the_participants_of_spring_2023"
+                target="_blank"
+              >
+                Cellular Automata at SPFC.
+              </Link>
+            </p>
+            <p className={styles.text}>
+              I grew up in Philidelphia and Seattle, went to school in
+              Providence, and now currently reside in San Francisco. If you
+              happen to be in the area, feel free to reach out to me! I love to
+              sit in coffee shops and talk about pastries ad naseum.
+            </p>
+          </div>
+          <div>
+            {Object.keys(Bio).map((bioKey, idx) => {
+              return (
+                <div data-aos="fade-left" data-duration="1000" key={idx}>
+                  <h2>{bioKey}</h2>
+                  {Bio[bioKey].map((item, secondIdx) => {
                     return (
-                      <li className={styles.linkItem} key={i}>
-                        <a href={currLink.link} target="_blank">
-                          {currLink.text}
-                        </a>
-                      </li>
+                      <p className={styles.info} key={secondIdx}>
+                        <span className={styles.date}>{item.date}</span>
+                        <Link
+                          href={item.website || ""}
+                          target="_blank"
+                          className={styles.site}
+                        >
+                          <b>{item.title}</b>
+                        </Link>
+                        <i>{item.organization}</i>
+                      </p>
                     );
                   })}
-                </ul>
-              </p>
-            </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

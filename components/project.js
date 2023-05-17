@@ -1,6 +1,8 @@
 import React, { useEffect, useState, useRef } from "react";
 import styles from "../styles/Projects.module.css";
 import Image from "next/image";
+import Link from "next/link";
+
 import { useContainerDimensions } from "../hooks/useResize";
 
 function setProjectStyle(tag) {
@@ -27,21 +29,13 @@ export default function Project({ project, gradient, colors }) {
 
   return (
     <div className={styles.project} data-aos="fade-up" ref={componentRef}>
-      {colors.length > 1 ? (
-        <div
-          className={styles.projectHeaderGraphic}
-          style={{
-            background: gradient,
-          }}
-        />
-      ) : (
-        <div
-          className={styles.projectHeaderGraphic}
-          style={{
-            backgroundColor: gradient,
-          }}
-        />
-      )}
+      <div
+        className={styles.projectHeaderGraphic}
+        style={{
+          background: gradient,
+        }}
+      />
+
       {project.thumbnail && (
         <div className={styles.imageWrapper}>
           <Image src={project.thumbnail} height={width * 0.75} width={width} />
@@ -50,17 +44,16 @@ export default function Project({ project, gradient, colors }) {
 
       <div className={styles.projectText}>
         <div className={styles.name}>
-          <a
-            href={project.website}
+          <Link
+            href={`/projects/${project.slug}`}
             className={styles.projectLink}
-            target="_blank"
           >
             {project.name}
-          </a>
+          </Link>
         </div>
-        <div>
-          <p className={styles.description}>{project.description}</p>
-        </div>
+
+        <p className={styles.description}>{project.description}</p>
+
         <div>
           {project.tags.map((tag) => {
             const currStyle = setProjectStyle(tag);

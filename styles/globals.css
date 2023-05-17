@@ -20,6 +20,12 @@
   font-weight: 600;
 }
 
+@font-face {
+  font-family: "Mod";
+  src: url("/fonts/Mod-Regular.otf");
+  font-weight: 400;
+}
+
 /* In your css file where you want to use the font */
 
 html,

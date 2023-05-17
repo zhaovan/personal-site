@@ -1,7 +1,7 @@
 import styles from "../styles/Navbar.module.css";
 import Link from "next/link";
 
-const navLocation = ["projects", "writing", "about"];
+const navLocation = ["projects", "about"];
 
 export default function NavBar({ currPage, blogPost }) {
   const active = { opacity: 1 };
