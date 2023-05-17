@@ -33,7 +33,7 @@
     "description": "generate poems using markov models",
     "slug": "blackout-poetry",
     "thumbnail": "/thumbnails/poetry.gif",
-    "tags": ["development"]
+    "tags": ["development", "featured"]
   },
   {
     "name": "Kernel Magazine",
