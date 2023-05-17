@@ -11,13 +11,12 @@ export default function About() {
     <div className={shared.page}>
       <div className={[shared.container, styles.newContainer].join(" ")}>
         <div className={styles.photoWrapper} data-aos="fade-right">
-          <div className={styles.circle} />
           <Image
-            src={"/media/about.jpeg"}
+            src={"/media/about.jpg"}
             className={styles.photo}
             alt="This is a terrible photo of me but with cute cats"
-            width={400}
-            height={100}
+            width={1000}
+            height={400}
           />
         </div>
 

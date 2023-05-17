@@ -1,6 +1,7 @@
 .photo {
   width: 100%;
   height: auto;
+  object-fit: cover;
   margin-top: 1rem;
   border-radius: 20px;
   box-shadow: 0.5rem 1rem 10px;
@@ -8,18 +9,8 @@
 
 .photoWrapper {
   position: relative;
+  flex-grow: 1;
 }
-
-/* .circle {
-  height: 100px;
-  width: 100px;
-  background-color: gold;
-
-  left: -0.5rem;
-  border-radius: 50%;
-  position: absolute;
-  z-index: 5;
-} */
 
 .info {
   margin: 0.5rem 0;
@@ -42,7 +33,7 @@
   }
   .photo {
     margin-top: 1%;
-    width: 50%;
+    /* width: 50%; */
     margin-bottom: 1rem;
   }
   .photoWrapper {
