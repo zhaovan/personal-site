@@ -29,7 +29,7 @@ The shop is hosted on printful, an ondemand printing platform that handles shipp
 </div>
 
 <div class="item">
-<img src="/projects/reboot-merch/sweater.jpg" >
+<img src="/projects/reboot-merch/sweater1.jpg" >
 </div>
 
 <div class="item">
