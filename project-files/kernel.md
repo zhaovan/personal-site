@@ -46,8 +46,8 @@ I had the opportunity to serve as a web and print designer and web developer for
 ### Colors and Type
 
 <div style="display:flex;">
-<img src="/projects/kernel/typography.png" width="40%">
-<img src="/projects/kernel/colors.png" width="50%" style="align-self:baseline">
+<img src="/projects/kernel/type.png" width="40%">
+<img src="/projects/kernel/color.png" width="50%" style="align-self:baseline">
 </div>
 
 ## Print
