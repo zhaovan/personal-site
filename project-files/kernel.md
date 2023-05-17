@@ -1,7 +1,7 @@
 # Kernel Magazine
 
 <div class="header-image"> 
-<img src="/thumbnails/kernelMagcover.png">
+<img src="/thumbnails/KernelMagCover.png">
 </div>
 
 Kernel Magazine is a literary magazine under Reboot focused on tech, society, and power. Run every year, it's one of Reboot's biggest projects along with the student fellowship.
