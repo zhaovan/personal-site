@@ -7,6 +7,13 @@
     "tags": ["development"]
   },
   {
+    "name": "EQTY Labs Design System",
+    "description": "components for data governance on chain",
+    "slug": "eqty-design-system",
+    "thumbnail": "/thumbnails/eqty-ds.png",
+    "tags": ["ui/ux", "development"]
+  },
+  {
     "name": "A world of space",
     "description": "browser based interactive fiction",
     "slug": "a-world-of-space",
