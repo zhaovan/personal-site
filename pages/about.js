@@ -17,6 +17,7 @@ export default function About() {
             alt="This is a terrible photo of me but with cute cats"
             width={1000}
             height={400}
+            priority={true}
           />
         </div>
 
