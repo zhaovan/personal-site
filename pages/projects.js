@@ -13,7 +13,6 @@ const filters = [
   "ui/ux",
   "development",
   "diversity",
-  "research",
 ];
 
 const tagToColors = {
@@ -21,7 +20,6 @@ const tagToColors = {
   "3d modeling": "#9ad1d4",
   "ui/ux": "#BADEFC",
   diversity: "#ffd700",
-  research: "#DDA0DD",
   development: "#eaeaea",
   "graphic design": "#F08080",
 };
