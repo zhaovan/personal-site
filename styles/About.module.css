@@ -10,6 +10,7 @@
 .photoWrapper {
   position: relative;
   flex-grow: 1;
+  min-width: 40%;
 }
 
 .info {
