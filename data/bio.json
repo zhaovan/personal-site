@@ -1,6 +1,12 @@
 {
   "experience": [
     {
+      "organization": "Galileo AI",
+      "title": "Design Engineer",
+      "date": "08-2022 - present",
+      "website": "https://www.usegalileo.ai/"
+    },
+    {
       "organization": "Freelance",
       "title": "Design Engineer",
       "date": "08-2022 - present",
@@ -61,7 +67,7 @@
       "website": "https://letterformarchive.org/"
     },
     {
-      "date": "06-203",
+      "date": "06-2023",
       "title": "Soft Defiance",
       "organization": "Harvey Milk Art Center",
       "website": "https://www.harveymilkphotocenter.org/exhibits/art-pride-2023-soft-defiance/"
@@ -91,7 +97,8 @@
     {
       "organization": "The New Revier",
       "title": "YOU JUST GOT LAID OFF",
-      "date": "upcoming"
+      "date": "05-2023",
+      "website": "https://thenewriver.us/youjustgotlaidoff/"
     },
     {
       "organization": "Taper",
