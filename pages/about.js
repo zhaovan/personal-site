@@ -25,7 +25,7 @@ export default function About() {
           />
         </div>
 
-        <div data-aos="fade-left" data-aos-duration="750">
+        <div data-aos="fade-left" data-aos-duration="500">
           <p className={styles.text}>
             I'm a dog lover from Seattle, WA, trying to fill this world with{" "}
             <b>
@@ -67,7 +67,7 @@ export default function About() {
         </div>
         {Object.keys(Bio).map((bioKey, idx) => {
           return (
-            <div data-aos="fade-left" data-duration="1000" key={idx}>
+            <div data-aos="fade-left" data-aos-duration="500" key={idx}>
               <h2>{bioKey}</h2>
               {Bio[bioKey].map((item, secondIdx) => {
                 return (
