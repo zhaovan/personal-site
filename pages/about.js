@@ -34,7 +34,7 @@ export default function About() {
             </b>
           </p>
           <p className={styles.text}>
-            My creative and engineering practice revoles around tools,
+            My creative and engineering practice revolves around tools,
             computational systems, and play. Specifically, I'm interested in the
             ways that computers and digital systems bring new affordances that
             allow us to push the boundaries of current human capability.
@@ -59,10 +59,10 @@ export default function About() {
             </Link>
           </p>
           <p className={styles.text}>
-            I grew up in Philidelphia and Seattle, went to school in Providence,
+            I grew up in Philadelphia and Seattle, went to school in Providence,
             and now currently reside in San Francisco. If you happen to be in
             the area, feel free to reach out to me! I love to sit in coffee
-            shops and talk about pastries ad naseum.
+            shops and talk about pastries ad nauseum.
           </p>
         </div>
         {Object.keys(Bio).map((bioKey, idx) => {
