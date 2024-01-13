@@ -1,5 +1,12 @@
 [
   {
+    "name": "Convo",
+    "description": "a playful handwritten typeface",
+    "slug": "convo",
+    "thumbnail": "/thumbnails/convo.png",
+    "tags": ["graphic design", "development"]
+  },
+  {
     "name": "Telescopic Text",
     "description": "adding detail to your writing",
     "slug": "telescopic",

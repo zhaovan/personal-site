@@ -36,6 +36,7 @@
   margin: 2.5%;
   justify-content: center;
   box-shadow: 5px 5px;
+  transition: transform 150ms ease-in-out;
 }
 
 .projectText {
@@ -46,15 +47,8 @@
   overflow: hidden;
 }
 
-/* for large screens only where its double faced */
-@media (min-width: 768px) {
-  .project:hover {
-    animation-name: cardHover;
-    animation-duration: 200ms;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  }
+.project:hover {
+  transform: translate(-16px, -16px) !important;
 }
 
 .clickable {
