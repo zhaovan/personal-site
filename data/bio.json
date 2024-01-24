@@ -9,19 +9,19 @@
     {
       "organization": "Freelance",
       "title": "Design Engineer",
-      "date": "08-2022 - present",
-      "website": "",
-      "companies": ["Sunflower Capital", "Playbook", "Hyper Online"]
+      "date": "08-2022 - 05-2022",
+      "website": ""
     },
     {
       "organization": "Reboot",
       "title": "Designer",
-      "date": "08-2021 - present",
+      "date": "08-2021 - 09-2023",
       "website": "https://reboothq.substack.com/"
     },
     {
       "organization": "EQTY Labs",
       "title": "Design Engineer",
+      "website": "https://www.eqtylab.io/",
       "date": "01-2023 - 05-2023"
     },
 
@@ -36,12 +36,20 @@
       "title": "Web Engineer",
       "website": "https://askiggy.com/",
       "date": "01-2021 - 06-2021"
+    }
+  ],
+  "fellowships": [
+    {
+      "date": "06-2022",
+      "title": "Engineering Fellow",
+      "organization": "Kleiner Perkins",
+      "website": "https://fellows.kleinerperkins.com/"
     },
     {
-      "organization": "Intus Care",
-      "title": "Software Engineer",
-      "website": "https://www.intuscare.com/",
-      "date": "10-2019 - 05-2020"
+      "date": "06-2021",
+      "title": "Engineering Fellow",
+      "organization": "8VC",
+      "website": "https://www.8vc.com/fellowships"
     }
   ],
 
@@ -160,7 +168,7 @@
   ],
   "awards": [
     {
-      "date": "04-2023",
+      "date": "08-2023",
       "title": "Albertina Tholakele Dube Scholarship",
       "organization": "Mendocino Conference",
       "website": "https://mcwc.org/blog/2023/4/21/2023-scholarship-winners"

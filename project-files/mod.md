@@ -4,7 +4,7 @@
     <img src="/thumbnails/mod.png" >
 </div>
 
-<p class="mod">This is mod</p>
+<h1 class="mod">This is mod</h1>
 
 Mod (named after Modular), is a typeface made during Type West 2023 as an exercise in building typefaces from various components. In this specific exercises, we were given a semi circle, a quarter circle, a square, and a triangle. While there were many different ways to approach this, I was interested in the geometric nature of the various shapes and wanted to make a typeface that respected the original form.
 
@@ -20,5 +20,7 @@ If you want to use it, feel free to download it and credit me!
 
 ## Color Experiments
 
+<div style="display:flex; flex-direction:column; gap:1rem">
 <img src="/projects/mod/color1.png" width="100%">
 <img src="/projects/mod/color2.png" width="100%">
+</div>

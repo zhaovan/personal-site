@@ -21,21 +21,15 @@ We knew going into this project that we wanted to build something that brought p
 We began first by coming up with numerous concepts as a group.
 
 <div class="image-gallery">
-<div class="item">
-<img src="https://miro.medium.com/max/2400/1*rbFul9uT8k_sXYjPbAH_bw.jpeg"  /> 
-</div>
 
-<div class="item">
+<img src="https://miro.medium.com/max/2400/1*rbFul9uT8k_sXYjPbAH_bw.jpeg"  />
+
 <img src="https://miro.medium.com/max/1900/1*jgm0NIn77vCVL2F_S-dusg.png">
-</div>
 
-<div class="item">
 <img src="https://miro.medium.com/max/2098/1*3tirYYn8yjgKoAX3_K6kgA.jpeg" >
-</div>
 
-<div class="item">
 <img src="https://miro.medium.com/max/2094/1*1sxdxn19mBFGYV2F8JJ62Q.jpeg" >
-</div>
+
 </div>
 
 Although we struggled initially with so many opposing directions to choose from, we eventually decided to focus on the concept of a shared coworking table, with hologram capabilities integrated into the table itself. The initial idea was to build the optimal furniture for people who needed to collaborate with one another and share imagery easily. This would address current issues with screen sharing, screen positioning, and technical difficulties with screen casting.
@@ -45,18 +39,14 @@ Although we struggled initially with so many opposing directions to choose from,
 With an initial concept chosen, we began physical model making to make more specific form decisions. We also used 3D modeling as a way to prototype more complex forms, and explore the joinery of the final model.
 
 <div class="image-gallery">
-<div class="item">
-<img src="https://miro.medium.com/max/888/1*VavLpkSKLwNDJgX89dLFTw.png" width="30%" />
-</div>
-<div class="item">
-<img src="https://miro.medium.com/max/1140/1*mhf5ABIynAqbrbc3GWQMTA.png" width="30%" />
-</div>
-<div class="item">
-<img src="https://miro.medium.com/max/1020/1*r9Pq7xP6Rvl9SYxxErBNRg.png" width="30%" />
-</div>
-<div class="item">
+
+<img src="https://miro.medium.com/max/888/1*VavLpkSKLwNDJgX89dLFTw.png" />
+
+<img src="https://miro.medium.com/max/1140/1*mhf5ABIynAqbrbc3GWQMTA.png" />
+
+<img src="https://miro.medium.com/max/1020/1*r9Pq7xP6Rvl9SYxxErBNRg.png" />
+
 <img src="https://miro.medium.com/max/1020/1*7PYSpZ9P3qEiTe-xb782ZQ.png" />
-</div>
 
 </div>
 
@@ -65,18 +55,14 @@ With an initial concept chosen, we began physical model making to make more spec
 For our final design of the hologram table, we used the idea of the Pepper’s ghost cone to create a hologram using projections on a TV that acts as a monitor. The circular requirements for projecting into the cone lead to a circular design of the table itself, which we built using a CNC mill and a lot of malleting. To project images onto the cone, we wrote a python script that converts rectangular images to polar images, and converts normally rectangular objects into circles that can be seen from multiple angles.
 
 <div class="image-gallery">
-<div class="item">
+
 <img src="https://miro.medium.com/max/680/1*gbKCq7oLgaC4KM2AcT8KGg.png" />
-</div>
-<div class="item">
+
 <img src="https://miro.medium.com/max/1136/1*ZPPXtorNHZZZRnGJHOCdnQ.png" />
-</div>
-<div class="item">
+
 <img src="https://miro.medium.com/max/1068/1*xwEvUFRz1gXjYhb68a2y5w.png" width="45%" />
-</div>
-<div class="item">
+
 <img src="https://miro.medium.com/max/1424/1*g-iubPUmBWzg2M0vFXryEg.png" width="45%" />
-</div>
 
 </div>
 
@@ -95,17 +81,13 @@ For our next steps, we would love to further explore this \*vibes\* table, perha
 ## Other Cool Images:
 
 <div class="image-gallery">
-<div class="item">
-<img src="https://miro.medium.com/max/2440/1*GiCTht2T9J-JpxtT6XqiXw.png" />
-</div>
-<div class="item">
-<img src="https://miro.medium.com/max/2412/1*2AeU60pdxNPeXBR2f4_--w.png" />
-</div>
-<div class="item">
-<img src="https://miro.medium.com/max/2448/1*yFOiXf_1xP7J2bnwaSn-Ng.png" />
-</div>
-<div class="item">
-<img src="https://miro.medium.com/max/2464/1*1pNy1M3MCAf42frutcyb9Q.png" />
 
+<img src="https://miro.medium.com/max/2440/1*GiCTht2T9J-JpxtT6XqiXw.png" />
+
+<img src="https://miro.medium.com/max/2412/1*2AeU60pdxNPeXBR2f4_--w.png" />
+
+<img src="https://miro.medium.com/max/2448/1*yFOiXf_1xP7J2bnwaSn-Ng.png" />
+
+<img src="https://miro.medium.com/max/2464/1*1pNy1M3MCAf42frutcyb9Q.png" />
 </div>
 </div>

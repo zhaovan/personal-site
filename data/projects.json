@@ -7,6 +7,13 @@
     "tags": ["graphic design", "development"]
   },
   {
+    "name": "Byrne",
+    "description": "workhorse serif inspired by math-y visuals",
+    "slug": "byrne",
+    "thumbnail": "/thumbnails/byrne.png",
+    "tags": ["graphic design"]
+  },
+  {
     "name": "Telescopic Text",
     "description": "adding detail to your writing",
     "slug": "telescopic",

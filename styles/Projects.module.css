@@ -30,13 +30,14 @@
 }
 
 .project {
-  width: 25%;
+  width: 25vw;
   border: solid;
   border-radius: 10px;
   margin: 2.5%;
   justify-content: center;
   box-shadow: 5px 5px;
-  transition: transform 150ms ease-in-out;
+  transition: transform 75ms ease-in;
+  background-color: #fff5ee;
 }
 
 .projectText {
@@ -74,7 +75,7 @@
 }
 
 .resumeTag {
-  font-family: "Inconsolata", "Consolas", monospace;
+  font-family: Sono, monospace;
   font-size: 0.9rem;
   padding: 1px 4px;
   display: inline-block;

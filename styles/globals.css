@@ -1,11 +1,6 @@
 @font-face {
-  font-family: "Ubuntu Mono";
-  src: url("/fonts/Ubuntu_Mono/UbuntuMono-Italic.ttf");
-}
-
-@font-face {
-  font-family: "iA Quattro";
-  src: url("/fonts/iAWriterQuattroS-Regular.ttf");
+  font-family: Sono;
+  src: url("/fonts/Sono.ttf");
 }
 
 @font-face {
@@ -26,12 +21,19 @@
   font-weight: 400;
 }
 
+@font-face {
+  font-family: Brittany;
+  src: url("/fonts/Brittany.ttf");
+}
+
 /* In your css file where you want to use the font */
 
 html,
 body {
   padding: 0;
   margin: 0;
+  background-color: #f5f5dd;
+  color: #191919;
   font-family: Montserrat, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
     Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
@@ -48,10 +50,6 @@ p > a {
   padding: 0.05rem 0.1rem;
 }
 
-h3 {
-  margin: 0;
-}
-
 p > a:hover {
   background-color: #94d8ef;
 }
@@ -64,4 +62,39 @@ p {
 
 .header-image > img {
   width: 100%;
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 2rem;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.image-gallery > img {
+  width: 45%;
+}
+
+.image-column {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.image-column > img {
+  width: 40%;
+}
+
+.mod {
+  font-family: Mod;
+  font-size: 64px;
+  text-align: center;
+}
+
+.links {
+  display: flex;
+  gap: 1rem;
 }

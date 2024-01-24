@@ -18,8 +18,8 @@ export default function About() {
           <Image
             src={"/media/about.jpg"}
             className={styles.photo}
-            alt="This is a terrible photo of me but with cute cats"
-            width={800}
+            alt="Photo of me at banff"
+            width={600}
             height={400}
             priority={true}
           />

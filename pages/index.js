@@ -12,7 +12,9 @@ export default function Home() {
           data-aos-delay="50"
           className={styles.textBoxWrapper}
         >
-          <p className={styles.title}>👋 Hey there, I'm Ivan!</p>
+          <p className={styles.title}>
+            Hey there,<span style={{ fontFamily: "Brittany" }}> I'm Ivan!</span>
+          </p>
           <div className={styles.textBox}>
             <p>
               Welcome to my tiny corner of the internet where I'm probably

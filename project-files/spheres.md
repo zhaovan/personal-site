@@ -1,15 +1,16 @@
 # Amazon Spheres Model
 
-<img src="/projects/spheres/top-view.png">
+<div class="header-image">
+    <img src="/thumbnails/amazon-spheres.png"/ >
+</div>
 
 <div class="image-gallery">
-<div class="item">
+<img src="/projects/spheres/top-view.png">
 <img src="/projects/spheres/front-view.png">
-</div>
-<div class="item">
+
 <img src="/projects/spheres/back-view.png">
 
-</div></div>
+</div>
 
 Made in 2020 for an intro to architecture project in Blender. Lost the files when my computer got stolen but hey, they look good!
 

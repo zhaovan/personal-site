@@ -16,39 +16,18 @@ The shop is hosted on printful, an ondemand printing platform that handles shipp
 
 <div class="image-gallery">
 
-<div class="item">
 <img src="/projects/reboot-merch/hat.jpeg" width="100%" >
-</div>
 
-<div class="item">
 <img src="/projects/reboot-merch/bag.jpeg" width="100%" >
-</div>
 
-<div class="item">
 <img src="/projects/reboot-merch/person+hat.jpg" width="100%" >
-</div>
 
-<div class="item">
 <img src="/projects/reboot-merch/sweater1.jpg" width="100%" >
-</div>
 
-<div class="item">
-
-<img src="/projects/reboot-merch/stickers1.png" width="100%" >
-
-</div>
-<div class="item">
-<img src="/projects/reboot-merch/stickers2.png" width="100%" >
-</div>
-
-<div class="item">
+<img src="/projects/reboot-merch/poster2.png" width="100%" >
 
 <img src="/projects/reboot-merch/poster1.png" width="100%" >
 
-</div>
-
-<div class="item">
-<img src="/projects/reboot-merch/poster2.png" width="100%" >
-</div>
+<img src="/projects/reboot-merch/stickers2.png" width="100%" >
 
 </div>
