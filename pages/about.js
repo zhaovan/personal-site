@@ -16,11 +16,11 @@ export default function About() {
           data-aos-duration="500"
         >
           <Image
-            src={"/media/about.jpg"}
+            src={"/media/about.png"}
             className={styles.photo}
             alt="Photo of me at banff"
-            width={600}
-            height={400}
+            width={800}
+            height={600}
             priority={true}
           />
         </div>

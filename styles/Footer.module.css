@@ -12,13 +12,11 @@
 }
 
 .noHighlight {
-  background-color: white;
   transition: opacity 0.3s;
 }
 
 .noHighlight:hover {
-  background-color: white;
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 .horizontal:hover {
