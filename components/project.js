@@ -55,10 +55,13 @@ export default function Project({ project, gradient, colors }) {
         <p className={styles.description}>{project.description}</p>
 
         <div>
-          {project.tags.map((tag) => {
+          {project.tags.map((tag, idx) => {
             const currStyle = setProjectStyle(tag);
             return (
-              <span className={[currStyle, styles.resumeTag].join(" ")}>
+              <span
+                className={[currStyle, styles.resumeTag].join(" ")}
+                key={idx}
+              >
                 {tag}
               </span>
             );

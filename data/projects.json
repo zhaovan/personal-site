@@ -4,141 +4,168 @@
     "description": "a playful handwritten typeface",
     "slug": "convo",
     "thumbnail": "/thumbnails/convo.png",
-    "tags": ["graphic design", "development"]
-  },
-  {
-    "name": "Byrne",
-    "description": "workhorse serif inspired by math-y visuals",
-    "slug": "byrne",
-    "thumbnail": "/thumbnails/byrne.png",
-    "tags": ["graphic design"]
-  },
-  {
-    "name": "Telescopic Text",
-    "description": "adding detail to your writing",
-    "slug": "telescopic",
-    "thumbnail": "/thumbnails/telescopic.gif",
-    "tags": ["development"]
+    "tags": ["graphic design", "development"],
+    "year": 2024
   },
   {
     "name": "EQTY Labs Design System",
     "description": "components for data governance on chain",
     "slug": "eqty-design-system",
     "thumbnail": "/thumbnails/eqty-ds.png",
-    "tags": ["ui/ux", "development"]
-  },
-  {
-    "name": "A world of space",
-    "description": "browser based interactive fiction",
-    "slug": "a-world-of-space",
-    "thumbnail": "/thumbnails/aworldofspace.gif",
-    "tags": ["development"]
-  },
-  {
-    "name": "Mod",
-    "description": "everyone's favorite modular typeface",
-    "slug": "mod",
-    "thumbnail": "/thumbnails/mod.png",
-    "tags": ["graphic design"]
+    "tags": ["ui/ux", "development"],
+    "year": 2023
   },
   {
     "name": "Reboot Merch",
     "description": "Get your swag on!",
     "slug": "reboot-merch",
     "thumbnail": "/thumbnails/reboot-merch.png",
-    "tags": ["graphic design"]
-  },
-
-  {
-    "name": "Blackout Poetry Generator",
-    "description": "generate poems using markov models",
-    "slug": "blackout-poetry",
-    "thumbnail": "/thumbnails/poetry.gif",
-    "tags": ["development", "featured"]
+    "tags": ["graphic design"],
+    "year": 2022
   },
   {
     "name": "Kernel Magazine",
     "description": "literary magazine on tech, society, and power",
     "slug": "kernel",
     "thumbnail": "/thumbnails/KernelMagCover.png",
-    "tags": ["ui/ux", "development", "graphic design", "featured"]
-  },
-  {
-    "name": "Hangouts",
-    "description": "facilitating hangouts in discord",
-    "slug": "hangouts",
-    "thumbnail": "/thumbnails/hangouts.png",
-    "tags": ["development"]
-  },
-  {
-    "name": "Holotable",
-    "description": "speculative design on tech and furniture",
-    "slug": "holotable",
-    "thumbnail": "/thumbnails/holotable.gif",
-    "tags": ["3d modeling", "development", "featured"]
-  },
-
-  {
-    "name": "Info Design Infographics",
-    "description": "infographics on various topics",
-    "slug": "infographics",
-    "thumbnail": "/thumbnails/infoviz.png",
-    "tags": ["graphic design", "featured"]
-  },
-  {
-    "name": "Watcher",
-    "description": "memex of my brain",
-    "slug": "watcher",
-    "thumbnail": "/thumbnails/watcher.png",
-    "tags": ["development", "ui/ux", "featured"]
+    "tags": ["ui/ux", "development", "graphic design", "featured"],
+    "year": 2023
   },
   {
     "name": "Prism Investor Track",
     "description": "speaker series and community for queer students in venture",
     "slug": "prism",
     "thumbnail": "/thumbnails/prism.png",
-    "tags": ["diversity", "development", "featured"]
+    "tags": ["diversity", "development", "featured"],
+    "year": 2022
+  },
+  {
+    "name": "Byrne",
+    "description": "workhorse serif inspired by math-y visuals",
+    "slug": "byrne",
+    "thumbnail": "/thumbnails/byrne.png",
+    "tags": ["graphic design"],
+    "year": 2023
+  },
+  {
+    "name": "Telescopic Text",
+    "description": "adding detail to your writing",
+    "slug": "telescopic",
+    "thumbnail": "/thumbnails/telescopic.gif",
+    "tags": ["development"],
+    "year": 2023
+  },
+
+  {
+    "name": "A world of space",
+    "description": "browser based interactive fiction",
+    "slug": "a-world-of-space",
+    "thumbnail": "/thumbnails/aworldofspace.gif",
+    "tags": ["development"],
+    "year": 2022
+  },
+  {
+    "name": "Mod",
+    "description": "everyone's favorite modular typeface",
+    "slug": "mod",
+    "thumbnail": "/thumbnails/mod.png",
+    "tags": ["graphic design"],
+    "year": 2023
+  },
+  {
+    "name": "Blackout Poetry Generator",
+    "description": "generate poems using markov models",
+    "slug": "blackout-poetry",
+    "thumbnail": "/thumbnails/poetry.gif",
+    "tags": ["development", "featured"],
+    "year": 2023
+  },
+  {
+    "name": "Hangouts",
+    "description": "facilitating hangouts in discord",
+    "slug": "hangouts",
+    "thumbnail": "/thumbnails/hangouts.png",
+    "tags": ["development"],
+    "year": 2022
+  },
+  {
+    "name": "Holotable",
+    "description": "speculative design on tech and furniture",
+    "slug": "holotable",
+    "thumbnail": "/thumbnails/holotable.gif",
+    "tags": ["3d modeling", "development", "featured"],
+    "year": 2022
+  },
+  {
+    "name": "Info Design Infographics",
+    "description": "infographics on various topics",
+    "slug": "infographics",
+    "thumbnail": "/thumbnails/infoviz.png",
+    "tags": ["graphic design", "featured"],
+    "year": 2022
+  },
+  {
+    "name": "Watcher",
+    "description": "memex of my brain",
+    "slug": "watcher",
+    "thumbnail": "/thumbnails/watcher.png",
+    "tags": ["development", "ui/ux", "featured"],
+    "year": 2021
+  },
+  {
+    "name": "Prism Investor Track",
+    "description": "speaker series and community for queer students in venture",
+    "slug": "prism",
+    "thumbnail": "/thumbnails/prism.png",
+    "tags": ["diversity", "development", "featured"],
+    "year": 2021
   },
   {
     "name": "Amazon Spheres Model",
     "description": "3d models of amazon spheres",
     "slug": "spheres",
     "tags": ["3d modeling"],
-    "thumbnail": "/thumbnails/amazon-spheres.png"
+    "thumbnail": "/thumbnails/amazon-spheres.png",
+    "year": 2020
   },
   {
     "name": "Roll Call",
     "description": "mobile app for informed election voting",
     "slug": "roll-call",
     "thumbnail": "/thumbnails/roll-call.png",
-    "tags": ["development"]
+    "tags": ["development"],
+    "year": 2020
   },
   {
     "name": "Tea Time",
     "description": "speaker series for the queer college community",
     "slug": "tea-time",
     "thumbnail": "/thumbnails/teatime.png",
-    "tags": ["diversity"]
+    "tags": ["diversity"],
+    "year": 2020
   },
   {
     "name": "Tarrey Town Audio",
     "description": "interactive audio experience on a quest from Zelda",
     "slug": "tarrey-town",
     "thumbnail": "/thumbnails/tarrey.png",
-    "tags": ["development", "ui/ux"]
+    "tags": ["development", "ui/ux"],
+    "year": 2020
   },
   {
     "name": "Optical Music Recognition",
     "description": "DL model on music sheet recognition",
     "slug": "omr",
     "thumbnail": "/thumbnails/omr.png",
-    "tags": ["development", "featured"]
+    "tags": ["development", "featured"],
+    "year": 2020
   },
   {
     "name": "Rhyme Time",
     "description": "poem generator with lstms",
     "slug": "rhyme-time",
     "thumbnail": "/thumbnails/rhymetime.png",
-    "tags": ["development"]
+    "tags": ["development"],
+    "year": 2020
   }
 ]
