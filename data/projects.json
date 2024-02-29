@@ -31,14 +31,7 @@
     "tags": ["ui/ux", "development", "graphic design", "featured"],
     "year": 2023
   },
-  {
-    "name": "Prism Investor Track",
-    "description": "speaker series and community for queer students in venture",
-    "slug": "prism",
-    "thumbnail": "/thumbnails/prism.png",
-    "tags": ["diversity", "development", "featured"],
-    "year": 2022
-  },
+
   {
     "name": "Byrne",
     "description": "workhorse serif inspired by math-y visuals",

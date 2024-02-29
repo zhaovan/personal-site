@@ -105,28 +105,30 @@ export default function Projects() {
           })}
         </div>
         <div className={styles.projectContainer}>
-          {projectList.map((project, i) => {
-            const colors = [];
+          {projectList
+            .sort((projectA, projectB) => projectB.year - projectA.year)
+            .map((project, i) => {
+              const colors = [];
 
-            for (const tag of project.tags) {
-              colors.push(tagToColors[tag]);
-            }
-            const colorString = colors.join(",");
+              for (const tag of project.tags) {
+                colors.push(tagToColors[tag]);
+              }
+              const colorString = colors.join(",");
 
-            const gradient =
-              colors.length > 1
-                ? "linear-gradient(45deg," + colorString + ")"
-                : colorString;
+              const gradient =
+                colors.length > 1
+                  ? "linear-gradient(45deg," + colorString + ")"
+                  : colorString;
 
-            return (
-              <Project
-                key={i}
-                project={project}
-                gradient={gradient}
-                colors={colors}
-              />
-            );
-          })}
+              return (
+                <Project
+                  key={i}
+                  project={project}
+                  gradient={gradient}
+                  colors={colors}
+                />
+              );
+            })}
         </div>
       </div>
     </div>
